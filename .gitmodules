@@ -1,0 +1,3 @@
+[submodule "Source/TerminalProjects/art"]
+	path = Source/TerminalProjects/art
+	url = https://github.com/crazii/art.git
