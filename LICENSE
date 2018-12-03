@@ -25,15 +25,15 @@ SOFTWARE.
 
 
 Additional Notice: This project uses files form mutiple sources, listed as follows:
-name					location													source
+name					    location													                        source
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-FreeImage				Dependencies/code/FreeImage									http://freeimage.sourceforge.net/
-HLSL2GLSL				Dependencies/code/hlsl2glsl									https://github.com/aras-p/hlsl2glslfork
-GLSL Optimizer			Dependencies/code/glsloptimizer								https://github.com/aras-p/glsl-optimizer
+FreeImage				    Dependencies/code/FreeImage									            http://freeimage.sourceforge.net/
+HLSL2GLSL				    Dependencies/code/hlsl2glsl									            https://github.com/aras-p/hlsl2glslfork
+GLSL Optimizer	    Dependencies/code/glsloptimizer							            https://github.com/aras-p/glsl-optimizer
 
-ETCPACK					Plugins/GraphicsPlugins/BladeImageFI/source/etcpack			https://github.com/Ericsson/ETCPACK
-mt19937 random			Plugins/GraphicsPlugins/BladePostFX/source/3rdparty			http://www.bedaux.net/mtrand/
-ConvertUTF				BladeBase/source/3rdparty									http://unicode.org/Public/PROGRAMS/CVTUTF/ConvertUTF.c
+ETCPACK					    Plugins/GraphicsPlugins/BladeImageFI/source/etcpack			https://github.com/Ericsson/ETCPACK
+mt19937 random	    Plugins/GraphicsPlugins/BladePostFX/source/3rdparty			http://www.bedaux.net/mtrand/
+ConvertUTF			    BladeBase/source/3rdparty									              http://unicode.org/Public/PROGRAMS/CVTUTF/ConvertUTF.c
 
 The codes above are not part of Blade's source codes, and they have copyrights & licenses of their own.
 Please read license.txt (if exist at the locations) or read the copyright notices in the beginning of the source files.
