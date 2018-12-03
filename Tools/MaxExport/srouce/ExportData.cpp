@@ -65,7 +65,7 @@ namespace Blade
 
 		//HOWTO: alpha clip. check the bitmap is alpha channel?
 		//ID_OP == opacity map
-		target.hasAlpha = material->GetMaxMaterial()->GetSubTexmap(ID_OP) != NULL;
+		target.hasTransparency = material->GetMaxMaterial()->GetSubTexmap(ID_OP) != NULL;
 		target.textureFullPath = false;
 
 		//export material
@@ -175,7 +175,7 @@ namespace Blade
 			default:
 				//others not supported
 				if( mapType == ID_OP )
-					target.hasAlpha = true;
+					target.hasTransparency = true;
 				continue;
 			}
 
