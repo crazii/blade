@@ -7,9 +7,10 @@ a cross platform 3d engine using c++98
   3. task based parallel system. each subsystem has own tasks and cooperate using parallel state data.  
   4. multiple rendering API support: D3D9, OpenGL ES 3, Vulkan is planned.  
   5. graphics features: large world & terrains; 3DS Max importer (deprecated); FBX importer; Dual quaternion animation; IK; HBAO, HDR Post Effects. CSM shadow maps, etc. Customizable rendering pipelines, using xml as config script.  
-  6. fast build/compilation, for fast prototyping/iteration. Win32 debug takes **1.5 min** on i7 CPU, Android takes about **5 mins**.  
-  7. data binding to XML (non-intrusive); simple binary XML format.  
-  8. multi-language supprt.
+  6. Editor & scene editing (to be improved).
+  7. fast build/compilation, for fast prototyping/iteration. Win32 debug takes **1.5 min** on i7 CPU, Android takes about **5 mins**.  
+  8. data binding to XML (non-intrusive); simple binary XML format.  
+  9. multi-language supprt.
 
 # How to build
   1. Build dependencies  
