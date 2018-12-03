@@ -33,23 +33,27 @@ a cross platform 3d engine using c++98
   10. multi-language supprt.
 
 # How to build
+you need Visual Studio 2015/2017 (latest update), with **desktop develepment**, **C++ cross platform (mobile) develeopment**, **MFC development** installed. if any project failed to load, right click the project and click reload to check the error messge to see which feature is missing and then re-install Visual studio with required feature (only newly required features are installed, it could be fast).  
+
   1. Build dependencies  
     Open Denpendices/build/VC14.1/ALL/All_Denpendency.sln and batch build all (MENU:Build => Batch Build..., press "Selected All" and then "Build").  
     Open All_Dpendency_Android & batch build all if you want to build Android version.  
     After that, you probably don't need to touch that solution(s) any more, exept that new dependencies were added.  
-    there're VC14 (VS2015 projects) too, if you want to debug & run on Android, VC14.1 (VS2017) is recommended, since older version may have bugs on installing packages & start apps.  
+    there're VC14 (VS2015 projects) too, if you want to debug & run on Android, VC14.1 (VS2017) is recommended, since older VS version may have bugs on installing packages & start apps.  
     
   2. Build tools  
-    Open Build/VC14.1/Tools.sln, build only Release|Win32. Blade uses win32 tools to get maximum compatibility.  
+    Open Build/VC14.1/Tools.sln, build only **Release|Win32**. Blade uses win32 tools to get maximum compatibility.  
+    if you don't have 3DS Max SDK installed, you can **unload the projects manually: BladeMaxExport, BladeMaxExportLoader.**  
     
   3. Build Blade & Run  
-    Open Build/VC14.1/Blade.sln (or Blade_Android.sln for android).  
-    select the build type and build.  
-    set GameStudio (AppPackage_Android for android) as startup project.  
+    before build, you may need update testing art resources using "**git submodule update --init --recursive**" to update the art submodule.  
+      * Open Build/VC14.1/Blade.sln (or Blade_Android.sln for android).  
+      * select the build type and build.  
+      * set GameStudio (AppPackage_Android for android) as startup project.  
    
    4. Editor mode  
     Supported on Windows version (Blade.sln) only.  
-    Right Click "GameStudio" project => Configuration Properties => Debugging => Command Arguments: set "--mode=Editor"  
+    Right Click "GameStudio" project => Configuration Properties => Debugging => Command Arguments: set "--mode=Editor"(without quotes)  
     
 # How to debug Android
   note: currently OBB is needed to work. It is not convinient, and a network file device reading host obb is planed to be added.  
