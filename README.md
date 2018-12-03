@@ -1,6 +1,12 @@
 # blade
 a cross platform 3d engine using c++98
 
+# features
+  1. cross platform arthitecture, easy to add support for more platforms. current supported platform is Win32(x64/x86), Android(ARM/ARM64). iOS is planned.  
+  2. plugin based framework, maximum decoupling and flexiable customization.  
+  3. multiple rendering API support: D3D9, OpenGL ES 3, Vulkan is planned.  
+  4. graphics features: terrain rendering, 3DS Max importer (deprecated), FBX importer, Dual quaternion animation, IK, etc  
+
 # How to build
   1. Build dependencies  
     Open Denpendices/build/VC14.1/ALL/All_Denpendency.sln and batch build all (MENU:Build => Batch Build..., press "Selected All" and then "Build").  
