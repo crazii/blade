@@ -1,0 +1,15 @@
+<!-- Text Stage -->
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+	<entity Name="big_Terrain_0_8" pages="1">
+		<element type="Terrain Element" name="terrain" scene_type="GraphicsScene" resource="big:terrains/0_8.blt" name="Terrain Element" value="" version="0.01A">
+			<config name="Position" value="(0.000,0.000,4096.000)"/>
+			<config name="Bounding" value="(0.000,0.000,0.000),(512.000,1.000,512.000):0"/>
+			<config name="Index X" value="0"/>
+			<config name="Index Z" value="8"/>
+		</element>
+		<element type="TerrainEditor" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="TerrainEditor" value="" version="0.01 ">
+			<config name="Editable Class" value="TerrainEditable"/>
+		</element>
+	</entity>
+</page>

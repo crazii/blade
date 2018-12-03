@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bladeconfig>
+	<configentry name="General Config" value="" version="0.01 ">
+		<config name="Language" value="en_US"/>
+	</configentry>
+	<configentry name="Window Setting" value="" version="0.01 ">
+		<config name="Window API" value="Win32Native"/>
+		<config name="Display Resolution" value="1600x1024"/>
+		<config name="Full Screen" value="FALSE"/>
+		<config name="Color Depth" value="32"/>
+		<config name="AutoWindow on Startup" value="FALSE"/>
+	</configentry>
+	<configentry name="Input Setting" value="" version="0.01 ">
+		<config name="Mouse API" value="Win32Default"/>
+		<config name="Keyboard API" value="Win32Default"/>
+	</configentry>
+	<configentry name="Graphics Basic" value="" version="0.01 ">
+		<config name="Render API" value="Direct3D9" version="0.01 ">
+			<config name="Adapter Count" value="1"/>
+			<config name="VSync" value="TRUE"/>
+			<config name="Adapters" value="NVIDIA GeForce GTX 1080"/>
+		</config>
+		<config name="Render Scheme" value="Deferred Shading"/>
+		<config name="Texture Filter" value="Bilinear"/>
+	</configentry>
+	<configentry name="Graphis Advanced" value="" version="0.01 ">
+		<config name="Terrain Config" value="" version="0.01A">
+			<config name="Mesh Quality" value="Low"/>
+			<config name="Batch Combination" value="Full Combination"/>
+			<config name="Texture Size" value="512"/>
+			<config name="Blend Normal Scale" value="1"/>
+			<config name="Block Size" value="32" version="0.01 ">
+				<config name="LOD levels" value="5"/>
+			</config>
+			<config name="Texture Quality" value="High"/>
+		</config>
+		<config name="Rendering Operations" value="" version="0.01 ">
+			<config name="Shadows" value="" version="0.02 ">
+				<config name="Shadow Quality" value="Middle"/>
+				<config name="Technique" value="Default"/>
+				<config name="CSM Cascade Count" value="4"/>
+				<config name="CSM Auto Distance" value="TRUE" version="0.01 ">
+					<config name="CSM Distance Factor" value="0.95"/>
+				</config>
+			</config>
+		</config>
+		<config name="Image Effects" value="" version="0.01 ">
+			<config name="HDR" value="" version="0.02 ">
+				<config name="Enable Bloom" value="TRUE"/>
+				<config name="Bloom Factor" value="0.75"/>
+				<config name="Bloom Intensity" value="2"/>
+				<config name="Exposure Sale" value="1"/>
+			</config>
+			<config name="HBAO" value="" version="0.02 ">
+				<config name="Blur Sharpness" value="20"/>
+				<config name="Angle Bias" value="0.15"/>
+				<config name="AO Intensity" value="3"/>
+				<config name="AO Range" value="0.6"/>
+				<config name="Max Distance" value="1000"/>
+				<config name="Direction Count" value="4"/>
+				<config name="Step Count" value="4"/>
+				<config name="Resolution" value="1"/>
+			</config>
+		</config>
+	</configentry>
+</bladeconfig>

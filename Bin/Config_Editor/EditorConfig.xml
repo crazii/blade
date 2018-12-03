@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorConfig value="" version="0.01 ">
+	<config name="EditorGlobalConfig" value="" version="0.01 ">
+		<config name="Transform Space" value="World Space"/>
+	</config>
+	<config name="ViewPort" value="" version="0.01 ">
+		<config name="Layout" value="0"/>
+		<config name="Camera0" value="" version="0.01 ">
+			<config name="Camera Move Speed" value="216"/>
+			<config name="Camera Rotate Speed" value="45"/>
+			<config name="Realtime Update" value="TRUE"/>
+			<config name="Maximize/Restore" value="FALSE"/>
+		</config>
+		<config name="Camera1" value="" version="0.01 ">
+			<config name="Camera Move Speed" value="50"/>
+			<config name="Camera Rotate Speed" value="45"/>
+			<config name="Realtime Update" value="TRUE"/>
+			<config name="Maximize/Restore" value="FALSE"/>
+		</config>
+		<config name="Camera2" value="" version="0.01 ">
+			<config name="Camera Move Speed" value="50"/>
+			<config name="Camera Rotate Speed" value="45"/>
+			<config name="Realtime Update" value="TRUE"/>
+			<config name="Maximize/Restore" value="FALSE"/>
+		</config>
+		<config name="Camera3" value="" version="0.01 ">
+			<config name="Camera Move Speed" value="1"/>
+			<config name="Camera Rotate Speed" value="125"/>
+			<config name="Realtime Update" value="TRUE"/>
+			<config name="Maximize/Restore" value="TRUE"/>
+		</config>
+	</config>
+	<config name="Tool" value="" version="0.01 ">
+		<config name="Deform" value="" version="0.01 ">
+			<config name="Brush Size" value="64"/>
+			<config name="Brush Intensity" value="64"/>
+			<config name="Brush Shape" value="media:editor_res/brushes/fade_circle.png"/>
+			<config name="Brush Color" value="(1.000,0.000,0.000,1.000)"/>
+		</config>
+		<config name="Paint" value="" version="0.01 ">
+			<config name="Brush Size" value="64"/>
+			<config name="Brush Intensity" value="64"/>
+			<config name="Brush Shape" value="media:editor_res/brushes/fade_circle.png"/>
+			<config name="Brush Color" value="(0.000,0.000,1.000,1.000)"/>
+			<config name="Terrain Texture" value="image:terrain_textures/TopsoilD.dds"/>
+		</config>
+		<config name="Rebuild Normal" value=""/>
+		<config name="Model Placement" value="" version="0.01 ">
+			<config name="Target Model" value="model:/tree/static/tree06.blm"/>
+			<config name="Random Rotation" value="FALSE"/>
+			<config name="Intersection Flags" value="7" version="0.01 ">
+				<config name="[0] Atmosphere" value="FALSE"/>
+				<config name="[1] Effect" value="FALSE"/>
+				<config name="[2] Skinned Mesh" value="FALSE"/>
+				<config name="[3] Skinned Mesh Alpha" value="FALSE"/>
+				<config name="[4] Static Mesh" value="TRUE"/>
+				<config name="[5] Static Mesh Alpha" value="FALSE"/>
+				<config name="[6] Terrain" value="TRUE"/>
+			</config>
+		</config>
+		<config name="Model Brush Tool" value="" version="0.01 ">
+			<config name="Brush Size" value="84"/>
+			<config name="Brush Intensity" value="1"/>
+			<config name="Brush Shape" value="media:editor_res/brushes/poisson.png"/>
+			<config name="Brush Color" value="(32.000,0.000,32.000,1.000)"/>
+			<config name="Random Rotation" value="TRUE"/>
+			<config name="Random Scale" value="FALSE"/>
+			<config name="Model Density" value="5"/>
+			<config name="Target Model" value="3" version="0.01 ">
+				<config name="0" value="model:/tree/static/tree05.blm"/>
+				<config name="1" value="model:/tree/static/tree06.blm"/>
+				<config name="2" value="model:/tree/static/tree04.blm"/>
+			</config>
+			<config name="Intersection Flags" value="7" version="0.01 ">
+				<config name="[0] Atmosphere" value="FALSE"/>
+				<config name="[1] Effect" value="FALSE"/>
+				<config name="[2] Skinned Mesh" value="FALSE"/>
+				<config name="[3] Skinned Mesh Alpha" value="FALSE"/>
+				<config name="[4] Static Mesh" value="FALSE"/>
+				<config name="[5] Static Mesh Alpha" value="FALSE"/>
+				<config name="[6] Terrain" value="TRUE"/>
+			</config>
+		</config>
+		<config name="Create Lights" value=""/>
+	</config>
+</EditorConfig>

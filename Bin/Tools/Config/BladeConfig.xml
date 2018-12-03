@@ -1,0 +1,18 @@
+﻿<bladeconfig>
+	<configentry name="Graphics Basic" value="" version="0.01 ">
+		<config name="Render API" value="Direct3D9" version="0.01 ">
+			<config name="Adapters" value="NVIDIA GeForce GTX 760"/>
+			<config name="Adapter Count" value="1"/>
+		</config>
+		<config name="Render Scheme" value="Forward Shading"/>
+		<config name="Texture Filter" value="Bilinear"/>
+	</configentry>
+	<configentry name="Graphis Advanced" value=""/>
+	<configentry name="Window Setting" value="" version="0.01 ">
+		<config name="Window API" value="Win32Native"/>
+		<config name="Display Resolution" value="800x600"/>
+		<config name="Full Screen" value="FALSE"/>
+		<config name="Color Depth" value="32"/>
+		<config name="AutoWindow on Startup" value="TRUE"/>
+	</configentry>
+</bladeconfig>

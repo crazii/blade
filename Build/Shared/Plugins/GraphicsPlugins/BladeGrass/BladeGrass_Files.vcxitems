@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{654B5A2D-5442-48CD-BD6B-CBD8D56183C6}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\header\BladeGrass.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\header\BladeGrass_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\header\interface\IGrassConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\BladeGrassPlugin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassContent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassElement.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassRenderable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassRenderType.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassSerializer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\header\GrassShaderShared.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\BladeGrassPlugin.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassConfig.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassContent.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassElement.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassRenderable.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassRenderType.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeGrass\source\GrassSerializer.cc" />
+  </ItemGroup>
+</Project>

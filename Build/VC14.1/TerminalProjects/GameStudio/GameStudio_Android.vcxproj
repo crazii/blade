@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C887E84E-7355-415D-B7D8-696C71A30C0B}</ProjectGuid>
+    <RootNamespace>GameStudio</RootNamespace>
+    <Keyword>Android</Keyword>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>Clang_3_6</PlatformToolset>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+    <ThumbMode>Disabled</ThumbMode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>Clang_3_6</PlatformToolset>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>Clang_3_6</PlatformToolset>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+    <ThumbMode>Disabled</ThumbMode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>Clang_3_6</PlatformToolset>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="..\..\..\Shared\TerminalProjects\GameStudio\GameStudio_Files.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform)\APK\libs\$(TargetArchAbi)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform)\APK\libs\$(TargetArchAbi)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform)\APK\libs\$(TargetArchAbi)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform)\APK\libs\$(TargetArchAbi)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <TargetName>lib$(SolutionName)</TargetName>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <PackageDebugSymbols>true</PackageDebugSymbols>
+    <ExtensionsToDeleteOnClean>*.d;*.tlog;$(ExtensionsToDeleteOnClean);*.java;*.xml;</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <TargetName>lib$(SolutionName)</TargetName>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <PackageDebugSymbols>true</PackageDebugSymbols>
+    <ExtensionsToDeleteOnClean>*.d;*.tlog;$(ExtensionsToDeleteOnClean);*.java;*.xml;</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <TargetName>lib$(SolutionName)</TargetName>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <ExtensionsToDeleteOnClean>*.d;*.tlog;$(ExtensionsToDeleteOnClean);*.java;*.xml;</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <TargetName>lib$(SolutionName)</TargetName>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <ExtensionsToDeleteOnClean>*.d;*.tlog;$(ExtensionsToDeleteOnClean);*.java;*.xml;</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\BladeApplication\header;$(SolutionDir)..\..\Source\TerminalProjects\GameLibrary\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDK_MATH_NO_SOFTFP=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>FullDebug</DebugInformationFormat>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <FloatABI>hard</FloatABI>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <AdditionalOptions>-flax-vector-conversions  -fvisibility=hidden -march=armv7-a</AdditionalOptions>
+      <EnableNeonCodegen>true</EnableNeonCodegen>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lGameLibrary_Android;-lBladeApplication_Android;-lBladeModel_Android;-lBladeTerrain_Android;-lBladeAtmosphere_Android;-lBladeGrass_Android;-lBladeImageFI_Android;-lBladePostFX_Android;-lBladeWindow_Android;-lBladeUI_Android;-lBladeGeometry_Android;-lBladeGraphics_Android;-lBladeGame_Android;-lBladeDevicePlugin_Android;-lBladeFramework_Android;-lBladeDevice_Android;-lBladeBase_Android;-lFreeImage_Android;-lPNG_Android;-lZLib_Android;-lEGL;-lGLESv3;-lm_hard</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform);$(SolutionDir)..\..\Bin\$(Configuration)_Android_$(Platform)\Plugins;$(SolutionDir)..\..\Dependencies\lib\$(ApplicationType)_$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>-Wl,-no-warn-mismatch %(AdditionalOptions)</AdditionalOptions>
+      <DebuggerSymbolInformation>true</DebuggerSymbolInformation>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+
+cd "$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\Android"
+set Platform=$(ApplicationType)
+set ExtraDir=$(SolutionDir)..\..\Source\BladeBase\source\interface_imp\platform\android\project\src\
+set TargetDir=$(IntDir)..\APK\
+set TargetLib=$(TargetFileName)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  CopyFiles.makefile"
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CustomBuildStep />
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\BladeApplication\header;$(SolutionDir)..\..\Source\TerminalProjects\GameLibrary\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <EnableNeonCodegen>
+      </EnableNeonCodegen>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <AdditionalOptions>-flax-vector-conversions  -fvisibility=hidden</AdditionalOptions>
+      <DebugInformationFormat>FullDebug</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lGameLibrary_Android;-lBladeApplication_Android;-lBladeModel_Android;-lBladeTerrain_Android;-lBladeAtmosphere_Android;-lBladeGrass_Android;-lBladeImageFI_Android;-lBladePostFX_Android;-lBladeWindow_Android;-lBladeUI_Android;-lBladeGeometry_Android;-lBladeGraphics_Android;-lBladeGame_Android;-lBladeDevicePlugin_Android;-lBladeFramework_Android;-lBladeDevice_Android;-lBladeBase_Android;-lFreeImage_Android;-lPNG_Android;-lZLib_Android;-lEGL;-lGLESv3;-lm</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform);$(SolutionDir)..\..\Bin\$(Configuration)_Android_$(Platform)\Plugins;$(SolutionDir)..\..\Dependencies\lib\$(ApplicationType)_$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <DebuggerSymbolInformation>true</DebuggerSymbolInformation>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+
+cd "$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\Android"
+set Platform=$(ApplicationType)
+set ExtraDir=$(SolutionDir)..\..\Source\BladeBase\source\interface_imp\platform\android\project\src\
+set TargetDir=$(IntDir)..\APK\
+set TargetLib=$(TargetFileName)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  CopyFiles.makefile"
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CustomBuildStep />
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\BladeApplication\header;$(SolutionDir)..\..\Source\TerminalProjects\GameLibrary\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDK_MATH_NO_SOFTFP=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Optimization>MaxSpeed</Optimization>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <FloatABI>hard</FloatABI>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <AdditionalOptions>-flax-vector-conversions  -fvisibility=hidden -march=armv7-a</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lGameLibrary_Android;-lBladeApplication_Android;-lBladeModel_Android;-lBladeTerrain_Android;-lBladeAtmosphere_Android;-lBladeGrass_Android;-lBladeImageFI_Android;-lBladePostFX_Android;-lBladeWindow_Android;-lBladeUI_Android;-lBladeGeometry_Android;-lBladeGraphics_Android;-lBladeGame_Android;-lBladeDevicePlugin_Android;-lBladeFramework_Android;-lBladeDevice_Android;-lBladeBase_Android;-lFreeImage_Android;-lPNG_Android;-lZLib_Android;-lEGL;-lGLESv3;-lm_hard</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform);$(SolutionDir)..\..\Bin\$(Configuration)_Android_$(Platform)\Plugins;$(SolutionDir)..\..\Dependencies\lib\$(ApplicationType)_$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalOptions>-Wl,-no-warn-mismatch %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+
+cd "$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\Android"
+set Platform=$(ApplicationType)
+set ExtraDir=$(SolutionDir)..\..\Source\BladeBase\source\interface_imp\platform\android\project\src\
+set TargetDir=$(IntDir)..\APK\
+set TargetLib=$(TargetFileName)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  CopyFiles.makefile"
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CustomBuildStep />
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\BladeApplication\header;$(SolutionDir)..\..\Source\TerminalProjects\GameLibrary\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Optimization>MaxSpeed</Optimization>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <EnableNeonCodegen>
+      </EnableNeonCodegen>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <AdditionalOptions>-flax-vector-conversions  -fvisibility=hidden</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lGameLibrary_Android;-lBladeApplication_Android;-lBladeModel_Android;-lBladeTerrain_Android;-lBladeAtmosphere_Android;-lBladeGrass_Android;-lBladeImageFI_Android;-lBladePostFX_Android;-lBladeWindow_Android;-lBladeUI_Android;-lBladeGeometry_Android;-lBladeGraphics_Android;-lBladeGame_Android;-lBladeDevicePlugin_Android;-lBladeFramework_Android;-lBladeDevice_Android;-lBladeBase_Android;-lFreeImage_Android;-lPNG_Android;-lZLib_Android;-lEGL;-lGLESv3;-lm</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform);$(SolutionDir)..\..\Bin\$(Configuration)_Android_$(Platform)\Plugins;$(SolutionDir)..\..\Dependencies\lib\$(ApplicationType)_$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+
+cd "$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\Android"
+set Platform=$(ApplicationType)
+set ExtraDir=$(SolutionDir)..\..\Source\BladeBase\source\interface_imp\platform\android\project\src\
+set TargetDir=$(IntDir)..\APK\
+set TargetLib=$(TargetFileName)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  CopyFiles.makefile"
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CustomBuildStep />
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Bin\Data\material\atmosphere\sky.bmt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\axis_gizmo.bmt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\geometry_brush_decal.bmt" />
+    <None Include="..\..\..\..\Bin\Data\material\hud.bmt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\instancedAABB.bmt" />
+    <None Include="..\..\..\..\Bin\Data\material\light.bmt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\model\skinned_mesh.bmt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\model\static_mesh.bmt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\blit.bmt" />
+    <None Include="..\..\..\..\Bin\Data\material\postfx\blur.bmt" />
+    <None Include="..\..\..\..\Bin\Data\material\postfx\hbao.bmt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\hdr.bmt" />
+    <None Include="..\..\..\..\Bin\Data\material\postfx\motion_vector.bmt" />
+    <None Include="..\..\..\..\Bin\Data\material\postfx\taa.bmt" />
+    <None Include="..\..\..\..\Bin\Data\material\simple_shape.bmt" />
+    <None Include="..\..\..\..\Bin\Data\material\terrain\terrain.bmt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\default.scheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\deferred_lighting.scheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\deferred_shading.scheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\build.gradle" />
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\CopyFiles.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\assets\Config\commoncfg.cfg" />
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\assets\Config\plugins.cfg" />
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\assets\Config\resource.cfg" />
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\java\com\blade\games\BladeNativeActivity.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\AndroidManifest.xml" />
+    <Xml Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\assets\Config\BladeConfig.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\res\values\strings.xml" />
+    <Xml Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\res\values\styles.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

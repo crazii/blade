@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version = "0.01" >
+
+	<material name="HUD">
+		<technique name="default" profile="2_0">
+			
+			<pass name="default">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="disable" write="disable"/>
+					<alpha_blend src="src_alpha" dest="inv_src_alpha" />
+				</render_property>
+				
+				<shader_option source="shader:hud.blshader" />				
+			</pass>
+		</technique>
+	</material>
+	
+</BladeMaterial>

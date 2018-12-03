@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{9CAFABEC-1294-4C3E-BBE8-F09ADE4D0600}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\header\BladeTerrainEditor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\header\BladeTerrainEditor_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\ITerrainBrushOperation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainBrushRect.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainDeformTool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainEditable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainEditorElement.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainPageEditable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainRelightTask.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainRelightTool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainSplatTool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainToolBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainToolManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\TerrainEditorPlugin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainBrushRect.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainDeformTool.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainEditable.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainEditorElement.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainPageEditable.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainRelightTask.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainRelightTool.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainSplatTool.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainToolBase.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\interface_imp\TerrainToolManager.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\TerrainEditorPCH.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\source\TerrainEditorPlugin.cc" />
+  </ItemGroup>
+</Project>

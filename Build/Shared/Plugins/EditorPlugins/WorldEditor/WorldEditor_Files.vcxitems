@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{383438BD-95E4-4350-9D64-25283843F2FA}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\header\BladeWorldEditor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\header\interface\IWorldEditableManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\header\WorldEditor_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\interface_imp\WorldEditableManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\interface_imp\WorldEditorCommand.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\interface_imp\WorldFile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\WorldEditorPlugin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\interface_imp\WorldEditableManager.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\interface_imp\WorldEditorCommand.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\interface_imp\WorldFile.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\WorldEditorPCH.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\source\WorldEditorPlugin.cc" />
+  </ItemGroup>
+</Project>

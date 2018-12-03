@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{8dc99695-c1a8-4245-a4c2-46367870d60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{b6462105-1302-4371-856f-4e21206144eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\3rdparty">
+      <UniqueIdentifier>{1d50c801-daf0-4b55-82cb-904931459947}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\header\BladePostFX.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\BladePostFXPlugin.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\HBAO.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\HDR.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\MotionVector.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\TAA.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\3rdparty\mtrand.h">
+      <Filter>source\3rdparty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\BladePostFXPlugin.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\HBAO.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\HDR.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\MotionVector.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\PostFXPCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\TAA.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\3rdparty\mtrand.cpp">
+      <Filter>source\3rdparty</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladePostFX\source\3rdparty\mtreadme.txt">
+      <Filter>source\3rdparty</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

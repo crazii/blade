@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="data">
+      <UniqueIdentifier>{e30b8426-5883-4ca8-b9d4-7d0f5700532d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\material">
+      <UniqueIdentifier>{7afe4aba-b4f3-4e86-afc3-97497f211037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\material\terrain">
+      <UniqueIdentifier>{4003ee34-ace5-4b3a-b5ab-6bdc8f1f6ac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\material\atmosphere">
+      <UniqueIdentifier>{f11ac89e-e4e8-434d-be73-a98fef6d4484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\renderscheme">
+      <UniqueIdentifier>{c8a024c8-4c7e-4e3b-a97e-4fde929a4f6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\material\model">
+      <UniqueIdentifier>{2831d313-f6d1-4510-b526-e20595bbf245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\material\postfx">
+      <UniqueIdentifier>{2a51a521-0c2d-4be4-b642-0e27575bc1f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\editor">
+      <UniqueIdentifier>{2bf73d12-185b-433a-8e94-b0d3cdbf0fbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Bin\Data\material\geometry_brush_decal.bmt">
+      <Filter>data\material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\instancedAABB.bmt">
+      <Filter>data\material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\atmosphere\sky.bmt">
+      <Filter>data\material\atmosphere</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\default.scheme">
+      <Filter>data\renderscheme</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\model\static_mesh.bmt">
+      <Filter>data\material\model</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\axis_gizmo.bmt">
+      <Filter>data\material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\model\skinned_mesh.bmt">
+      <Filter>data\material\model</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\terrain\terrain.bmt">
+      <Filter>data\material\terrain</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\simple_shape.bmt">
+      <Filter>data\material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Config_Editor\commoncfg.cfg">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Config_Editor\plugins.cfg">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Config_Editor\resource.cfg">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\deferred_lighting.scheme">
+      <Filter>data\renderscheme</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\deferred_shading.scheme">
+      <Filter>data\renderscheme</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\light.bmt">
+      <Filter>data\material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\hud.bmt">
+      <Filter>data\material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\blit.bmt">
+      <Filter>data\material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\motion_vector.bmt">
+      <Filter>data\material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\taa.bmt">
+      <Filter>data\material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\hdr.bmt">
+      <Filter>data\material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\blur.bmt">
+      <Filter>data\material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\hbao.bmt">
+      <Filter>data\material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Config\BladeConfig.xml">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Config\commoncfg.cfg">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\config.ico">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\double_blade.ico">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\globe.ico">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Config\plugins.cfg">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Config\resource.cfg">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\Bin\Config_Editor\BladeConfig.xml">
+      <Filter>data\editor</Filter>
+    </Xml>
+    <Xml Include="..\..\..\..\Bin\Config_Editor\EditorConfig.xml">
+      <Filter>data\editor</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\Source\TerminalProjects\GameStudio\GameStudio.rc">
+      <Filter>data</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

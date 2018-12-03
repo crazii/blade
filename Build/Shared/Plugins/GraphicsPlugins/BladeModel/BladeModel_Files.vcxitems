@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{DC7DF0DF-CD3E-45F6-A668-2DE9372909F8}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\BladeModel.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\BladeModel_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\interface\IAnimationBuilder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\interface\IModel.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\interface\IModelBuilder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\interface\IModelConfigManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\interface\IModelResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\interface\ISkeletonResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\interface\ISyncAnimation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\interface\ModelState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\BladeModelPlugin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\Animation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\AnimationBuilder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\AnimationResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\AnimationSorter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\Bone.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\BoneVisualizer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\IK.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\IKSolver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\Model.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelBatchCombiner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelBuilder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelConfigManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelElement.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelSerializer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelType.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\Skeleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SkeletonResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SkeletonResourceState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SkeletonSerializer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\StaticModelResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\StaticModelSerializer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SubMesh.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\BladeModel.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\BladeModelPCH.cc">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\BladeModelPlugin.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\Animation.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\AnimationBuilder.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\AnimationResource.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\BoneVisualizer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\IK.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\IKSolver.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\Model.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelBatchCombiner.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelBuilder.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelConfigManager.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelElement.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelResource.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelSerializer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelType.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\Skeleton.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SkeletonResource.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SkeletonSerializer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\StaticModelSerializer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SubMesh.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\ModelState.cc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+LIBRARY BladeMaxExportLoader.dle
+EXPORTS
+   LibDescription       @1       PRIVATE
+   LibNumberClasses     @2       PRIVATE
+   LibClassDesc         @3       PRIVATE
+   LibVersion           @4       PRIVATE
+   LibInitialize        @6       PRIVATE
+   LibShutdown          @7       PRIVATE
+SECTIONS
+   .data READ WRITE

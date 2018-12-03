@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{C9CC2CA1-6A04-44A3-A2B5-1764DD679CF3}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\header\3dsmaxsdk_preinclude.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\header\BladeMaxExport.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\header\ExportData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\header\TangentSpaceCalculation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\srouce\AnimDefDialog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\srouce\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\BladeMaxExport.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\srouce\AnimDefDialog.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\srouce\BladeMaxExport.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\srouce\BladeMaxExport_Exp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\srouce\BladeMaxExport_Model.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\MaxExport\srouce\ExportData.cpp" />
+  </ItemGroup>
+</Project>

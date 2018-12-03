@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version="0.01" >
+
+	<material name="AABB">
+		
+		<technique name="instancing" profile="2_0" >
+			<pass name="default">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less" write="disable"/>
+				</render_property>
+				
+				<shader_option source="shader:aabb.blshader" />
+			</pass>
+		</technique>
+		
+	</material>
+	
+</BladeMaterial>

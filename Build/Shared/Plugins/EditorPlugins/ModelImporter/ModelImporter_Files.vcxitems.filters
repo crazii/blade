@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{b9952f6f-103a-40f4-9348-5523524ad8e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{1e09013c-49ac-4324-a321-a37594296162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp">
+      <UniqueIdentifier>{9d4ac0b8-e7b9-4d71-ab14-da43ffc57108}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\header\BladeModelImporter.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\source\ModelImporterPlugin.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\source\interface_imp\FBXCollector.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\source\interface_imp\FBXHelper.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\source\interface_imp\FBXImporter.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\source\ModelImporterPCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\source\ModelImporterPlugin.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\source\interface_imp\FBXCollector.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\ModelImporter\source\interface_imp\FBXImporter.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

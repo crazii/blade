@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{3B5E2468-D450-40D5-AAA2-66215ED28E93}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\png.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngconf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngdebug.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pnginfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pnglibconf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngpriv.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngstruct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\png.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngerror.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngget.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngmem.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngpread.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngread.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngrio.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngrtran.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngrutil.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngtrans.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngwio.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngwrite.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngwtran.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\FreeImage\Source\LibPNG\pngwutil.c" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version = "0.01" >
+
+	<material name="Skinned Mesh" >
+		<!-- texture uniform in shader: stages binding order
+		<textures>
+			<texture name="diffuseMap"/>
+			<texture name="normalMap"/>
+			<texture name="specularLevelMap"/>
+			<texture name="glossMap"/>
+			<texture name="glowMap"/>
+		</textures>
+		-->
+	
+		<technique name="legacy" profile="2_0">
+			
+			<groups>
+				<group name="diffuse" >
+					<requirements>
+						<texture index="0" />
+					</requirements>
+				</group>
+				<group name="material_color" />
+			</groups>
+
+			<pass name="depth">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="enable"/>
+					<color_write red="disable" green="disable" blue="disable" alpha="disable" />
+				</render_property>
+				<shader_option name="depth_only" group="diffuse" source="shader:mesh.blshader" subshader="skin_depth" />
+			</pass>
+			<pass name="alpha_depth">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="enable"/>
+					<color_write/>
+				</render_property>
+				<shader_option name="depth_alphaclip" group="diffuse" source="shader:mesh.blshader" subshader="skin_depth_alphaclip" />
+			</pass>
+			
+			<pass name="shadow" clone="depth">
+				<render_property>
+					<depth bias="1" slope_bias="0.005"/>
+				</render_property>
+			</pass>
+			
+			<pass name="alpha_shadow" clone="alpha_depth">
+				<render_property>
+					<depth bias="1" slope_bias="0.005"/>
+				</render_property>
+			</pass>
+		
+			<pass name="default">
+				
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="equal" write="disable" bias="0" slope_bias="0" clip="enable" bias_clamp="0"/>			
+				</render_property>
+
+				<shader_option name="color_map" group="diffuse" source="shader:mesh.blshader" subshader="skin_diffuse"/>
+				<shader_option name="no_map" group="material_color" source="shader:mesh.blshader" subshader="skin_material_color_only" />
+			</pass>
+			
+			<pass name="alpha_blending" clone="default">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="disable"/>
+					<alpha_blend src="src_alpha" dest="inv_src_alpha" op="add" alpha_src="one" alpha_dest="one" alpha_op="add" independent="enable"/>
+				</render_property>
+			</pass>
+		</technique>
+	
+	
+		<!-- use vertex normals : fs_skinned_mesh.hlsl
+		2 textures : normal map
+		3 textures : normal map, specular map
+		 -->
+		<technique name="forwad_shading" profile="2_a">
+			
+			<groups>
+				<group name="normal_specular" >
+					<requirements>
+						<texture index="0-2" />
+					</requirements>
+				</group>
+				<group name="normal" >
+					<requirements>
+						<texture index="0-1" />
+					</requirements>
+				</group>
+				<group name="diffuse" >
+					<requirements>
+						<texture index="0" />
+					</requirements>
+				</group>
+				<group name="material_color" />
+			</groups>
+
+			<pass name="depth">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="enable"/>
+					<color_write red="disable" green="disable" blue="disable" alpha="disable" />
+				</render_property>
+				<shader_option name="depth_only" group="diffuse,normal,normal_specular,material_color" source="shader:mesh.blshader" subshader="skin_depth"/>
+			</pass>
+			<pass name="alpha_depth">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="enable"/>
+					<color_write/>
+				</render_property>
+				<shader_option name="depth_alphaclip" group="diffuse,normal,normal_specular" source="shader:mesh.blshader" subshader="skin_depth_alphaclip"/>
+			</pass>
+			
+			<pass name="shadow" clone="depth">
+				<render_property>
+					<depth bias="1" slope_bias="0.005"/>
+				</render_property>
+			</pass>
+			
+			<pass name="alpha_shadow" clone="alpha_depth">
+				<render_property>
+					<depth bias="1" slope_bias="0.005"/>
+				</render_property>
+			</pass>
+		
+			<pass name="default">
+				
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="equal" write="disable" bias="0" slope_bias="0" clip="enable" bias_clamp="0"/>
+					<!--
+					<color diffuse="(1,1,1,0)" specular="(1,1,1,0)" emissive="(1,1,1,0)" />
+					<color_write red="enable" green="enable" blue="enable" alpha="enable" />
+					<fog/>
+					<alpha_clip/>
+					<alpha_blend src="src_alpha" dest="inv_src_alpha" op="add" alpha_src="one" alpha_dest="one" alpha_op="add" independent="enable"/>
+					<stencil read_mask="0x0" write_mask="0x0" front_test="less" back_test="less" front_pass_op="keep" front_fail_op="zero" back_pass_op="zero" back_fail_op="keep" />
+					<scissors>
+						<sissor left="0" top="0" right="0" bottom="0" />
+					</scissors>
+					<samplers>
+						<sampler border="(0,0,0,0)" max_anisotropy="4" test="never" type="diffuse">
+							<mipmap_lod min="3" max="0" bias="0">
+							<address_mode u="border" v="border" w="border" />
+							<filter min="linear" mip="linear" mag="linear" />
+						</sampler>
+						<sampler/>
+					</samplers>
+					-->					
+				</render_property>
+
+				<shader_option name="specular_map" group="normal_specular" source="shader:mesh.blshader" subshader="skin_normal_specular"/>				
+				<shader_option name="normal_map" group="normal" source="shader:mesh.blshader" subshader="skin_normalmap"/>
+				<shader_option name="color_map" group="diffuse" source="shader:mesh.blshader" subshader="skin_diffuse"/>
+				<shader_option name="no_map" group="material_color" source="shader:mesh.blshader" subshader="skin_material_color_only" />
+			</pass>
+			
+			<pass name="alpha_blending" clone="default">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="disable"/>
+					<alpha_blend src="src_alpha" dest="inv_src_alpha" op="add" alpha_src="one" alpha_dest="one" alpha_op="add" independent="enable"/>
+				</render_property>
+			</pass>
+
+			<LOD level="0" sort_group="normal_specular" dist_start="0" dist_end="16.0" />
+			<LOD level="1" sort_group="normal" dist_start="14.0" dist_end="32" />
+			<LOD level="2" sort_group="diffuse" dist_start="30" dist_end="MAX" />
+		</technique>
+		
+		<technique name="deferred_shading" profile="3_0">
+			<groups>
+				<group name="normal_specular" >
+					<requirements>
+						<texture index="0-2" />
+					</requirements>
+				</group>
+				<group name="normal" >
+					<requirements>
+						<texture index="0-1" />
+					</requirements>
+				</group>
+				<group name="diffuse" >
+					<requirements>
+						<texture index="0" />
+					</requirements>
+				</group>
+				<group name="material_color" />
+			</groups>
+
+			<pass name="depth">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="enable"/>
+					<color_write red="disable" green="disable" blue="disable" alpha="disable" />
+				</render_property>
+				<shader_option name="depth_only" group="diffuse,normal,normal_specular,material_color" source="shader:mesh.blshader" subshader="skin_depth"/>
+			</pass>
+			<pass name="alpha_depth">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="enable"/>
+					<color_write/>
+				</render_property>
+				<shader_option name="depth_alphaclip" group="diffuse,normal,normal_specular,material_color" source="shader:mesh.blshader" subshader="skin_depth_alphaclip"/>
+			</pass>
+			
+			<pass name="shadow" clone="depth">
+				<render_property>
+					<depth bias="1" slope_bias="0.005"/>
+				</render_property>
+			</pass>
+			
+			<pass name="alpha_shadow" clone="alpha_depth">
+				<render_property>
+					<depth bias="1" slope_bias="0.005"/>
+				</render_property>
+			</pass>
+			
+			<pass name="ds_geometry">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="equal" write="disable"/>
+				</render_property>
+				
+				<shader_option name="specular_map" group="normal_specular" source="shader:mesh.blshader" subshader="skin_normal_specular"/>
+				<shader_option name="normal_map" group="normal" source="shader:mesh.blshader" subshader="skin_normalmap"/>
+				<shader_option name="color_map" group="diffuse" source="shader:mesh.blshader" subshader="skin_diffuse"/>
+				<shader_option name="no_map" group="material_color" source="shader:mesh.blshader" subshader="skin_material_color_only" />
+			</pass>
+			
+			<!-- alpha blending pass -->
+			<pass name="alpha_blending">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="disable"/>
+					<alpha_blend src="src_alpha" dest="inv_src_alpha" op="add" alpha_src="one" alpha_dest="one" alpha_op="add" independent="enable"/>
+				</render_property>
+				<shader_option name="specular_map" group="normal_specular" source="shader:mesh.blshader" subshader="alphablend_skin_normal_specular"/>
+				<shader_option name="normal_map" group="normal" source="shader:mesh.blshader" subshader="alphablend_skin_normalmap"/>
+				<shader_option name="color_map" group="diffuse" source="shader:mesh.blshader" subshader="alphablend_skin_diffuse"/>
+			</pass>
+
+      <LOD level="0" sort_group="normal_specular" dist_start="0" dist_end="16.0" />
+      <LOD level="1" sort_group="normal" dist_start="14.0" dist_end="32" />
+      <LOD level="2" sort_group="diffuse" dist_start="30" dist_end="MAX" />
+		</technique>
+		
+	</material>
+	
+</BladeMaterial>

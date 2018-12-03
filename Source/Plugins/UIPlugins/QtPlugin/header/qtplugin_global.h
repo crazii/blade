@@ -1,0 +1,12 @@
+#ifndef QTPLUGIN_GLOBAL_H
+#define QTPLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef QTPLUGIN_LIB
+# define QTPLUGIN_EXPORT Q_DECL_EXPORT
+#else
+# define QTPLUGIN_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QTPLUGIN_GLOBAL_H

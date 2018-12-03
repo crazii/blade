@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{E62BAFB8-5FAA-4C7F-BB3D-B787068E4193}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\header\App.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\header\ClientConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\header\DebugLogRedirector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\App.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\AppMain.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\App_EventHandle.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\ClientConfig.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\DebugLogRedirector.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\demo\Demo.cc" />
+  </ItemGroup>
+</Project>

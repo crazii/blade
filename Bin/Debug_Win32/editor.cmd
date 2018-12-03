@@ -1,0 +1,1 @@
+start GameStudio.exe --mode=Editor --cpath="../Config_Editor"

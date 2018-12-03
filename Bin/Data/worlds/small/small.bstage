@@ -1,0 +1,61 @@
+<!-- Text Stage -->
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stage name="Stage Config" value="" version="0.01 ">
+	<config name="title" value="small"/>
+	<config name="Page Size" value="512"/>
+	<config name="Page Count" value="1"/>
+	<config name="Visible Page Count" value="1"/>
+	<static_data name="Atmosphere" value="" version="0.01A">
+		<config name="Type" value="Sky Box" version="0.01 ">
+			<config name="Sky Texture" value="media:image/sky_textures/cube/ely_hills.dds"/>
+		</config>
+		<config name="Global Ambient Color" value="(0.800,0.800,0.800,0.800)"/>
+		<config name="Light Diffuse Color" value="(2.807,2.807,2.807,1.000)"/>
+		<config name="Light Specular Color" value="(0.500,0.500,0.500,1.000)"/>
+		<config name="Enable Secondary Light" value="FALSE"/>
+		<config name="Secondary Diffuse Color" value="(1.000,1.000,1.000,1.000)"/>
+		<config name="Secondary Specular Color" value="(1.000,1.000,1.000,1.000)"/>
+	</static_data>
+	<static_data name="Terrain Creation Config" value="" version="0.01A">
+		<config name="Blend Map Scale" value="1"/>
+		<config name="Max Height" value="512"/>
+		<config name="Data Path" value="terrains"/>
+		<config name="Resource Path" value="small"/>
+	</static_data>
+	<scene type="GameScene"/>
+	<scene type="GeometryScene"/>
+	<scene type="GraphicsScene" name="GraphicsScene" value="" version="0.01 ">
+		<config name="Space Type" value="Quadtree Space"/>
+		<config name="Coordinator Type" value="Default Coordinator"/>
+	</scene>
+	<scene type="[SCN_SKIP]EditorScene"/>
+	<config_data name="GameWorldData" value="" version="0.01A">
+		<config name="Name" value=""/>
+		<config name="StartPosition" value="(97.230,49.729,82.086)"/>
+	</config_data>
+	<entity Name="MAIN_CAMERA" pages="0">
+		<element type="_MAIN_CAMERA_ELEMENT_" name="camera" scene_type="GraphicsScene" resource=""/>
+		<element type="GeometryElement" name="ceometry" scene_type="GeometryScene" resource="" name="GeometryElement" value="" version="0.01A">
+			<config name="Position" value="(97.230,49.729,82.086)"/>
+			<config name="Scale" value="(1.000,1.000,1.000)"/>
+			<config name="Rotation" value="(-0.095,-0.874,-0.190,0.437)"/>
+		</element>
+		<element type="CameraController" name="controller" scene_type="GameScene" resource="" name="CameraController" value="" version="0.01A">
+			<config name="NEAR_PLANE" value="0.2"/>
+			<config name="FAR_PLANE" value="1500"/>
+			<config name="ASPECT_RATIO" value="1.77778"/>
+			<config name="FIELD_OF_VIEW" value="1.50098"/>
+		</element>
+	</entity>
+	<entity Name="small_AtmosphereEntity" pages="0">
+		<element type="AtmosphereElement" name="GraphicsAtmoSphere" scene_type="GraphicsScene" resource=""/>
+		<element type="EditorElement" name="[ELM_SKIP]Atmosphere" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="Atmosphere"/>
+		</element>
+	</entity>
+	<entity Name="[ELM_SKIP]Terrain Helper" pages="0">
+		<element type="EditorElement" name="[ELM_SKIP]Terrain Helper" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="TerrainPageEditable"/>
+		</element>
+	</entity>
+</stage>

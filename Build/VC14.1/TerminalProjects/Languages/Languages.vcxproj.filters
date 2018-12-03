@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="enUS">
+      <UniqueIdentifier>{4c99607e-5bff-4dd1-a255-e2e187ad7c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{ea68baa8-be4c-46a8-bb6d-bc8c45b11f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{e388afaa-3fa1-4df0-abc1-ac7a27aaef5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Plugins\GraphicsPlugins\BladeAtmosphere\header\BladeAtmosphere_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\EditorPlugins\AtmosphereEditor\header\BladeAtmosphereEditor_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\BladeBase\header\BladeBase_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\EditorFramework\header\BladeEditor_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\BladeFramework\header\BladeFramework_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\BladeGraphics_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\BladeModel_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\EditorPlugins\ModelViewer\header\BladeModelViewer_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\GraphicsPlugins\BladeTerrain\header\BladeTerrain_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\header\BladeTerrainEditor_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\SubsystemPlugins\BladeUI\header\BladeUI_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\header\BladeWindow_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\BladeFramework\header\interface\public\geometry\GeometryInterface_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\BladeFramework\header\interface\public\graphics\GraphicsInterface_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\header\WorldEditor_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\UIPlugin_blang.h">
+      <Filter>enUS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Source\TerminalProjects\Languages\readme.txt" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Languages\Language.makefile" />
+  </ItemGroup>
+</Project>

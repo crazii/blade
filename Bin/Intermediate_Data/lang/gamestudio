@@ -1,0 +1,759 @@
+﻿[en_US]
+&Browse...
+About
+Adapter Count
+Adapters
+Add new language
+All
+All Files
+All Supported Files
+All supported languages are added, no more to add.
+Animation List
+Anisotropic
+Apply
+Atmosphere
+Atmosphere Config
+Attenuation
+AutoWindow on Startup
+Back
+Batch Combination
+Begin
+Beginning
+Bilinear
+Blade
+Blade Config
+Blade package file
+Blend Map Size
+Blend Normal Scale
+Block Size
+Browse...
+Brush Color
+Brush Config
+Brush Intensity
+Brush Shape
+Brush Size
+Cache media for
+Camera
+Camera Element
+Camera Move Speed
+Camera Position
+Camera Rotate Speed
+Cancel
+cannnot open file - file type reaches max limit.
+cannnot open file - opening file failed.
+Close File
+Color Depth
+Column visibility
+Common
+Config...
+Coordinator Type
+Copy From Existing Language
+Copyright(C) By Crazii, 2011-2015
+Create
+Create Objects
+Data Path
+Date Modified
+Debug
+Default Coordinator
+Default Space
+Deform
+Delete Current Row
+Delete Selected Row
+Dialog
+Diffuse
+Direction
+Directional Light
+Directory
+Display Resolution
+double click here to set custom palying range
+DynamicGeometryElement
+Edit
+Editable Class
+Editable World
+Editor
+EditorElement
+Effect
+Effector Sub Index
+Effectors
+Enable Secondary Light
+End
+End Frame
+Ending
+Erase Existing Data
+Error
+Exit
+Export
+Export Package
+FALSE
+File
+File '%s' not saved yet, save now?
+File Option
+Find String. Format [COLUMN NAME:]STRING.
+Forward
+Front
+Full Combination
+Full Screen
+General Config
+GeometrySytemElement
+Global Ambient Color
+Goto next empty string
+Goto next untransltaed string
+Graphics Basic
+Graphics Element
+Graphics System Element
+GraphicsScene
+Graphis Advanced
+Help
+Hidden
+High
+IK Testing tool
+Import backup
+Import backup text file failed.
+Importing...
+Index X
+Index Z
+Inensity
+Info
+Init UI Module...
+Input Setting
+Insert Row After
+Invalid file selected.
+Invalid file specified.
+Invalid range. valid ranges are [%d - %d].
+Invallid File Name.
+Invallid Folder selected.
+Keyboard API
+Layout
+Left
+Light Diffuse Color
+Light Element
+Light Specular Color
+Loading...
+Local Space
+LOD levels
+Log
+Low
+Maximize/Restore
+Media Files
+Media Library
+Media Preview
+Media Types
+MediaView
+Mesh Quality
+Middle
+Model
+Model Files
+Mouse API
+Multi-Language definition
+Name
+Navigation bar
+New
+New File
+Next
+Next Frame
+No
+No Combination
+Object Space
+OK
+Open
+Options
+Output
+Page Size
+Paint
+Perspective
+Play/Pause
+PlayPause
+Please Select a file type.
+Point
+Point Light
+Position
+Prev
+Previous Frame
+Property
+Quadtree Space
+Range
+ReadOnlyGeometryElement
+Realtime Update
+Rebuild Normal
+Render API
+Render Scheme
+Render Types
+RenderHelper
+Reset Layout
+Resource Path
+Rotate Tool
+Rotation
+Save
+Save All
+Scale
+Scale Tool
+Secondary Diffuse Color
+Secondary Specular Color
+Select a New Language
+Select File
+Select File Type
+Select Tool
+Selected Folder doesn't exist or is read only.
+Show Skeleton
+Show Submesh Bounding
+Show this dialog on startup
+Size
+Skeleton File
+Skinned Mesh
+Sky Geometry Density
+Sky Radius
+Sky Texture
+Solid
+Space Type
+Specular
+Spot Light
+Spotlight Inner Angle
+Spotlight Outer Angle
+Start Frame
+Static Mesh
+StaticGeometryElement
+Strip Existing Data
+Studio
+SubMesh Visibility
+Terrain
+Terrain Config
+Terrain Creation Config
+Terrain Element
+Terrain Texture
+Texture Filter
+Texture Quality
+Texture Size
+Textures
+Tile Size
+Tool
+Top
+Total Tile Count
+Touch API
+Track Range Selection
+TrackView
+Transform Space
+Translate Tool
+TriLinear
+TRUE
+Type
+Up
+Version
+View
+View Mode
+ViewPort
+Visible Page Count
+Visible Tile Count
+Warning
+Widgets
+Window API
+Window Setting
+Wireframe
+World
+World Space
+Yes
+[zh_CN]
+浏览(&B)...
+关于
+适配器个数
+适配器
+添加新语言
+所有
+所有文件
+所有支持的文件
+所有语言已经添加完毕, 沒有更多可添加的语言.
+动画列表
+各向异性
+应用
+大气
+大气配置
+衰减
+启动时自动创建窗口
+退后
+批次合并
+开始
+起始
+双线性过滤
+刀锋
+刀锋配置
+刀锋数据包文件
+混合贴图尺寸
+混合法线比例
+块尺寸
+浏览...
+画刷颜色
+画刷配置
+画刷强度
+画刷形状
+画刷尺寸
+缓冲媒体
+相机
+相机元素
+相机移动速度
+相机位置
+相机旋转速度
+取消
+无法打开文件 - 文件类型达到最大数量限制.
+无法打开文件 - 打开文件失败
+关闭文件
+颜色深度
+列可见性
+普通
+配置...
+空间协调器
+从现有语言复制
+版权(C) By Crazii, 2011-2015
+创建
+创建对象
+数据路径
+修改日期
+调试
+默认协调器
+默认空间
+形变
+删除当前行
+删除选中行
+对话框
+漫反射
+方向
+方向光
+文件夹
+显示分辨率
+双击此处以设置播放范围
+动态集合元素
+编辑
+可编辑类型
+可编辑世界
+编辑器
+编辑器元素
+特效
+末端效应器子索引
+末端效应器
+使能第二盏灯
+结束
+结束帧
+终结
+擦除现有数据
+错误
+离开
+导出
+导出数据包
+否
+文件
+文件 '%s' 尚未保存, 现在保存吗?
+文件选项
+查找字符串. 格式 [列名称:]字符串.
+前进
+前视图
+全部合并
+全屏
+通用配置
+几何系统元素
+全局环境光
+跳转到下一个空字符串
+跳转到下一个未翻译字符串
+基本图形
+图形元素
+图形系统元素
+图形场景
+高级图形
+帮助
+隐藏
+高
+反向动力学测试工具
+导入备份
+导入备份文件失败.
+正在导入...
+索引 X
+索引 Z
+密度
+信息
+初始化 UI 模块...
+输入设定
+在当前行后插入
+选择的文件无效.
+指定的文件无效.
+无效范围. 有效的范围是 [%d - %d].
+文件名称无效.
+选择的文件夹无效.
+键盘 API
+布局
+左视图
+灯光反射
+灯光元素
+灯光镜面高光
+正在加载...
+局部空间
+LOD 层次级别
+日志
+低
+最大化/还原
+媒体资料
+媒体库
+媒体预览
+媒体类型
+媒体视图
+网格质量
+中
+模型
+模型文件
+鼠标 API
+多国语言定义
+名称
+导航栏
+新建
+新建文件
+下一个
+下一帧
+否
+无合并
+对象空间
+确认
+打开
+选项
+输出
+页面大小
+上色
+透视
+播放/暂停
+播放暂停
+请选择一个文件类型.
+点
+点光源
+位置
+前一个
+前一帧
+属性
+四叉树
+范围
+只读几何元素
+实时更新
+重建法线向量
+渲染 API
+渲染方案
+渲染类型
+渲染辅助体
+重置布局
+资源路径
+旋转工具
+旋转
+保存
+全部保存
+缩放
+缩放工具
+第二盏灯光反射
+第二盏灯光镜面高光
+选择一个新的語言
+选择文件
+选择文件类型
+选择工具
+所选的文件夹不存在或者为只读模式.
+显示骨骼
+显示子网格包围盒
+启动时显示此对话框
+尺寸
+骨骼文件
+蒙皮网格
+天空几何密度
+天空半径
+天空纹理
+实体
+空间类型
+镜面光
+聚光灯
+聚光灯内径
+聚光灯外径
+起始帧
+静态网格
+静态几何元素
+精简数据
+演播室
+子网格可见性
+地形
+地形配置
+地形创建配置
+地形元素
+地形紋理
+纹理过滤
+纹理质量
+纹理尺寸
+纹理
+平铺尺寸
+工具
+顶视图
+平铺总数
+触摸 API
+轨迹范围选择
+轨迹视图
+变换空间
+位移工具
+三线性
+是
+类型
+向上
+版本
+视图
+视图模式
+視口
+可见页面数量
+课件平铺数
+警告
+窗口部件
+窗口 API
+窗口设定
+线框
+世界
+世界空间
+是
+[zh_TW]
+瀏覽(&B)...
+關於
+擴充卡個數
+擴充卡
+添加新語言
+所有
+所有文檔
+所有支持的文檔
+所有語言已經添加完畢, 沒有更多可添加的語言.
+動畫列表
+各向異性
+套用
+大氣
+大氣配置
+衰減
+啟動時自動創建視窗
+後退
+批次合併
+開始
+起始
+雙線性過濾
+刀鋒
+刀鋒配置
+刀鋒數據包文件
+混合貼圖尺寸
+混合 法線 比例
+塊尺寸
+瀏覽...
+畫刷顏色
+畫刷配置
+畫刷強度
+畫刷形狀
+畫刷尺寸
+緩衝媒體
+相機
+相機元素
+相機移動速度
+相機位置
+相機旋轉速度
+取消
+無法打開文檔 - 文檔類型達到最大數量限制
+無法打開文檔 - 打開文檔失敗
+關閉文檔
+顏色位元深度
+列可見性
+普通
+配置...
+空間協調器
+從現有語言複製
+版權(C) By Crazii, 2011-2015
+創建
+創建對象
+數據路徑
+修改日期
+調試
+缺省協調器
+缺省空間
+形變
+刪除當前行
+刪除選中行
+對話框
+漫反射
+方向
+方向光
+資料夾
+顯示分辨率
+雙擊此處以設置播放範圍
+動態幾何元素
+編輯
+可編輯類型
+可編輯世界
+編輯器
+編輯器元素
+特效
+末端效應器子索引
+末端效應器
+使能第二盞燈
+結束
+結束幀
+終結
+擦除現有數據
+錯誤
+離開
+導出
+導出數據包
+否
+文檔
+文檔 '%s' 尚未保存, 現在保存嗎?
+文檔選項
+查找字符串. 格式 [列名稱:]字符串.
+前進
+前視圖
+全部合併
+全熒屏
+通用配置
+幾何系統元素
+全局环境光
+跳轉到下一個空字符串
+跳轉到下一個未翻譯字符串
+基本圖形
+圖形元素
+圖形系統元素
+圖形場景
+高級圖形
+幫助
+隱藏
+高
+逆向運動學測試工具
+導入備份
+導入備份文檔失敗.
+正在導入...
+索引 X
+索引 Z
+密度
+信息
+初始化 UI 模塊...
+輸入設定
+在當前行后插入
+選擇的文檔無效.
+指定的文檔無效.
+無效範圍. 有效的範圍是 [%d - %d].
+文檔名稱無效.
+選擇的資料夾無效.
+鍵盤 API
+佈局
+左視圖
+燈光散射
+燈光元素
+燈光鏡面高光
+正在載入...
+局部空間
+LOD 層次級別
+日誌
+低
+最大化/還原
+媒體資料
+媒體庫
+媒體預覽
+媒體類型
+媒體視圖
+網格質量
+中
+模型
+模型文件
+滑鼠 API
+多國語言定義
+名稱
+導航欄
+新建
+新建文檔
+下一個
+下一幀
+否
+無合併
+對象空間
+確認
+打開
+選項
+輸出
+頁面尺寸
+上色
+透視
+播放/暫停
+播放暫停
+請選擇一個文檔類型.
+點
+點光源
+位置
+前一個
+前一幀
+屬性
+四叉樹
+範圍
+唯讀幾何元素
+實時更新
+重建法線向量
+渲染 API
+渲染方案
+渲染類型
+渲染輔助體
+復位佈局
+資源路徑
+旋轉工具
+旋轉
+保存
+全部保存
+縮放
+縮放工具
+第二盞燈光反射
+第二盞燈光鏡面高光
+選擇一個新的語言
+選擇文檔
+選擇文檔類型
+選擇工具
+選擇的資料夾不存在或者為衹讀模式.
+顯示骨骼
+顯示子網格邊界盒
+啟動時顯示此對話框
+尺寸
+骨骼文檔
+蒙皮網格
+天空幾何密度
+天空半徑
+天空紋理
+實體
+空間類型
+鏡面光
+聚光燈
+聚光燈内徑
+聚光燈外徑
+起始幀
+靜態網格
+靜態幾何元素
+精簡數據
+演播室
+子網格可見性
+地形
+地形配置
+地形創建配置
+地形元素
+地形紋理
+紋理過濾
+紋理質量
+紋理尺寸
+紋理
+平鋪尺寸
+工具
+頂視圖
+平鋪總數
+觸摸 API
+軌跡範圍選擇
+軌跡視圖
+變換空間
+位移工具
+三線性
+是
+類型
+向上
+版本
+視圖
+視圖模式
+視口
+可見頁面數量
+可見平鋪數
+警告
+小窗口
+視窗 API
+視窗設定
+線框
+世界
+世界空間
+是

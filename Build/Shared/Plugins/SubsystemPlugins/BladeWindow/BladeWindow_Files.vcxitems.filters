@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{35fbf8e4-82ec-4b96-8e08-f6825d585e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\windowsysteminterface">
+      <UniqueIdentifier>{c27df216-46e3-4fea-ba30-e8ff2b4af35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{37b02fe9-b828-4ed6-8bb8-f7978d388e8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\header\BladeWindow_blang.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\header\BladeWindow.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\header\windowsysteminterface\IWindowsystem.h">
+      <Filter>header\windowsysteminterface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\source\WindowEventDispatcher.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\source\WindowSystem.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\source\WindowSystemPlugin.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\source\WindowEventDispatcher.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\source\WindowSystem.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\source\WindowSystemPCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\source\WindowSystemPlugin.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

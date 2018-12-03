@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{8ECD8A5A-E97B-4DA5-9B7F-F7AF309DB3F9}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeDevice\header\graphics\GLES\public\GLESAttributeNames.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeDevice\header\graphics\GLES\public\GLESPixelFormat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeShaderCompiler\header\GLSLAttributeTable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeShaderCompiler\header\HLSL2GLSLConvert.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeShaderCompiler\header\HLSL2GLSLIncludeLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeShaderCompiler\header\ShaderCompilerApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeShaderCompiler\header\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeShaderCompiler\source\BladeShaderCompiler.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeShaderCompiler\source\HLSL2GLSLConvert.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeShaderCompiler\source\ShaderCompilerApplication.cc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{1416da8a-8fd9-4b60-9a78-e4987780f3bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\widgets">
+      <UniqueIdentifier>{99a2807e-a97f-41ee-87ce-78d0db68961f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\uiwindows">
+      <UniqueIdentifier>{33543978-5b17-4c49-898e-83515267d4e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{68ddbbb9-5d00-4632-8660-911ca0a863a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\header">
+      <UniqueIdentifier>{0e30bbec-c7d0-45c9-9048-f799f40f554e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{e26ca74e-6aec-410c-9d60-e6ec0be82f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\propertybrowser">
+      <UniqueIdentifier>{bca4f116-0d9b-4a61-8948-76f1545c202a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\propertybrowser\extension">
+      <UniqueIdentifier>{b5db6fb6-e218-400e-8317-3e5b63930a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\widgets">
+      <UniqueIdentifier>{ace818e6-95a0-4e38-be0a-508b0ee04f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\uiwindows">
+      <UniqueIdentifier>{5585bf55-e4d4-4963-a725-22c7a02ff854}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtConfigDialog.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtHelper.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtIconManager.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtLayoutManager.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtMainWindow.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtMediaLibrary.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtMenu.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtMenuManager.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtNewFileDialog.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtPlugin.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtPluginPCH.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\qtplugin_global.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtProgressWindow.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtPropertyGrid.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtPropertyHelper.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtSplash.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtToolbox.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtWindow.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtLogWindow.h">
+      <Filter>header\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtMediaView.h">
+      <Filter>header\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtPropertyPanel.h">
+      <Filter>header\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtToolPanel.h">
+      <Filter>header\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtTrackView.h">
+      <Filter>header\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtWidgetBase.h">
+      <Filter>header\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\uiwindows\QtTableWindow.h">
+      <Filter>header\uiwindows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\uiwindows\QtViewportWindow.h">
+      <Filter>header\uiwindows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\shared\header\UIPlugin_blang.h">
+      <Filter>shared\header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtbuttonpropertybrowser.h">
+      <Filter>source\propertybrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qteditorfactory.h">
+      <Filter>source\propertybrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtgroupboxpropertybrowser.h">
+      <Filter>source\propertybrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowser.h">
+      <Filter>source\propertybrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowserutils_p.h">
+      <Filter>source\propertybrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertymanager.h">
+      <Filter>source\propertybrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qttreepropertybrowser.h">
+      <Filter>source\propertybrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtvariantproperty.h">
+      <Filter>source\propertybrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\BladeExtension.h">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\fileedit.h">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\fileeditfactory.h">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\filepathmanager.h">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtConfigDialog.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtHelper.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtIconManager.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtLayoutManager.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtMainWindow.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtMediaLibrary.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtMenu.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtMenuManager.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtNewFileDialog.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtPlugin.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtPluginPCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtProgressWindow.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtPropertyGrid.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtPropertyHelper.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtSplash.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtToolbox.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtWindow.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\moc_qtpropertybrowserutils_p.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtbuttonpropertybrowser.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qteditorfactory.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtgroupboxpropertybrowser.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowser.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowserutils.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertymanager.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qttreepropertybrowser.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtvariantproperty.cpp">
+      <Filter>source\propertybrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\BladeExtension.cpp">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\fileedit.cpp">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\fileeditfactory.cpp">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\filepathmanager.cpp">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\moc_fileedit.cpp">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\moc_fileeditfactory.cpp">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\moc_filepathmanager.cpp">
+      <Filter>source\propertybrowser\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtLogWindow.cc">
+      <Filter>source\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtMediaView.cc">
+      <Filter>source\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtPropertyPanel.cc">
+      <Filter>source\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtToolPanel.cc">
+      <Filter>source\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtTrackView.cc">
+      <Filter>source\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\uiwindows\QtTableWindow.cc">
+      <Filter>source\uiwindows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\uiwindows\QtViewportWindow.cc">
+      <Filter>source\uiwindows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtAbstractEditorFactoryBase">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtAbstractPropertyBrowser">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtAbstractPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtBoolPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtBrowserItem">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtButtonPropertyBrowser">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCharEditorFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCharPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCheckBoxFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtColorEditorFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtColorPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCursorEditorFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCursorPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDateEditFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDatePropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDateTimeEditFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDateTimePropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDoublePropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDoubleSpinBoxFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtEnumEditorFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtEnumPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtFlagPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtFontEditorFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtFontPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtGroupBoxPropertyBrowser">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtGroupPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtIntPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtKeySequenceEditorFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtKeySequencePropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtLineEditFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtLocalePropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtPointFPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtPointPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtProperty">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowser.pri">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowser.qrc">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtRectFPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtRectPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtScrollBarFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSizeFPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSizePolicyPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSizePropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSliderFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSpinBoxFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtStringPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtTimeEditFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtTimePropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtTreePropertyBrowser">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtVariantEditorFactory">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtVariantProperty">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtVariantPropertyManager">
+      <Filter>source\propertybrowser</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\BladeExtension.moc">
+      <Filter>source\propertybrowser\extension</Filter>
+    </None>
+  </ItemGroup>
+</Project>

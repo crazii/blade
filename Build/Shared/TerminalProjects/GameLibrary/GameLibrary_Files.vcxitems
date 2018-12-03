@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{C5762D04-2146-4C60-A817-E4374E80640C}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\header\GameFSM.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\header\GameLibrary.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\interface_imp\GameLogic.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\GameFSM.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\GameLibrary.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\GameLibraryPCH.cc">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\interface_imp\GameLogic.cc" />
+  </ItemGroup>
+</Project>

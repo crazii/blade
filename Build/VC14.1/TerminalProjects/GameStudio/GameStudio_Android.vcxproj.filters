@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\deferred_lighting.scheme">
+      <Filter>renderscheme</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\deferred_shading.scheme">
+      <Filter>renderscheme</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\renderscheme\default.scheme">
+      <Filter>renderscheme</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\axis_gizmo.bmt">
+      <Filter>material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\geometry_brush_decal.bmt">
+      <Filter>material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\hud.bmt">
+      <Filter>material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\instancedAABB.bmt">
+      <Filter>material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\light.bmt">
+      <Filter>material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\simple_shape.bmt">
+      <Filter>material</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\blur.bmt">
+      <Filter>material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\blit.bmt">
+      <Filter>material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\motion_vector.bmt">
+      <Filter>material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\taa.bmt">
+      <Filter>material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\hbao.bmt">
+      <Filter>material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\terrain\terrain.bmt">
+      <Filter>material\terrain</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\postfx\hdr.bmt">
+      <Filter>material\postfx</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\model\skinned_mesh.bmt">
+      <Filter>material\model</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\model\static_mesh.bmt">
+      <Filter>material\model</Filter>
+    </None>
+    <None Include="..\..\..\..\Bin\Data\material\atmosphere\sky.bmt">
+      <Filter>material\atmosphere</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\CopyFiles.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\assets\Config\commoncfg.cfg">
+      <Filter>src\main\assets\Config</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\assets\Config\plugins.cfg">
+      <Filter>src\main\assets\Config</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\assets\Config\resource.cfg">
+      <Filter>src\main\assets\Config</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\build.gradle" />
+    <None Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\java\com\blade\games\BladeNativeActivity.java">
+      <Filter>src\main\java\com\blade\games</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="material">
+      <UniqueIdentifier>{61231416-4ae8-4674-bdd4-591a0b83056c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderscheme">
+      <UniqueIdentifier>{6427f0b8-7eec-43c9-82ba-6bd3e8f9fc3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="material\model">
+      <UniqueIdentifier>{20336791-3ed4-422d-b54f-ec7aae632416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="material\terrain">
+      <UniqueIdentifier>{42ba6a72-9106-4ec2-9590-de2f6140fdae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="material\postfx">
+      <UniqueIdentifier>{be598420-c795-4c0a-a990-56047c426be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="material\atmosphere">
+      <UniqueIdentifier>{11b3b059-a18c-4673-bb98-efadc750ecbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{17cddcc7-c5d2-459f-b15c-218a7e81aa01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main">
+      <UniqueIdentifier>{31cd98a1-23f0-4528-a9fb-15aeebe37c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\assets">
+      <UniqueIdentifier>{55821803-a5de-414c-969b-7c0bfaa88b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\assets\Config">
+      <UniqueIdentifier>{e2397edf-7d00-4def-b325-91b32a18d900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\java">
+      <UniqueIdentifier>{ba7f57f6-d1cb-4d31-bca1-8be48d6b9aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\java\com">
+      <UniqueIdentifier>{417b1e1c-a045-4cf5-8592-15b171abce1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\java\com\blade">
+      <UniqueIdentifier>{94d729dc-7bf9-4604-aeb5-c8d3598cea87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\res">
+      <UniqueIdentifier>{a7e22720-c681-4a1e-ab57-3461e1f64061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\res\values">
+      <UniqueIdentifier>{e52d1645-db55-4292-961e-320816cb0225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\java\com\blade\games">
+      <UniqueIdentifier>{71f7ffa5-7c12-4aa6-8a98-8abc502ed0e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\assets\Config\BladeConfig.xml">
+      <Filter>src\main\assets\Config</Filter>
+    </Xml>
+    <Xml Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\res\values\strings.xml">
+      <Filter>src\main\res\values</Filter>
+    </Xml>
+    <Xml Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\res\values\styles.xml">
+      <Filter>src\main\res\values</Filter>
+    </Xml>
+    <Xml Include="..\..\..\..\Source\TerminalProjects\GameStudio\Android\src\main\AndroidManifest.xml">
+      <Filter>src\main</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

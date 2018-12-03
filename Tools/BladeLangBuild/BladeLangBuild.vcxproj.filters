@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="lang">
+      <UniqueIdentifier>{5f557554-b45f-4d85-9038-fa5a5c69ed71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lang\extern">
+      <UniqueIdentifier>{6eac9df8-ee45-491f-a18c-99f7bb5c42b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\BladeLangBuild.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LangBuildApplication.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\LangBuildApplication.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeEditor_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\WorldEditor_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\UIPlugin_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\EditorFramework\header\BladeEditor_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\UIPlugins\Win32UIPlugin\header\UIPlugin_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\EditorPlugins\WorldEditor\header\WorldEditor_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BladeBase\header\BladeBase_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeBase_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\EditorPlugins\TerrainEditor\header\BladeTerrainEditor_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeTerrainEditor_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\EditorPlugins\AtmosphereEditor\header\BladeAtmosphereEditor_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeAtmosphereEditor_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeModelViewer_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\EditorPlugins\ModelViewer\header\BladeModelViewer_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\GraphicsPlugins\BladeAtmosphere\header\BladeAtmosphere_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeAtmosphere_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeTerrain_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\GraphicsPlugins\BladeTerrain\header\BladeTerrain_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\BladeGraphics_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeGraphics_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="lang\BladeModel_zhTW_blang.h">
+      <Filter>lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\BladeModel_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lang\readme.txt">
+      <Filter>lang</Filter>
+    </None>
+  </ItemGroup>
+</Project>

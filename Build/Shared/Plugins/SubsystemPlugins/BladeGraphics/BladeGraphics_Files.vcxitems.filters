@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{8ab04fbb-a2ee-4dc9-ab5e-83798f71727d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface">
+      <UniqueIdentifier>{71c4d4ac-8610-490a-9dbb-5593a8365f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface\public">
+      <UniqueIdentifier>{092fd911-02c2-4f58-9fad-34a378bf0e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\Element">
+      <UniqueIdentifier>{05a12e34-aaf0-431d-b977-5eb8f1304ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{d522f921-6919-427c-810a-4452e6d96aeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp">
+      <UniqueIdentifier>{e9052bf7-228e-4437-ab7a-9e60d4f6357c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\QuadtreeSpace">
+      <UniqueIdentifier>{50ca2267-4134-465c-8712-7c08da74e7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\RenderScheme">
+      <UniqueIdentifier>{daeac231-868c-4cf3-a1e7-df4908818f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\Material">
+      <UniqueIdentifier>{72206302-8915-4dd7-bb42-72988849f06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\ShaderVariables">
+      <UniqueIdentifier>{9cfa8da8-4ffb-47dc-86fd-9e21a6d5c421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\Effect">
+      <UniqueIdentifier>{89de8f13-96f5-42cb-bde8-ef97d2f79265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\RenderHelper">
+      <UniqueIdentifier>{6654d732-fc04-45ca-9472-f700f1b568fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\Serializers">
+      <UniqueIdentifier>{b979d9a2-386c-45db-a4d8-00d89df3195c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\Shadows">
+      <UniqueIdentifier>{960585b2-6c97-4c60-a08c-f97c590d33f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\internal">
+      <UniqueIdentifier>{a245d275-5f79-4847-83a9-9ece14d8370b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Element">
+      <UniqueIdentifier>{7651a50c-6007-4308-ade1-48820ae488a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\AutoShaderVariable.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\BladeGraphics.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\BladeGraphics_blang.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\Frustum.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\GraphicsCommand.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\GraphicsResource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\Material.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\MaterialCloneShare.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\MaterialInstance.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\MaterialLOD.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\Pass.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\RenderType.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\RenderUtility.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\ShaderGroup.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\ShaderInstance.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\ShaderOption.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\ShaderResource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\ShaderVariableMap.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\SpaceBase.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\SpaceContent.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\SpaceCoordinatorBase.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\Technique.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\TextureResource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\TextureStage.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\TextureState.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IRenderPhase.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IRenderPipeline.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IRenderQueue.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\ISpaceContent.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IAABBRenderer.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\ICamera.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\ICameraManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IEffectManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IGraphicsSystem.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IGraphicsUpdater.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\ILight.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\ILightManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IMaterialLODUpdater.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IMaterialManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IRenderScene.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IRenderScheme.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IRenderSchemeManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IRenderTypeManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\IShaderVariableSource.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\ISpace.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\ISpaceCoordinator.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\ISpaceData.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\public\IImageEffect.h">
+      <Filter>header\interface\public</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\public\IRenderable.h">
+      <Filter>header\interface\public</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\interface\public\IRenderSorter.h">
+      <Filter>header\interface\public</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\Element\CameraElement.h">
+      <Filter>header\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\Element\GraphicsElement.h">
+      <Filter>header\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\Element\LightElement.h">
+      <Filter>header\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Camera.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\CameraRenderBuffer.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\GraphicsSystemPlugin.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\MaterialLODUpdater.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\ShaderConstantTypeBind.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\SubShaderImpl.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\TextureShaderHelper.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\LightType.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderableSchemeData.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderSorter.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\CameraManager.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\DefaultSpace.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\DefaultSpaceCoordinator.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsScene.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsSystem.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsTask.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsTaskController.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsUpdater.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Light.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\LightManager.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderTypeManager.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\View.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\QuadtreeSpace\Quadtree.h">
+      <Filter>source\interface_imp\QuadtreeSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\QuadtreeSpace\QuadtreeSpace.h">
+      <Filter>source\interface_imp\QuadtreeSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\DefaultRenderQueue.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\ImageEffectOutput.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderPhase.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderPipeline.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSchemeConfig.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSchemeDesc.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSchemeParser.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSortHelper.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderStepInstance.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderChannel.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderOutput.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderScheme.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSchemeManager.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderStep.h">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Material\DefaultMaterial.h">
+      <Filter>source\interface_imp\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Material\MaterialManager.h">
+      <Filter>source\interface_imp\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\GlobalShaderVariableUpdaters.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\OutputShaderVariableUpdaters.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\PropertyShaderVariables.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\PropertyShaderVariableUpdater.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\CameraViewShaderVariableUpaters.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\GlobalLightShaderVariableUpdaters.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\GlobalLightVariables.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\GlobalShaderVariables.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\InstanceShaderVariables.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\InstanceShaderVariableUpdaters.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\ShaderVariableSource.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\ShaderVariableUpdaters.h">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\BoundingEffect.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\EditGizmoEffect.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\HUDEffect.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\HUDRenderable.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\BrushDecalEffect.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\CustomEffect.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\DecalEffect.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\EffectManager.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\EffectRenderType.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\HighLightEffect.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\TransparentEffect.h">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderHelper\AABBRenderer.h">
+      <Filter>source\interface_imp\RenderHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderHelper\AABBTransformSet.h">
+      <Filter>source\interface_imp\RenderHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderHelper\AxisGizmo.h">
+      <Filter>source\interface_imp\RenderHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderHelper\HelperRenderType.h">
+      <Filter>source\interface_imp\RenderHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\BinaryShaderSerializer.h">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\HybridShaderSerializer.h">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\MaterialSerializer.h">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\ShaderKeywords.h">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\ShaderResourceSerializer.h">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\TextureResourceSerializer.h">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Shadows\DefaultShadowTechnique.h">
+      <Filter>source\interface_imp\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Shadows\IShadowTechnique.h">
+      <Filter>source\interface_imp\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Shadows\LiSPSMShadowTechnique.h">
+      <Filter>source\interface_imp\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Shadows\ShadowManager.h">
+      <Filter>source\interface_imp\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Shadows\TSMShadowTechnique.h">
+      <Filter>source\interface_imp\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\internal\GraphicsConfig.h">
+      <Filter>source\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\FrameEvents.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\GraphicsShaderShared.inl">
+      <Filter>header</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\internal\readme.txt">
+      <Filter>source\internal</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\AutoShaderVariable.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\BladeGraphicsPCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Camera.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\CameraRenderBuffer.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Frustum.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\GraphicsCommand.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\GraphicsResource.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\GraphicsSystemPlugin.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Material.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\MaterialInstance.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\MaterialLODUpdater.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Pass.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\RenderType.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\RenderUtility.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\ShaderGroup.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\ShaderInstance.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\ShaderOption.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\ShaderResource.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\ShaderVariableMap.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\SpaceBase.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\SpaceContent.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\SpaceCoordinatorBase.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Technique.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\TextureResource.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\TextureStage.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\TextureState.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\LightType.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderSorter.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\CameraManager.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\DefaultSpace.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\DefaultSpaceCoordinator.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsScene.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsSystem.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsTask.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsTaskController.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\GraphicsUpdater.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Light.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\LightManager.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderTypeManager.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\View.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\QuadtreeSpace\Quadtree.cc">
+      <Filter>source\interface_imp\QuadtreeSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\QuadtreeSpace\QuadtreeSpace.cc">
+      <Filter>source\interface_imp\QuadtreeSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\DefaultRenderQueue.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\ImageEffectBase.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\ImageEffectOutput.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderPhase.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderPipeline.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSchemeConfig.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSchemeParser.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSortHelper.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderStepInstance.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderChannel.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderOutput.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderScheme.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderSchemeManager.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderScheme\RenderStep.cc">
+      <Filter>source\interface_imp\RenderScheme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Material\DefaultMaterial.cc">
+      <Filter>source\interface_imp\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Material\MaterialManager.cc">
+      <Filter>source\interface_imp\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\PropertyShaderVariables.cc">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\GlobalLightVariables.cc">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\GlobalShaderVariables.cc">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\InstanceShaderVariables.cc">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\ShaderVariableSource.cc">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\ShaderVariables\ShaderVariableUpdaters.cc">
+      <Filter>source\interface_imp\ShaderVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\EditGizmoEffect.cc">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\HUDRenderable.cc">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\CustomEffect.cc">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Effect\EffectManager.cc">
+      <Filter>source\interface_imp\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderHelper\AABBRenderer.cc">
+      <Filter>source\interface_imp\RenderHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderHelper\AABBTransformSet.cc">
+      <Filter>source\interface_imp\RenderHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderHelper\AxisGizmo.cc">
+      <Filter>source\interface_imp\RenderHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\RenderHelper\HelperRenderType.cc">
+      <Filter>source\interface_imp\RenderHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\BinaryShaderSerializer.cc">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\HybridShaderSerializer.cc">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\MaterialSerializer.cc">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\ShaderResourceSerializer.cc">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Serializers\TextureResourceSerializer.cc">
+      <Filter>source\interface_imp\Serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\interface_imp\Shadows\ShadowManager.cc">
+      <Filter>source\interface_imp\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Element\CameraElement.cc">
+      <Filter>source\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Element\GraphicsElement.cc">
+      <Filter>source\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\Element\LightElement.cc">
+      <Filter>source\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\source\FrameEvents.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

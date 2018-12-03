@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{237b222a-ebb9-46aa-8350-ba3c6104069a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{16aa1d10-7c95-4649-b3c9-00aec3e88b1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp">
+      <UniqueIdentifier>{bbb885d6-fcd5-4d31-8e06-c622133db670}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\header\BladeLangEditor.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\LangEditorPlugin.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\interface_imp\LangEditor.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\interface_imp\LangEditorCommand.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\interface_imp\LangEditorController.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\interface_imp\LangEditorFile.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\LangEditorPCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\LangEditorPlugin.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\interface_imp\LangEditor.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\LangEditor\source\interface_imp\LangEditorFile.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

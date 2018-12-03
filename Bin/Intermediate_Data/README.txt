@@ -1,0 +1,1 @@
+This folder doesn't hold product data, but only intermediate data used by team, i.e. internal studio projects.

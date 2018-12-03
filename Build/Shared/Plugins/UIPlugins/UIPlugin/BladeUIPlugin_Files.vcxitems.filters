@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{6d3008b6-f457-4047-aee9-eac33bbddbf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\ConfigDialog">
+      <UniqueIdentifier>{718788e2-1b95-437a-be0d-c7bb4c246513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\ui">
+      <UniqueIdentifier>{2de57374-bb5b-42e6-84f4-2c03f92204a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\ui\private">
+      <UniqueIdentifier>{371f1046-552d-423c-ae98-0f71efe4ee36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\ui\private\MultiPaneCtrl">
+      <UniqueIdentifier>{58ab51b7-737e-4e2e-881b-43a1b5e5aa9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\ui\private\theme">
+      <UniqueIdentifier>{c3cd415c-38ea-4559-8633-1485848e7446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c8e33df0-7040-421c-b14e-7f8365725929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{598edec1-5f8c-4457-a3d5-a2674f428f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\header">
+      <UniqueIdentifier>{c9f4158d-eaf2-46ea-b590-8c052dafebc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{ffa533a6-69fa-4823-9d11-d741458eaae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ConfigDialog">
+      <UniqueIdentifier>{9b604491-b82c-447d-a45a-cfde7c3e361e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ui">
+      <UniqueIdentifier>{e297848e-7f39-4a6f-a98a-050f738bf700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ui\private">
+      <UniqueIdentifier>{8358cf5e-6c83-4513-ae29-638992eb650a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ui\private\MultiPaneCtrl">
+      <UniqueIdentifier>{49f4cf97-1ea0-4b3f-971f-f013cf1a53de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ui\private\theme">
+      <UniqueIdentifier>{26ad082b-2b53-493c-ba46-d16c660e95dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ui\widgets">
+      <UniqueIdentifier>{af5e115e-7e80-4ab2-bc1c-a928ed9a7134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ui\uiwindows">
+      <UniqueIdentifier>{085563e5-69fe-4ba0-8a07-87666a23dc8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\BladeUIPlugin.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\resource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\stdafx.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\targetver.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\Win32UIEntry.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\UIPlugin.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\OptionPopup.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\ColorPicker.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\ConfigControlUtil.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\ConfigDialog.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\ConfigDialogProxy.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\FilePicker.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\ImagePicker.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\OptionControls.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\OptionList.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\SliderInput.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ConfigDialog\TextSlider.h">
+      <Filter>header\ConfigDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\DockWindow.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\IconManager.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\LayoutManager.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\LoadingProgressWindow.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\MainWindow.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\Menu.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\MenuManager.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\SplashOutput.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\UIMediaLibrary.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\UIToolBox.h">
+      <Filter>header\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UIBaseTabCtrl.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UIDialog.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UIFileNewDialog.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UIFrameWnd.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UIListCtrl.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UIMenu.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UISlider.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UISplashWindow.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UITabCtrl.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UITabDialog.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UIToolBar.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\UIToolTip.h">
+      <Filter>header\ui\private</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\MultiPaneCtrl\DockingMarkers.h">
+      <Filter>header\ui\private\MultiPaneCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\MultiPaneCtrl\Draw.h">
+      <Filter>header\ui\private\MultiPaneCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\MultiPaneCtrl\MultiPaneCtrl.h">
+      <Filter>header\ui\private\MultiPaneCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\MultiPaneCtrl\TabCtrl.h">
+      <Filter>header\ui\private\MultiPaneCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\MultiPaneCtrl\Tools.h">
+      <Filter>header\ui\private\MultiPaneCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\MultiPaneCtrl\Tree.h">
+      <Filter>header\ui\private\MultiPaneCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\ui\private\theme\ThemeManager.h">
+      <Filter>header\ui\private\theme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\shared\header\UIPlugin_blang.h">
+      <Filter>shared\header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\theme\ThemeButton.h">
+      <Filter>source\ui\private\theme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\theme\ThemeHeader.h">
+      <Filter>source\ui\private\theme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\theme\ThemeScrollBar.h">
+      <Filter>source\ui\private\theme</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\InfoWindow.h">
+      <Filter>source\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\LogWindow.h">
+      <Filter>source\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\MediaView.h">
+      <Filter>source\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\PropertyWindow.h">
+      <Filter>source\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\TabedReBar.h">
+      <Filter>source\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\TrackView.h">
+      <Filter>source\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\TrackViewRangeDialog.h">
+      <Filter>source\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\TrackViewUI.h">
+      <Filter>source\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\TableCommand.h">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\TableView.h">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\TableWindow.h">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\UIViewportCommand.h">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\ViewportOption.h">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\ViewportToolBar.h">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\ViewportWindow.h">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\BladeUIPlugin.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\res\built-in.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\res\Markers\BottomPane.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\res\Markers\LeftPane.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\res\Markers\RightPane.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\res\Markers\TabsPane.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\res\Markers\TopPane.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\res\BladeUIPlugin.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\BladeUIPlugin.def">
+      <Filter>source</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\stdafx.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\Win32UIEntry.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\UIPlugin.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\OptionPopup.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\ColorPicker.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\ConfigControlUtil.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\ConfigDialog.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\FilePicker.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\ImagePicker.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\OptionControls.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\OptionList.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\SliderInput.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ConfigDialog\TextSlider.cc">
+      <Filter>source\ConfigDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\IconManager.cc">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\LayoutManager.cc">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\MainWindow.cc">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\Menu.cc">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\MenuManager.cc">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\UIMediaLibrary.cc">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\UIToolBox.cc">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UIBaseTabCtrl.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UIDialog.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UIFileNewDialog.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UIFrameWnd.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UIListCtrl.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UIMenu.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UISlider.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UISplashWindow.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UITabCtrl.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UITabDialog.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UIToolBar.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\UIViewport.cc">
+      <Filter>source\ui\private</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\MultiPaneCtrl\DockingMarkers.cpp">
+      <Filter>source\ui\private\MultiPaneCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\MultiPaneCtrl\MultiPaneCtrl.cpp">
+      <Filter>source\ui\private\MultiPaneCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\MultiPaneCtrl\TabCtrl.cpp">
+      <Filter>source\ui\private\MultiPaneCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\private\theme\ThemeManager.cc">
+      <Filter>source\ui\private\theme</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\InfoWindow.cc">
+      <Filter>source\ui\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\LogWindow.cc">
+      <Filter>source\ui\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\MediaView.cc">
+      <Filter>source\ui\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\PropertyWindow.cc">
+      <Filter>source\ui\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\TabedReBar.cc">
+      <Filter>source\ui\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\TrackView.cc">
+      <Filter>source\ui\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\TrackViewRangeDialog.cc">
+      <Filter>source\ui\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\widgets\TrackViewUI.cc">
+      <Filter>source\ui\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\TableCommand.cc">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\TableView.cc">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\TableWindow.cc">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\ViewportOption.cc">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\ViewportToolBar.cc">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\source\ui\uiwindows\ViewportWindow.cc">
+      <Filter>source\ui\uiwindows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\ReadMe.txt">
+      <Filter>source</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

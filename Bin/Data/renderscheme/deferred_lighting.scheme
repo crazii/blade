@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<render_scheme name="Deferred Lighting" profiles="3_0,4_0,5_0" >
+
+	<!-- render buffer definition, the default final output is not needed, as it is controlled by program -->
+		<!-- pre-defined buffers are "FINAL", "NONE" -->
+		<render_buffers>
+			<buffer name="depth_buffer" width="100%" height="100%" type="depth" format="D24S8" />
+			<buffer name="normal_buffer" width="100%" height="100%" type="color" format="R8G8B8A8" />
+			<buffer name="light_buffer" width="100%" height="100%" type="color" format="R8G8B8A8" />
+			<!-- <buffer name="shadow_buffer" width="512" height="512" type="depth" format="D24S8" /> -->
+		</render_buffers>
+	
+	<!-- types definition -->
+	<render_types>
+		<type name="Terrain"/>
+		<type name="Static Mesh"/>
+		<type name="Skinned Mesh"/>
+		<type name="Atmosphere"/>
+		<type name="Effect"/>
+		<type name="RenderHelper"/>
+	</render_types>
+	
+	<!-- pre-z pass -->
+	<render_output name="pre_z_pass" target="NONE" target_depth="depth_buffer">
+		<view reference="FINAL" />
+		<camera reference="MAIN" />
+		<render_step type="Terrain" enable="true" pass="depth" />
+		<render_step type="Static Mesh" enable="true" pass="depth" />
+		<render_step type="Skinned Mesh" enable="true" pass="depth" sorter="Animations"/>
+	</render_output>
+	
+	<!-- geometry pass -->
+	<render_output name="Geometry" target="normal_buffer" target_depth="depth_buffer" >
+		<view reference="FINAL" />
+		<camera reference="MAIN" />
+	
+		<render_step type="Terrain" pass="geometry" />
+		<render_step type="Static Mesh" pass="geometry" sorter="Textures"/>
+		<render_step type="Skinned Mesh" pass="geometry" sorter="Animations,Textures"/>
+		
+	</render_output>
+	
+	<!-- lighting pass -->
+	<render_output name="Lighting" target="light_buffer" target_depth="NONE">
+		<view reference="FINAL" />
+		<camera reference="MAIN" />
+		
+		<!-- <render_step type="directional_light"/> -->
+		<!-- <render_step type="point_light"/> -->
+	<!--	<render_step type="spot_light"/> -->
+	</render_output>
+	
+	<!-- shadow pass
+	<render_output name="shadow_pass" target="shadow_buffer" target_depth="NONE" >
+		<view reference="FINAL" />
+		<camera reference="MAIN_LIGHT" />
+		
+		<render_step type="Terrain" pass="shadow" />
+		<render_step type="Static Mesh" pass="shadow"/>
+		<render_step type="Skinned Mesh" pass="shadow"/>
+	</render_output>
+	-->
+	
+	<!-- shading pass -->
+	<render_output name="Shading" target="FINAL" target_depth="NONE">
+		<view reference="FINAL" />
+		<camera reference="MAIN" />
+	
+		<render_step type="Atmosphere" pass="default"/>
+		<render_step type="Terrain" pass="shading"/>
+		<render_step type="Static Mesh" pass="shading"/>
+		<render_step type="Skinned Mesh" pass="shading"/>
+		
+	</render_output>
+	
+	<!-- alpha-blend fowrad pass -->
+	<render_output name="mixed" target="FINAL" target_depth="NONE">
+		<render_step type="Effect" sorter="BackToFront"/>
+	</render_output>
+	
+</render_scheme>

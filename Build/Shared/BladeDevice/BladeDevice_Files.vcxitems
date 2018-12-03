@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{28427F45-8383-485D-9AF2-831C71095C47}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\BladeDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\BladeWin32API.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\file\android\ApkFileDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\file\android\ApkFileStream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESContext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESCubeTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESFrameBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESGraphicsResourceManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESHeader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESIndexBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESRenderDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESRenderTarget.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESRenderWindow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESShaderIntermediate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESUtil.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESVertexBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESVertexDeclaration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESVolumeTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\public\GLESAttributeNames.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\public\GLESPixelFormat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\IndexBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\IPixelBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\OGL\OGLRenderDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\PixelBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\RenderTarget.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\RenderWindow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\Shader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\ShaderIntermediate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\Texture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\Util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\VertexBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\VertexDeclaration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9CubeTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9GraphicsResourceManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9Header.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9IndexBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9PixelBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9RenderDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9RenderSurface.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9RenderWindow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9Resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9Shader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9Texture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9TypeConverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9VertexBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9VertexDeclaration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9VolumeTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3DXIncludeLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\ID3D9Helper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3DIncludeLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3DShaderIntermediate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\dxerr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\SoftwareShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\android\AndroidTouchDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\DInput8Base.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\DInput8Keyboard.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\DInput8Mouse.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32GlobalKeyboardDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32KeyboardDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32KeyMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32MouseBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32MouseDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\window\android\AndroidWindowDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\window\android\AndroidWindowMessagePump.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\window\windows\Win32WindowDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\window\windows\Win32WindowMessagePump.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\android\AndroidGLESRenderWindow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\android\GLESContextEGL.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESStateBlock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9StateBlock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9Util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\DInput8KeyMap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\BladeDevicePCH.cc">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\file\android\ApkFileDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\file\android\ApkFileStream.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\android\AndroidGLESRenderWindow.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\android\GLESContextEGL.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESContext.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESCubeTexture.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESGraphicsResourceManager.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESIndexBuffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESRenderDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESRenderTarget.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESShader.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESShaderIntermediate.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESTexture.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESUtil.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESVertexBuffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESVertexDeclaration.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESVolumeTexture.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\IndexBuffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\PixelBuffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\RenderTarget.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\RenderWindow.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\Shader.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\ShaderIntermediate.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\Texture.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\VertexBuffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\VertexDeclaration.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9CubeTexture.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9GraphicsResourceManager.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9IndexBuffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9PixelBuffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9RenderDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9RenderSurface.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9RenderWindow.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9Shader.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9Texture.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9Util.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9VertexBuffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9VertexDeclaration.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9VolumeTexture.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3DIncludeLoader.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3DShaderIntermediate.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\dxerr.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\android\AndroidTouchDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\DInput8Base.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\DInput8Keyboard.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\DInput8Mouse.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\Win32GlobalKeyboardDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\Win32KeyboardDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\Win32MouseBase.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\Win32MouseDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\window\android\AndroidWindowDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\window\android\AndroidWindowMessagePump.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\window\windows\Win32WindowDevice.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\window\windows\Win32WindowMessagePump.cc" />
+  </ItemGroup>
+</Project>

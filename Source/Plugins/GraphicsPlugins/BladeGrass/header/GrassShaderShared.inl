@@ -1,0 +1,6 @@
+#ifndef __Blade_GrassShaderShared_inl__
+#define __Blade_GrassShaderShared_inl__
+
+#define BLADE_GRASS_VERTEX_NORMAL 0
+
+#endif//__Blade_GrassShaderShared_inl__

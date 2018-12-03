@@ -1,0 +1,67 @@
+#ifndef __Blade_TerrainShaderShared_inl__
+#define __Blade_TerrainShaderShared_inl__
+
+//shared definitions between shader & C++ code
+//terrain.hlsl is needed to manually re-compile if this file changes
+
+#define BLADE_TERRAIN_ENABLE_UVSCALE 0	//enable uv tiling scale based on height. experimental & not working, DO NOT USE
+#define LEVEL0_SCALE (1.0)
+#define LEVEL0_DISTANCE (LEVEL0_RADIUS*LEVEL0_SCALE)
+
+
+#if BLADE_PLATFORM == BLADE_PLATFORM_ANDROID
+	#define LEVEL0_RADIUS (32.0)
+
+static const float LOD_DISTANCES[8] = 
+{
+	LEVEL0_DISTANCE,
+	LEVEL0_DISTANCE*3,
+	LEVEL0_DISTANCE*6,
+	LEVEL0_DISTANCE*9,
+	LEVEL0_DISTANCE*12,
+	LEVEL0_DISTANCE*20,
+	LEVEL0_DISTANCE*30,
+	LEVEL0_DISTANCE*40
+};
+#else
+	#define LEVEL0_RADIUS (64.0)
+
+static const float LOD_DISTANCES[8] =
+{
+	LEVEL0_DISTANCE*2,
+	LEVEL0_DISTANCE*4,
+	LEVEL0_DISTANCE*8,
+	LEVEL0_DISTANCE*16,
+	LEVEL0_DISTANCE*24,
+	LEVEL0_DISTANCE*40,
+	LEVEL0_DISTANCE*64,
+	LEVEL0_DISTANCE*104
+};
+
+#endif
+
+static const float LOD_DISTANCES_SQUARE[8] =
+{
+	LOD_DISTANCES[0]	*	LOD_DISTANCES[0],
+	LOD_DISTANCES[1]	*	LOD_DISTANCES[1],
+	LOD_DISTANCES[2]	*	LOD_DISTANCES[2],
+	LOD_DISTANCES[3]	*	LOD_DISTANCES[3],
+	LOD_DISTANCES[4]	*	LOD_DISTANCES[4],
+	LOD_DISTANCES[5]	*	LOD_DISTANCES[5],
+	LOD_DISTANCES[6]	*	LOD_DISTANCES[6],
+	LOD_DISTANCES[7]	*	LOD_DISTANCES[7],
+};
+
+static const float PREV_LOD_DISTANCES[8] =
+{
+	0.0,
+	LOD_DISTANCES[0],
+	LOD_DISTANCES[1],
+	LOD_DISTANCES[2],
+	LOD_DISTANCES[3],
+	LOD_DISTANCES[4],
+	LOD_DISTANCES[5],
+	LOD_DISTANCES[6]
+};
+
+#endif // __Blade_TerrainShaderShared_inl__

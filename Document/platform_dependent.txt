@@ -1,0 +1,21 @@
+Platform dependent code overview.
+
+BladeBase:
+	(abstractions - interface/public/*)
+
+	default implementation - source/interface_imp/platform:
+		Timer
+		DefaultFileDevice	(file IO)
+		DefaultStream		(file IO: path, file truncate)
+
+		PlatformData		(needed for some platform, i.e. Android using JNI)
+		DynamicLib			(dynamic library)
+		PlatformManager
+
+		
+	those shouldn't be platform dependent (C/C++ standard), but lack of implementation on some platform
+		String/StringHelper
+	
+
+BladeDevice:
+	<All> - implementation of BladeBase: interface/public/*

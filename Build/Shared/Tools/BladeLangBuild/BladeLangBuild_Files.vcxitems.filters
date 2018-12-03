@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{12756669-b64f-43a7-b4d3-d0e2478dbae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lang">
+      <UniqueIdentifier>{b615c164-5fd4-482f-a210-43461e1954aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lang\extern">
+      <UniqueIdentifier>{e2e2aefb-b283-4c41-986c-c71c2e54c245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{a02ee65a-7674-4ec2-bff2-3c2d8ea74dd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeLangBuild\header\LangBuildApplication.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeBase\header\BladeBase_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeFramework\header\BladeFramework_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeFramework\header\interface\public\geometry\GeometryInterface_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeFramework\header\interface\public\graphics\GraphicsInterface_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\EditorFramework\header\BladeEditor_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\EditorPlugins\AtmosphereEditor\header\BladeAtmosphereEditor_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\EditorPlugins\ModelViewer\header\BladeModelViewer_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\header\BladeTerrainEditor_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\header\WorldEditor_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\GraphicsPlugins\BladeAtmosphere\header\BladeAtmosphere_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\BladeModel_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\GraphicsPlugins\BladeTerrain\header\BladeTerrain_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\BladeGraphics_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\SubsystemPlugins\BladeUI\header\BladeUI_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\header\BladeWindow_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\UIPlugins\shared\header\UIPlugin_blang.h">
+      <Filter>lang\extern</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeLangBuild\source\BladeLangBuild.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeLangBuild\source\LangBuildApplication.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{122bac18-db17-405a-b091-b4c23b526528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{a162b799-48c8-49b9-901e-51636ccb5289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp">
+      <UniqueIdentifier>{bf6bf3d8-f01c-4ee6-80f8-07907e11ba4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\GrassEditor\header\BladeGrassEditor.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\GrassEditor\source\GrassEditorPlugin.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\GrassEditor\source\interface_imp\GrassBrushTool.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\GrassEditor\source\interface_imp\GrassEditable.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\GrassEditor\source\GrassEditorPlugin.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\GrassEditor\source\interface_imp\GrassBrushTool.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\EditorPlugins\GrassEditor\source\interface_imp\GrassEditable.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

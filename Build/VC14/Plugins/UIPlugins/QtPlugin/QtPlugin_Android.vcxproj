@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtConfigDialog.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtHelper.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtIconManager.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtLayoutManager.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtMainWindow.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtMediaLibrary.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtMenu.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtMenuManager.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtNewFileDialog.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtPlugin.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtPluginPCH.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\qtplugin_global.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtProgressWindow.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtPropertyGrid.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtPropertyHelper.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtSplash.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtToolbox.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\QtWindow.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\uiwindows\QtTableWindow.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\uiwindows\QtViewportWindow.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtLogWindow.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtMediaView.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtPropertyPanel.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtToolPanel.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtTrackView.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\header\widgets\QtWidgetBase.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\BladeExtension.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\fileedit.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\fileeditfactory.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\filepathmanager.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtbuttonpropertybrowser.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qteditorfactory.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtgroupboxpropertybrowser.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowser.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowserutils_p.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertymanager.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qttreepropertybrowser.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtvariantproperty.h" />
+    <ClInclude Include="..\..\..\..\..\Source\Plugins\UIPlugins\shared\header\UIPlugin_blang.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\BladeExtension.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\fileedit.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\fileeditfactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\filepathmanager.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\moc_fileedit.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\moc_fileeditfactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\moc_filepathmanager.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\moc_qtpropertybrowserutils_p.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtbuttonpropertybrowser.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qteditorfactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtgroupboxpropertybrowser.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowser.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowserutils.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertymanager.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qttreepropertybrowser.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtvariantproperty.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtConfigDialog.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtHelper.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtIconManager.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtLayoutManager.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtMainWindow.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtMediaLibrary.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtMenu.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtMenuManager.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtNewFileDialog.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtPlugin.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtPluginPCH.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtProgressWindow.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtPropertyGrid.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtPropertyHelper.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtSplash.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtToolbox.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\QtWindow.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\uiwindows\QtTableWindow.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\uiwindows\QtViewportWindow.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtLogWindow.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtMediaView.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtPropertyPanel.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtToolPanel.cc" />
+    <ClCompile Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\widgets\QtTrackView.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\extension\BladeExtension.moc" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtAbstractEditorFactoryBase" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtAbstractPropertyBrowser" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtAbstractPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtBoolPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtBrowserItem" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtButtonPropertyBrowser" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCharEditorFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCharPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCheckBoxFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtColorEditorFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtColorPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCursorEditorFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtCursorPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDateEditFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDatePropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDateTimeEditFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDateTimePropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDoublePropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtDoubleSpinBoxFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtEnumEditorFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtEnumPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtFlagPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtFontEditorFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtFontPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtGroupBoxPropertyBrowser" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtGroupPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtIntPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtKeySequenceEditorFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtKeySequencePropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtLineEditFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtLocalePropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtPointFPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtPointPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtProperty" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowser.pri" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\qtpropertybrowser.qrc" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtRectFPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtRectPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtScrollBarFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSizeFPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSizePolicyPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSizePropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSliderFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtSpinBoxFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtStringPropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtTimeEditFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtTimePropertyManager" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtTreePropertyBrowser" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtVariantEditorFactory" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtVariantProperty" />
+    <None Include="..\..\..\..\..\Source\Plugins\UIPlugins\QtPlugin\source\propertybrowser\QtVariantPropertyManager" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QTPLUGIN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\Plugins\UIPlugins\QtPlugin\header;$(SolutionDir)..\..\Source\Plugins\UIPlugins\QtPlugin;$(SolutionDir)..\..\Source\Plugins\UIPlugins\shared\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Dependencies\include;$(SolutionDir)..\..\Dependencies\include\QtCore;$(SolutionDir)..\..\Dependencies\include\QtGui;$(SolutionDir)..\..\Dependencies\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>QtPluginPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)..\Lib;$(SolutionDir)..\..\Dependencies\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>BladeBase.lib;BladeFramework.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(TargetDir)\Lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QTPLUGIN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\Plugins\UIPlugins\QtPlugin\header;$(SolutionDir)..\..\Source\Plugins\UIPlugins\QtPlugin;$(SolutionDir)..\..\Source\Plugins\UIPlugins\shared\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Dependencies\include;$(SolutionDir)..\..\Dependencies\include\QtCore;$(SolutionDir)..\..\Dependencies\include\QtGui;$(SolutionDir)..\..\Dependencies\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>QtPluginPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)..\Lib;$(SolutionDir)..\..\Dependencies\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>BladeBase.lib;BladeFramework.lib;qtmain.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(TargetDir)\Lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QTPLUGIN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\Plugins\UIPlugins\QtPlugin\header;$(SolutionDir)..\..\Source\Plugins\UIPlugins\QtPlugin;$(SolutionDir)..\..\Source\Plugins\UIPlugins\shared\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Dependencies\include;$(SolutionDir)..\..\Dependencies\include\QtCore;$(SolutionDir)..\..\Dependencies\include\QtGui;$(SolutionDir)..\..\Dependencies\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>QtPluginPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)..\Lib;$(SolutionDir)..\..\Dependencies\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>BladeBase.lib;BladeFramework.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(TargetDir)\Lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QTPLUGIN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\Plugins\UIPlugins\QtPlugin\header;$(SolutionDir)..\..\Source\Plugins\UIPlugins\QtPlugin;$(SolutionDir)..\..\Source\Plugins\UIPlugins\shared\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Dependencies\include;$(SolutionDir)..\..\Dependencies\include\QtCore;$(SolutionDir)..\..\Dependencies\include\QtGui;$(SolutionDir)..\..\Dependencies\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>QtPluginPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)..\Lib;$(SolutionDir)..\..\Dependencies\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>BladeBase.lib;BladeFramework.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(TargetDir)\Lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" Qt5Version_x0020_x64="5.7" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

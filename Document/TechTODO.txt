@@ -1,0 +1,303 @@
+// *before the item means it is finished
+// !before the item means it is important
+// ?before the item means it is optional or to be confirmed
+// @beforee the item means it maybe need delay to next milestone
+// -before the item means it is canceled.
+June.10.2012:
+	*1.environment manager: "editor" "game" global value is not so good, it better not be used in low level.
+	*2.check none copyable attribute of singletons
+
+@3.spacemanager:current implementation of quadtree is temporary and need to be upgraded
+
+	!*4.refelection for scene/element - mainly data binding, for auto serialization & editor property
+	*data-binding almost done, need upper level code adaption, i.e. add graphics scene config data (space type,etc.)
+	-move terrain config manager's config directly into terrain page element's config, atmosphere to be the same.
+
+	-5.use DirectXTex(http://directxtex.codeplex.com/releases/view/90008) for DDS compress instead of squish, maybe DDS loading replaced too.
+	not needed any more.
+
+	*6.serializer for string: use UTF8 String instead of WString because WString (wchar_t) is of platform dependent size. (the principle is to keep one copy of data usable for all platforms)
+
+	*7.IConfigurable::getAdditionalInfo should be remove for better design
+
+	-@8.StaticGeometry need to be removed on game runtime, but need exist on editor mode. EditableElement creation listener is the same. need a mechanism to slove this.
+	alternative: EditableElement always exist in current Edit&Play Editor, but changes another Play logic from Edit logic in current window,
+	not a new playing window performing a new stage loading.
+	new idea: default no StaticGeometry for all, add Static Geometry for selected objects
+	StaticGeometry now is removed.
+
+
+	-9.add nedmalloc as resource memory pool for dynamic sized data & grouped pool objects, i.e. per scene data pool, image/indexbuffer/vertexbuffer data.
+	*use DLMalloc instead, done.
+
+
+	*11. space content CUSTOM_VISIBLE flag should checked before culling
+
+	*12move material-pass shader variable into material instance : ambient,diffuse,specular,decal projection camera
+
+	*add per-instance shader variables for diffuse & specular, and--
+?pass color(diffuse/specular) multiple instance color(diffuse/specular)
+
+
+	*13. terrain properties using property sheet & data-binding.
+
+
+	*14. add terrain normal map config into terrain global (realtime-changeable) config
+?currently hard coded using bool value & 'if' statement - seems a little mess, maybe change to strategy pattern if there's more maps(i.e.specular)?
+
+
+	*15. add graphic advance config option into config manager (realtime-configurable) and move terrain global config into it.
+	because terrain global config canbe changed at realtime so it is better not saved as per-map data.
+
+	*16. fix small bug on resource path: full directory path include "." will be mis-judged as package.
+
+	*17. AABB effect need enable and test (original AABB parallel state already removed)
+
+@18.object data binding bug: collections config sub data handler not cleared and cause crash if group parent's value change (value changing result in related sub config not found thus not deleted).
+
+
+
+
+
+Milestone 2 Model:
+
+Mesh rendering&viewing
+3DSMAX/Blender plugin or FBX/COLLADA importer
+
+Model Format file & 3DSMAX exporter
+	*1.model better contain map channel info such as diffuse, normal, specular, glow, etc.
+	*2.ModelViewer: ModelElement expose AABB interface to help locate camera
+	*3.model shader: how many LOD levels supported? 
+	Answer: 3 levels  
+		0.diffuse+normal+specular level
+		1.diffuse+normal
+		2.diffuse
+		//glow map is not planed to be supported by model
+		//but it'll be on effects, which are content of next mile stones.
+
+	*4.model animation: IK HOWTO? dev notes: http://www.cnblogs.com/crazii/p/4662199.html, http://www.cnblogs.com/crazii/p/5021548.html
+
+
+	*5.	per-view render setting (wireframe,point,solid) + multiple view for each window
+	*6.	app ID for model type ( per view render switch (enable/disable)& setting(wireframe) for render types
+	*7.	@MileStone1.18 make data-binding thread safe and now it works fine.
+	*8.use float16 half precision for model data
+	*9.	skin/bone info export from 3ds Max, and skinned shaders for material LODs
+
+	*10.	bug fix: multiple render window(opened files) problem on UI layout change, i.e. log show/hide, property show hide
+			*bug fix: loading model for none-existing textures (now model not shown, change it to a default error model?), and then assert failure on exit.
+			*bug fix: the second window of multiple render windows: blank black area after toggle side/bottom window(property,log) visible & invisible (view need update).
+			and the toolbars need update too(re-position).
+
+
+
+	*11.	ResourceStateGroup not inherit ResourceState (save memory) but a same base interface with ResourceState
+	*12.	TerrainTile::setup()add pre-created hardware UV buffer & layerBuffer, into TerrainResource
+	*13.	Terrain: remove blend UV border fix and use point sampling, move atlas layer int8x4 to position.w(ushort4.1) as FFFF(15x15x15x15) totally will save 10Mbytes.
+		no longer need border fix UV stream.
+
+	*14.	add RenderOperation (POD) which contain GraphicsGeometry, MaterialInstance, IRenderable, and use it as element for render queue(RenderBuffer).
+			?@remove GraphicsGeometry for each renderable.
+
+?15.	add render instance utility to make further HW instancing rendering more easy.
+
+	*16.	fix bugs on quaternions/rotations(currently camera rotation is incorrect).
+
+
+	*17.terrain splat brush: init default terrain texture
+	*18.editor: eidtor config. save config for tools/etc.
+
+	*19.remove NamedParam & ParamValue, use Variant instead.
+	*20.TString for Variant: WString & String support. - currenly TString only, should support WString & String at the same time.
+
+
+
+	*20.	add BC5 (DXN/3DC) compression for normal maps.
+	
+	*21.	auto size config dialog: already auto height for the initial page, need auto height for all pages, + auto width
+
+	*22. developer option for configs, auto hide them on product running.
+	*22.a) dynamic window resolution list, 
+		move color depth form window config to graphics config?
+		-no, leave it as it is.
+
+	*23. FBX importer
+
+	*23.*a) Mesh converter (merge mesh, skeleton, etc.) - mesh merge & bone merge done, need more test.
+		*b) Editor bone visualizer
+			Editor tools to toggle bone visibility
+			Editor tools to toggle sub mesh bounding box
+		
+		*c) Model resource's ative bones indices are inconsistent (skeleton modification will invalidate the Model's indices), use bone name instead
+ 	     active indices can be built & used on runtime.
+		*d) dynamic AAB bounding for animation
+		*?e) animation LOD : frame rate LOD (20fps-30fps-50fps-60fps), bone LOD
+	HOWTO: bone LOD?
+
+	*24. IK
+		*Editor IK testing tool, implement IK after test tool finish, then test IK.
+	
+	*25 create separated repository for art resource.
+
+Milestone 3: Scene & Effects
+
+	*1.remove StaticAllocatable, TempAllocatable & allocatable<T>, use unified placement new(size_t, IPool* [,const char*, int]) with high level memory block
+	header storing IPool* pointer, so that delete will find the right pool instance.
+	-for fixed size allocation, set IPool* = NULL, i.e. new ( (IPool*)NULL, __FILE__,__LINE__) , decide the right pool in the implementation.
+	note: always uses a IPool pointer. mayneed magic for compatibility with std new routine on delete.
+	
+	note: Allocatable v.s. Allocatable<T>: Allocatable is of the same type, Allocatable<T> usually are different types, thus
+	Allocatable may make EBO invalid. TODO: better ways?
+
+
+	*2.World editor: model paging & model placement. model paging should be separated from terrain paging, in different visibility/loading range.
+		a) handle object occasionally moving in static spaces, i.e. eidtor's moving function. (currently may need )
+		b) satitic objects located in static scene, no runtime update.
+		c) dynamic space implementation( octree ), update all objects' positions
+		d) paging for all objects in the scene, including lights
+
+	*3.ISpace & ISpaceData refactor. 
+	*add strictly fit flag on addContent. terrain block should use strictly fit to debug.
+
+	*4.complete render scheme.
+		*a)render scheme support deferred shading
+		*c)multiple viewport fix for deferred shading
+		*d)tiny bug fix: editor crashes if use hotkey ^+O to open files.
+
+	*5.deferred shading.
+		*a) directional light done
+		*b) complete point/spot light for deferred shading.
+		c) optimization: add near depth clip for light volumes; use quad to render all lights
+			i)merge overlapped lights to save sampling.
+			ii)tile deferred shading
+		*d)deferred shading: multiple window support, resolve render target name conflict, etc.
+		*e) Gbuffer sampling: only scale depth since depth buffer size is not really controlled by app, other buffers leave it as it to be.
+
+	*6.real time shaowmap
+
+7.post effects
+	.) DOF
+		*a) SSAO - HBAO added
+		*b) HDR
+		*c) TAA
+	d) dynamic motions for moving/animated object
+	e) config panel for post effects	-half done. now global options in "Edit/Engine OPtions". TODO: add per-scene delegating object to config & save (after scene hierarchy panel completed).
+
+	*8.lang table build fix & tang table build tool, translating tool
+	.)improve & polish for languages.
+
+9.wrap tool app entry to a reusable module/lib, they are now all the same.
+
+	*10.use Interface(IEntity::getInterfaces) for terrain editing. terrain editing uses parallel state to editing to test IParaState functions.
+		after add a user controllable character using IParaState, terrain editing can remove the IParaState implementation.
+	
+	*11. add light support
+		*a) editor: scale proportions constraint for editable - add flag to control.
+		*b) test & finish light element serialization
+		*c) point/spot lighting for forward shading.
+	
+12.world editor: grasses & water, atmosphere scaterring, fog etc.
+
+13.data binding to graphics effect, especially for editor to tune parameters.
+
+?14.shader constant update: view matrix pos / camera pos set to (0,0,0), and offset world matrix pos / world pos by real camera pos. - this will give better precision on large scaled maps, when far from map origin.
+
+	-15.editor: map all elements to editable / editor elements, and crate editable from the map, so that saving editor element is not needed any more.
+	note: editor element may need to serialize editor data: extra data for editor but not need for runtime.
+
+
+?16.resource manager: create another copy on reload/reloadSync
+
+
+17. code refactor:
+		*a) move platform manager to base/foundation: cpuinfo, prefetch, sleep those are fundamental functions.
+	?merge platform manager & platform data.
+		*b) operator delete handle objects created by default new (add magic)
+		note: done by make global operator new compatible to std global operator delete.
+		*c) forward shading: add renderable processing(configurable for sceheme output) to save local light list - remove redundant calc for multiple cameras on shader updates
+		*d) rendering scheme: alpha blend - add normal rendering for alpha blending objects (depth pass with alpha clip), for alpha clip + alpha blending 2 pass.
+		*e) merge  IModule to IPlugin
+	f) consider pure static build: adaption for plugins (some OS/platform doesn't support dynamic lib)
+			*1) add BLADE_PLUGIN_API to switch btween dllexport/static
+			*2) add global plugin  list to manually append all pluins (instead of a list of dll/so files), for platform manager to enumate.
+			*3) add static lib project configs: not used for Windows. Android changed to static lib, iOS need static lib too.
+		*g) refactor lang table and tools: update to reflect string change in code. strip/insert
+		*h) material/shader: bind sampler when texture state/sampler state change, remove material's texture uniform definition 
+			note: done by add material's missing texture uniform on linking sampler, and add TextureState's applyUniforms to match linked uniform order.
+		*i) make '_SHADER_' semantic optional in shader
+		
+		*j) link sampler to multiple pass is incorrect and could cause sampler mismatch
+				shader instance is per-pass, so shader instance will not be shared among passes.
+				sampler info should be stored in shader instance instead of in shared subshader. otherwise if subshader is shared among passes, the sampler state may be incorrect.
+			
+		*k) remember render target texture's last view port setting: DON'T use current viewport setting to caluclate uvspace.
+			by doing this it is possible to render partial content to rtt and sampling it correctly using uvspace.
+			i.e.perform chained downscaling with 2 textures, instead of multiple textures in different sizes
+			DONE. viewport now stored via IRenderTexture interface. clamp needed to limit uv to sub view region to prevent linear bleeding out of region. multiple sampling offsets needed too.
+		TODO: custom viewport renderings may broke viewport setting, add restore viewport method.
+		
+		*k)	ConfigSerializer::readConfigBinary/writeConfigBinary: add name for block to support inserting/removing arbitary data block.
+			IOBuffer write() return pointer may be invalid after reallocation
+		
+			*pages in entity is hard to decide, if only load visible pages (invisible pages are not loaded and pages count for entity may be incorrect.
+				TODO: use bool to indicate entity is fully/partially contained.
+					or create all pages but load only visible pages
+	
+	
+	l)	change Model config panel to submesh list, and support graphics element material instance param adjust & save.
+		working in progress.
+
+
+		*m)	paging bugs:
+		*1.dynamic space translation if paging center moved
+		*2.edit mode: save pages before unload
+		*3.x+z swith(not in 1 frame but close): one page unload right after async loading, when loading callback calls, entity & element is deleted (multiple element loading corrupt entity loading state, 1st element ready becomes ES_READY and deleted, 2nd element ready crashes.).
+
+
+	@n)	use template for variant? (or use std::variant when swtiched to c++17)
+	
+	
+		*o)	paging update/unload/load: further optimization. -ALMOST DONE. NEED MORE PROFILING AND THINKING
+			note: now destroyPagingEntities() added, but deleting Entity is consuming too much time. 
+			there're 2 ways to optimize:
+				-entity object pool with element mask. creation/deletion of entity with the same elements will be pooled;
+				*delay entity deleting to later frames.
+	
+		*p)	graphics interface (i.e.TerrainInterface) async update: add ref in case element destroyed.
+		
+	*18	terrain morphing improvement for Fixed LOD
+	
+terrain cliff stretched texturing fix - UV based on height: use per sub-atlas setting for biplanar/triplanar mapping
+
+	
+@19	refactor/expand paging system to support cube/sphercial world (3D paging instead of 2D)
+	note: should adjust interface to support 3D paging, and add another 3D implementation.
+
+	?add edit mode profile for paging, edit mode need larger loading range. - that means we need a "play/review" mode to preview the none-edit mode final result.
+
+		*tiny bug fix on first time world creation (put objects on page bounds, then assertion failure on page set to empty, some bug exist)
+	
+?20	IConfig: serialize all group value & sub configs even if it is not current value. (all options should be saved, in case user change back on any time and still have previous data).
+	note: probably hard to do based on current code. and even it could be saved, some sub configs may be mapped to the same data, probably causing conflicts.
+
+	*21	Entity/Element: add extra process function after post process(loading phase), so that elements can access other elements' loaded data using interfaces
+		note: now use ISerializable's priority to controll loading order & postProcess order;
+
+	*fix RenderSchemeConfig data handler : DelegateOnlyHandler's target is fake and will cause problem on rebind target.
+
+	*22. FBX importer improvements problems fix (last change reverted);	
+		working in progress. X)probably need to seprate global bone table to per-submesh, since submeshes may share the same bone but they may have different pose
+		then bones will need different initial binding pose. or separate binding pose for bones only.
+		
+21 add vertex declaration parameter for soft buffered geometry effects (i.e. bruh decals). currently the vertex declaration is buit-in & fixed and cannot be changed.
+
+22. add shader variantions & feature switch that can be switched at runtime.
+
+
+Milestone 4: Editor & tool pipeline
+
+1. use single proxy object for terrain blocks far away from camera, bake splat texture into 1 base texture.
+	*2. terrain dynamic tiling based on distance.
+3. use small sections to perform static model batching, meshes within the same sector are statically batched.
+	*4. task manager: add dynamic dispatchable lightweight tasks besides pre-type-grouped tasks, for parallel culling, skinning etc.
+5. shadow culling: draw top view debug frustum, use scene culling result if possible (maybe reduce light frustum far plane to avoid culling visible content again), to avoid CSM 4 culling.

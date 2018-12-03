@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version="0.01" >
+
+  <!-- simple shape that has no Textures/Lighting, performing transform in VS & return object color in FS -->
+	<material name="SimpleShape">
+		
+		<technique name="default" profile="2_0">
+
+			<pass name="default">
+				<render_property fill_mode="solid" cull_mode="none">
+					<depth test="disable" write="disable"/>
+				</render_property>
+				
+				<shader_option source="shader:default_shape.blshader" />
+			</pass>
+		</technique>
+		
+	</material>
+
+	
+</BladeMaterial>

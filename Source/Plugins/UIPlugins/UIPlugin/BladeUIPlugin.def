@@ -1,0 +1,6 @@
+; Win32DialogMFC.def : Declares the module parameters for the DLL.
+
+LIBRARY      "BladeUIPlugin.dll"
+
+EXPORTS
+    ; Explicit exports can go here

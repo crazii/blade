@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{9c003444-26cf-4486-a315-5109fba6164e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface">
+      <UniqueIdentifier>{ce7fd4f6-bfb8-46a9-942e-31bbcfd549f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{1d7c62f9-57a7-4d7e-89f0-a1d2a96b8400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp">
+      <UniqueIdentifier>{479d0fe0-cc7f-4300-bb74-8115286cc3d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\header\GameFSM.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\header\GameLibrary.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\interface_imp\GameLogic.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\GameFSM.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\GameLibrary.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\GameLibraryPCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameLibrary\source\interface_imp\GameLogic.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

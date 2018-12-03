@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ 
+<!-- technique is the technique name for all render types' materials -->
+<!-- profile is the scheme's minimal requirement for video card, and maximal limit for shaders -->
+<render_scheme name="Forward Shading" profiles="2_0,2_a" >
+
+	<!-- render buffer definition, the default final output is not needed, as it is controlled by program -->
+	<!-- pre-defined buffers are "FINAL", "NONE" -->
+	<render_buffers>
+		<!-- FINAL color buffer : the final buffer created by app. it doesn't have any depth stencil buffer attached -->
+		<!--
+			attributes:
+			width/height: set the target dimension. example "1280" or "50%" or "50%+256".
+				            "P%" means the dimension is decided relatively to the size of final buffer.
+                    NOTE THAT a depth buffer cannot be smaller than the used color buffer for one output
+                    
+			format:       the pixel format that to be used.
+			type: 	      buffer type: either to be "color" or "depth"
+			access:       graphics device access. could be "read", "write", or "read_write"
+			
+		-->
+		<buffer name="depth_buffer" width="100%" height="100%" type="depth" format="D24S8" access="write"/>
+		<buffer name="[Shadow]shadow_depth" width="2048" height="2048" type="depth" format="D16" access="read_write"/>
+	</render_buffers>
+	
+	<render_operators>
+		<operator type="Shadows" prefix="[Shadow]"/>
+	</render_operators>
+	
+	<!-- types definition -->
+	<render_types>
+		<type name="Terrain"/>
+		<type name="Static Mesh"/>
+		<type name="Skinned Mesh"/>
+		<type name="Static Mesh Alpha"/>
+		<type name="Skinned Mesh Alpha"/>
+		<type name="Atmosphere"/>
+		<type name="Effect"/>
+		<!-- helpers include AABB, Gizmo, Skeleton, etc. -->
+		<type name="RenderHelper"/>  
+	</render_types>
+	
+	<!-- shadow pass -->
+	<render_output name="[Shadow]Cascade0" target="EMPTY" target_depth="[Shadow]shadow_depth">
+		<camera reference="LightCamera0" />
+		<view reference="NONE" left="0" top="0" right="100%" bottom="100%" >
+			<clear color="NONE" depth="1.0" stencil="NONE" />
+		</view>
+		<render_step type="Terrain" enable="true" pass="shadow" texturing="false" />
+		<render_step type="Static Mesh" enable="true" pass="shadow" sorter="Geometries" texturing="false" />
+		<render_step type="Skinned Mesh" enable="true" pass="shadow" sorter="Geometries" texturing="false" />
+		<render_step type="Static Mesh Alpha" enable="true" pass="alpha_shadow" sorter="Geometries,Textures"/>
+		<render_step type="Skinned Mesh Alpha" enable="true" pass="alpha_shadow" sorter="Geometries,Animations,Textures"/>	
+	</render_output>
+
+  <!-- shadow pass -->
+	<!-- DON'T use CSM because constant register count exceed on 2_a profile -->
+  <!-- <render_output name="[Shadow]Cascade1" reference="[Shadow]Cascade0">
+		<camera reference="LightCamera1" />
+		<view left="50%" top="0" right="100%" bottom="50%" />
+	</render_output>
+	<render_output name="[Shadow]Cascade2" reference="[Shadow]Cascade0">
+		<camera reference="LightCamera2" />
+		<view left="0" top="50%" right="50%" bottom="100%" />
+	</render_output>
+	<render_output name="[Shadow]Cascade3" reference="[Shadow]Cascade0">
+		<camera reference="LightCamera3" />
+		<view left="50%" top="50%" right="100%" bottom="100%" />
+	</render_output>
+	-->
+	
+	<!-- pre-z pass -->
+	<render_output name="Pre-Z" target="NONE" target_depth="depth_buffer">
+		<view reference="FINAL">
+			<clear color="NONE" depth="1.0" stencil="0"/>
+		</view>
+		<camera reference="MAIN" />
+	
+		<render_step type="Terrain" enable="true" pass="depth" texturing="false" />
+		<render_step type="Static Mesh" enable="true" pass="depth" sorter="Geometries" texturing="false" />
+		<render_step type="Skinned Mesh" enable="true" pass="depth" sorter="Geometries,Animations" texturing="false" />
+	</render_output>
+
+	<!-- foward pass -->
+	<render_output name="Forward Shading" target="FINAL" target_depth="depth_buffer" input0="[Shadow]shadow_depth" enable="true" >
+	
+		<!-- view definition available options are :
+		reference = 
+		"FINAL" - use the app specific view,
+		"NONE" - default value. use a new view object , with its default values already being set properly
+		
+		or create new view with attributes as follows
+		<view [reference="NONE"] left="10+20T" top="5+10%" right="20+10%" bottom="100%">
+			<clear color="NONE / (0,0,0,0)" depth="NONE / 1.0f" stencil="NONE / <uint16_val>" />
+		</view>
+		-->
+		<view reference="FINAL">
+			<clear color="(0,0,0,0)" depth="NONE" stencil="NONE"/>
+		</view>
+		
+		<!-- camera definition 
+		"reference" options  are:
+		"MAIN" - use the app specified main camera
+		"MAIN_LIGHT" - use the main directional light bounded camera
+		"$NAME" - use the camera which has the name "$NAME", created by app
+		unlike view object, camera must have a reference, to use the reference camera's space geometry data (rotation/position)
+		but it can be customized.
+
+		attributes:
+		custom:       enable customized attributes. use "disable" to disable the following custom attributes, "enable" to enable them. default value: "disable"
+		custom attributes:
+		type:         projection mode. PERSPECTIVE/ORTHOGRAPHIC. default value: same as referenced target.
+		near/far:     near/far clip plane. default value: same as referenced target.
+		horiz_fov:    horizontal field of view. default value: same as referenced target.
+		aspect:       aspect ratio. default value: same as referenced target.
+		width/height: project size in orthographic mode. P% means using value relative view' width/height.
+		"default" of width/height equals 100%. default value: same as referenced target.
+
+		note: custom camera params does not affect scene/space culling, it is just used for rendering only
+		example:
+		<camera reference="MAIN" custom="enable/disable" static="disable" type="PERSPECTIVE" horiz_fov="90" /> 
+		
+		-->
+		<camera reference="MAIN" />
+
+		<!-- sorter: sorting method. 
+		available sorters:
+		"NONE": no sorting
+		"Textures": sort by render textures
+		"FrontToBack": sort by distance from front to back
+		"BackToFront": sort by distance from front to back
+		and any other custom sorting methods registered into factory.
+		the sorting methods can be combined, i.e. "Textures,FrontToBack"
+		
+		default: "NONE"
+		-->
+		<render_step type="Atmosphere" enable="true" pass="default" />
+		<render_step type="Terrain" enable="true" pass="default" />
+		<render_step type="Static Mesh" enable="true" pass="default" sorter="Geometries,Textures"/>
+		<render_step type="Skinned Mesh" enable="true" pass="default" sorter="Geometries,Animations,Textures"/>
+
+    <!-- move alpha test/clip after normal rendering to take advantage of early z. TODO: use single shading pass that write depth -->
+    <render_step type="Static Mesh Alpha" enable="true" pass="alpha_depth" sorter="Geometries,Textures"/>
+    <!--<render_step type="Static Mesh Alpha" enable="true" pass="default" sorter="Geometries,Textures"/>-->
+    <render_step type="Skinned Mesh Alpha" enable="true" pass="alpha_depth" sorter="Geometries,Animations,Textures"/>
+		<!--<render_step type="Skinned Mesh Alpha" enable="true" pass="default" sorter="Geometries,Animations,Textures"/>-->
+	</render_output>
+	
+	<!-- alpha blend pass -->
+	<!-- sorter for render_output will merge all render_steps and sort in mixed one shot -->
+	<render_output name="Alpha Blending" target="FINAL" target_depth="depth_buffer" input0="[Shadow]shadow_depth" enable="true" sorter="BackToFront" >
+		<view reference="FINAL"/>
+		<camera reference="MAIN" />
+
+		<!-- note: 
+		if a pass is specified, group is ignored:
+			runtime will enumerate all shader options to see if the shader option has any renderables.
+		if no pass specified, runtime will enumerate all renderables(in shader groups if group is valid),
+			then the dynamic pass will be obtained from each renderable, and then use the dynamic shader option from the pass
+		-->
+		<render_step type="Static Mesh Alpha" enable="true" pass="alpha_blending"/>
+		<render_step type="Skinned Mesh Alpha" enable="true" pass="alpha_blending"/>
+		<render_step type="Effect" enable="true" pass="" />
+		<render_step type="RenderHelper" enable="true" pass="" />
+	</render_output>
+
+	<!-- !if you want draw a single object, 
+	then you'd better put the object and the referenced camera into a separated space,
+	so that this object will not be affecting or affected by the rest of the entire scene -->
+	
+	<!-- !important: better to put 2D objects in a separated space -->
+	<render_output name="2D" target="FINAL" target_depth="depth_buffer" enable="true" >
+	
+		<view reference="NONE"/>
+		<camera type="ORTHOGRAPHIC" custom="enable" near="0.1" far="1000" />
+	</render_output>
+	
+</render_scheme>

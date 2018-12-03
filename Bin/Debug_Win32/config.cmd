@@ -1,0 +1,1 @@
+start GameStudio.exe --config

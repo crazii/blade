@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E4BEFE33-B2A2-4648-A1D2-E02F3898C194}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Languages</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Bin\Intermediate_Data\lang\</OutDir>
+    <NMakeBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Languages"
+
+set OutFile=en_US
+set SourceDir=$(SolutionDir)\..\..\Source
+set OutDir=$(OutDir)
+
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f Language.makefile</NMakeBuildCommandLine>
+    <NMakeOutput>$(OutDir)en_US</NMakeOutput>
+    <NMakeCleanCommandLine>@if exist $(OutDir)en_US del /F /Q $(OutDir)en_US</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>@if exist $(OutDir)en_US del /F /Q $(OutDir)en_US
+set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Languages"
+
+set OutFile=en_US
+set SourceDir=$(SolutionDir)\..\..\Source
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f Language.makefile</NMakeReBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Bin\Intermediate_Data\lang\</OutDir>
+    <NMakeBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Languages"
+
+set OutFile=en_US
+set SourceDir=$(SolutionDir)\..\..\Source
+set OutDir=$(OutDir)
+
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f Language.makefile</NMakeBuildCommandLine>
+    <NMakeOutput>$(OutDir)en_US</NMakeOutput>
+    <NMakeCleanCommandLine>@if exist $(OutDir)en_US del /F /Q $(OutDir)en_US</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>@if exist $(OutDir)en_US del /F /Q $(OutDir)en_US
+set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Languages"
+
+set OutFile=en_US
+set SourceDir=$(SolutionDir)\..\..\Source
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f Language.makefile</NMakeReBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Bin\Intermediate_Data\lang\</OutDir>
+    <NMakeBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Languages"
+
+set OutFile=en_US
+set SourceDir=$(SolutionDir)\..\..\Source
+set OutDir=$(OutDir)
+
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f Language.makefile</NMakeBuildCommandLine>
+    <NMakeOutput>$(OutDir)en_US</NMakeOutput>
+    <NMakeCleanCommandLine>@if exist $(OutDir)en_US del /F /Q $(OutDir)en_US</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>@if exist $(OutDir)en_US del /F /Q $(OutDir)en_US
+set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Languages"
+
+set OutFile=en_US
+set SourceDir=$(SolutionDir)\..\..\Source
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f Language.makefile</NMakeReBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Bin\Intermediate_Data\lang\</OutDir>
+    <NMakeBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Languages"
+
+set OutFile=en_US
+set SourceDir=$(SolutionDir)\..\..\Source
+set OutDir=$(OutDir)
+
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f Language.makefile</NMakeBuildCommandLine>
+    <NMakeOutput>$(OutDir)en_US</NMakeOutput>
+    <NMakeCleanCommandLine>@if exist $(OutDir)en_US del /F /Q $(OutDir)en_US</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>@if exist $(OutDir)en_US del /F /Q $(OutDir)en_US
+set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Languages"
+
+set OutFile=en_US
+set SourceDir=$(SolutionDir)\..\..\Source
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f Language.makefile</NMakeReBuildCommandLine>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\BladeBase\header\BladeBase_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\BladeFramework\header\BladeFramework_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\BladeFramework\header\interface\public\geometry\GeometryInterface_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\BladeFramework\header\interface\public\graphics\GraphicsInterface_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\EditorFramework\header\BladeEditor_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\EditorPlugins\AtmosphereEditor\header\BladeAtmosphereEditor_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\EditorPlugins\ModelViewer\header\BladeModelViewer_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\header\BladeTerrainEditor_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\header\WorldEditor_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\GraphicsPlugins\BladeAtmosphere\header\BladeAtmosphere_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\BladeModel_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\GraphicsPlugins\BladeTerrain\header\BladeTerrain_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\BladeGraphics_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\SubsystemPlugins\BladeUI\header\BladeUI_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\header\BladeWindow_blang.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\UIPlugins\UIPlugin\header\UIPlugin_blang.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Source\TerminalProjects\Languages\Language.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Languages\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

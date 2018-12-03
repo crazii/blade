@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{2c4418af-5258-4490-9a71-021d999a83df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface">
+      <UniqueIdentifier>{e60c7e9b-16db-4937-b4a9-01aa7caac3e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface\public">
+      <UniqueIdentifier>{3ce11247-0a82-4d82-b5b1-e35ab56b06f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface\public\graphics">
+      <UniqueIdentifier>{fe9da5eb-9856-469c-808f-c45b525f3521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface\public\input">
+      <UniqueIdentifier>{e8ce7d41-8422-4ef8-b4fc-283bc544fe8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface\public\window">
+      <UniqueIdentifier>{302e2dbd-51d1-4cff-a1be-d884bdf26752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface\public\file">
+      <UniqueIdentifier>{ee6b6225-fcd3-42b4-9e43-8e3da89e0274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\interface\public\time">
+      <UniqueIdentifier>{87eb704a-4e06-4d04-9778-5f87b652417b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\memory">
+      <UniqueIdentifier>{866a40a4-d15a-442f-8ae7-b1d4dc67ba1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\utility">
+      <UniqueIdentifier>{7b20b413-4472-4884-b2f5-0280748ea538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\math">
+      <UniqueIdentifier>{00aeeee3-27df-4922-b3a7-bfdcfc540882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\threading">
+      <UniqueIdentifier>{f31e3746-8ea0-4935-b618-da8cc0c47fca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\platform">
+      <UniqueIdentifier>{35843bf5-8761-400d-a0b5-65572e4e3ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\platform\android">
+      <UniqueIdentifier>{3c460882-35ef-4506-b644-51449432f0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{e21a1c8c-e982-4322-ac13-fd5811017961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp">
+      <UniqueIdentifier>{da2c4b9d-33eb-4760-9063-7cdc8f45a428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\pool">
+      <UniqueIdentifier>{cc18bbfb-fbbb-4d2a-a9e7-85cdef690ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\pool\nedmalloc">
+      <UniqueIdentifier>{f892582e-9015-4605-a553-aa53345c6c96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\platform">
+      <UniqueIdentifier>{ef192d94-8e85-4a0d-89e2-1ef10edbf489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\platform\windows">
+      <UniqueIdentifier>{b0680a6b-ed6e-4688-8490-09dc330ff99d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\platform\unix">
+      <UniqueIdentifier>{b14bfdd6-2d7d-488a-95fe-0c501e70ca24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\platform\android">
+      <UniqueIdentifier>{6cb2603c-d2f0-4a43-9bf0-56819cfd5afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\platform\android\project">
+      <UniqueIdentifier>{b48a0e5b-b03b-4f92-acaa-6a57006f78d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface_imp\platform\android\project\src">
+      <UniqueIdentifier>{bfa03876-ec31-496c-ba7e-af6f2b9549ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\memory">
+      <UniqueIdentifier>{66425a88-417a-40ea-ba86-2907a915135f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\utility">
+      <UniqueIdentifier>{ec57a7a4-92ba-495a-b066-0ed101cd71ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\graphics">
+      <UniqueIdentifier>{86ace813-43a5-4d09-b890-f87ea88a6e14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\math">
+      <UniqueIdentifier>{f9a6e12a-6edf-4c57-b753-d9463fa80701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\math\3rdparty">
+      <UniqueIdentifier>{a3d1ee6c-702b-4476-96c5-ad1cdbc28f4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\threading">
+      <UniqueIdentifier>{48731e4f-5abc-43ff-ab07-d5e3dc39c073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\3rdparty">
+      <UniqueIdentifier>{7931aa99-a106-4bc7-bac3-ab32af410c5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\BladeBase.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\BladeBase_blang.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\BladeCppDef.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\BladeException.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\BladePCH.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\BladePlatform.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\BladeStdTypes.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\BladeTypes.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\Factory.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\Handle.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\Lock.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\Pimpl.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\RefCount.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\Singleton.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\StaticHandle.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\VersionFactory.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\ILangTable.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\ILog.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\ILogManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\Interface.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\IPlatformManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\InterfaceSingleton.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\IPool.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\IPoolManager.h">
+      <Filter>header\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\IPlugin.h">
+      <Filter>header\interface\public</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\IDevice.h">
+      <Filter>header\interface\public</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\GraphicsBaseEnums.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IImageManager.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\PixelColorFormatter.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\ShaderInfoTable.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\Color.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\GraphicsGeometry.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IGraphicsBuffer.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IGraphicsResourceManager.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IImage.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IIndexBuffer.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IRenderDevice.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IRenderTarget.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IRenderView.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IRenderWindow.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IShader.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\ITexture.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IVertexBuffer.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IVertexDeclaration.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\IVertexSource.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\PixelFormat.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\RenderDeviceCaps.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\RenderProperty.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\graphics\VertexElement.h">
+      <Filter>header\interface\public\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\input\ITouchView.h">
+      <Filter>header\interface\public\input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\input\ITouchDevice.h">
+      <Filter>header\interface\public\input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\input\IKeyboard.h">
+      <Filter>header\interface\public\input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\input\IKeyboardDevice.h">
+      <Filter>header\interface\public\input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\input\IMouse.h">
+      <Filter>header\interface\public\input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\input\IMouseDevice.h">
+      <Filter>header\interface\public\input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\window\Helpers.h">
+      <Filter>header\interface\public\window</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\window\IWindow.h">
+      <Filter>header\interface\public\window</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\window\IWindowDevice.h">
+      <Filter>header\interface\public\window</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\window\IWindowEventHandler.h">
+      <Filter>header\interface\public\window</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\window\IWindowMessagePump.h">
+      <Filter>header\interface\public\window</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\file\IFileDevice.h">
+      <Filter>header\interface\public\file</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\file\IStream.h">
+      <Filter>header\interface\public\file</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\time\ITimeDevice.h">
+      <Filter>header\interface\public\time</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\interface\public\time\Time.h">
+      <Filter>header\interface\public\time</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\memory\BladeMemory.h">
+      <Filter>header\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\memory\PoolAllocator.h">
+      <Filter>header\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\memory\SizeAllocator.h">
+      <Filter>header\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\memory\StaticAllocator.h">
+      <Filter>header\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\memory\TempAllocator.h">
+      <Filter>header\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\Bindable.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\BiRef.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\BladeContainer.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\BPKFile.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\Buffer.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\CodeConverter.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\ConfigFile.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\DataBinding.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\DataBindingEx.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\DataBridge.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\Delegate.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\FixedArray.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\Functors.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\FunctorsExt.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\IOBuffer.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\Mask.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\MemoryStream.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\Profiling.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\String.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\StringHelper.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\StringHelperEx.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\StringList.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\StringStream.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\StringTable.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\TextFile.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\TList.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\Variant.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\Version.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\utility\XmlFile.h">
+      <Filter>header\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\BladeSIMD.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\DualQuaternion.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Half.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Half3.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Vector4i.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\AxisAlignedBox.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\BladeMath.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Box2.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Box2i.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Box3i.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Line2.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Matrix33.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Matrix44.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Plane.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Quaternion.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Ray.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Sphere.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Vector2.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Vector2i.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Vector3.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Vector3i.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\math\Vector4.h">
+      <Filter>header\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\threading\ConditionVariable.h">
+      <Filter>header\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\threading\Mutex.h">
+      <Filter>header\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\threading\ReadWriteLock.h">
+      <Filter>header\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\threading\Thread.h">
+      <Filter>header\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\platform\PlatformData.h">
+      <Filter>header\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\platform\android\android_native_app_glue.h">
+      <Filter>header\platform\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\BladeUnicode.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\BladeWin32API.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\MemoryDebug.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\InterfaceSingletonImpl.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\LangTable.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\LangTableFile.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\Log.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\LogManager.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\MemoryFileDevice.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\PoolManager.h">
+      <Filter>source\interface_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\DLMallocPool.h">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\FixedSizePage.h">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\FixedSizePageAllocator.h">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\FixedSizePool.h">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\IncrementalPage.h">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\IncrementalPool.h">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\nedmalloc\malloc.c.h">
+      <Filter>source\interface_imp\pool\nedmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\nedmalloc\nedmalloc.h">
+      <Filter>source\interface_imp\pool\nedmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\DynamicLib.h">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\FileDevice.h">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\FileStream.h">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\PlatformData_Private.h">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\PlatformManager.h">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsConditionVariable.h">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsFileDevice.h">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsFileStream.h">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsMutex.h">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsTimeDevice.h">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsThread.h">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixConditionVariable.h">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixFileDevice.h">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixFileStream.h">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixMutex.h">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixThread.h">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixTimeDevice.h">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\android\ACpuFeatures.h">
+      <Filter>source\interface_imp\platform\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\android\JniHelper.h">
+      <Filter>source\interface_imp\platform\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\Base64.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\BPKData.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\InternalString.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\InternalStringHelper.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\ColorChannel.h">
+      <Filter>source\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\TempGraphicsResourceManager.h">
+      <Filter>source\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\DefaultGraphicsResourceManager.h">
+      <Filter>source\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\DefaultIndexBuffer.h">
+      <Filter>source\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\DefaultVertexBuffer.h">
+      <Filter>source\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\DefaultVertexDeclaration.h">
+      <Filter>source\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\MathAlgorithm.h">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\3rdparty\PoissonGenerator.h">
+      <Filter>source\math\3rdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\3rdparty\ConvertUTF.h">
+      <Filter>source\3rdparty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\header\Pimpl.inl">
+      <Filter>header</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\android\project\src\BladeBase.java">
+      <Filter>source\interface_imp\platform\android\project\src</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\BladeException.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\BladeUnicode.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\Factory.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\Lock.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\Mask.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\RefCount.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\StaticDataInit.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\VersionFactory.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\InterfaceSingleton.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\LangTable.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\LangTableFile.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\Log.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\LogManager.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\MemoryFileDevice.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\PoolManager.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\FixedSizePageAllocator.cc">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\DLMallocPool.cc">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\FixedSizePage.cc">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\FixedSizePool.cc">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\IncrementalPage.cc">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\IncrementalPool.cc">
+      <Filter>source\interface_imp\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\ConditionVariable.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\DynamicLib.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\FileDevice.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\FileStream.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\Mutex.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\PlatformData.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\PlatformManager.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\PlatformManager_CPUInfo.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\Thread.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\TimeDevice.cc">
+      <Filter>source\interface_imp\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsFileDevice.cc">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsFileStream.cc">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\windows\WindowsTimeDevice.cc">
+      <Filter>source\interface_imp\platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixFileDevice.cc">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixFileStream.cc">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\unix\UnixTimeDevice.cc">
+      <Filter>source\interface_imp\platform\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\android\ACpuFeatures.cc">
+      <Filter>source\interface_imp\platform\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\android\android_native_app_glue.c">
+      <Filter>source\interface_imp\platform\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\platform\android\JniHelper.cc">
+      <Filter>source\interface_imp\platform\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\memory\Allocator.cc">
+      <Filter>source\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\memory\BladeMemory.cc">
+      <Filter>source\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\Base64.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\BiRef.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\BPKData.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\BPKFile.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\Buffer.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\CodeConverter.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\ConfigFile.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\Delegate.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\InternalString.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\IOBuffer.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\MemoryStream.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\Profiling.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\String.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\StringAllocator.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\StringHelper.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\StringHelperEx.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\StringList.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\StringStream.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\StringTable.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\TextFile.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\Variant.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\Version.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\utility\XmlFile.cc">
+      <Filter>source\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\PixelColorFormatter.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\ShaderInfoTable.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\Color.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\DefaultIndexBuffer.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\DefaultVertexBuffer.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\DefaultVertexDeclaration.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\GraphicsGeometry.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\IVertexSource.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\PixelFormat.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\RenderProperty.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\graphics\VertexElement.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\DualQuaternion.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Half.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Half3.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Vector3i.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Vector4i.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\AxisAlignedBox.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\BladeMath.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Box2.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Box2i.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Box3i.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Line2.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Matrix33.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Matrix44.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Plane.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Quaternion.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Ray.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Sphere.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Vector2.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Vector2i.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Vector3.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\math\Vector4.cc">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\threading\ReadWriteLock.cc">
+      <Filter>source\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\BladePCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\IPlugin.cc">
+      <Filter>source\interface_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\3rdparty\ConvertUTF.cc">
+      <Filter>source\3rdparty</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\nedmalloc\License.txt">
+      <Filter>source\interface_imp\pool\nedmalloc</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\interface_imp\pool\nedmalloc\Readme.txt">
+      <Filter>source\interface_imp\pool\nedmalloc</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeBase\source\threading\Note.txt">
+      <Filter>source\threading</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

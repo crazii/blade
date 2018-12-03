@@ -1,0 +1,9 @@
+.exp
+.dll
+.exe
+.pdb
+.log
+.txt
+.ilk
+.map
+.uilayout

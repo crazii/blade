@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Textures\Common.makefile">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\Locale.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\Locale.UI.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\MakeAll.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\Shared.inc" />
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Textures\Sky.makefile">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Textures\Terrain.makefile">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\UI.makefile" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71587764-81CB-4AD6-B6F6-7C721BBE830E}</ProjectGuid>
+    <RootNamespace>Textures</RootNamespace>
+    <Keyword>MakeFileProj</Keyword>
+    <ApplicationType>iOS</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <iOSConfigurationType>Makefile</iOSConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <iOSConfigurationType>Makefile</iOSConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <iOSConfigurationType>Makefile</iOSConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <iOSConfigurationType>Makefile</iOSConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Bin\Data\Data_Platform\image\pvrtc\</OutDir>
+    <AdditionalOptions>Metal</AdditionalOptions>
+    <TargetExt>ktx</TargetExt>
+    <NMakeBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Textures"
+
+set Platform=$(ApplicationType)
+set API=$(AdditionalOptions)
+set Format=$(TargetExt)
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  MakeAll.makefile"</NMakeBuildCommandLine>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+    <NMakeReBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Textures"
+
+set Platform=$(ApplicationType)
+set API=$(AdditionalOptions)
+set Format=$(TargetExt)
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  MakeAll.makefile"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>@echo off</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Bin\Data\Data_Platform\image\pvrtc\</OutDir>
+    <AdditionalOptions>Metal</AdditionalOptions>
+    <TargetExt>ktx</TargetExt>
+    <NMakeBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Textures"
+
+set Platform=$(ApplicationType)
+set API=$(AdditionalOptions)
+set Format=$(TargetExt)
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  MakeAll.makefile"</NMakeBuildCommandLine>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+    <NMakeReBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Textures"
+
+set Platform=$(ApplicationType)
+set API=$(AdditionalOptions)
+set Format=$(TargetExt)
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  MakeAll.makefile"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>@echo off</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Bin\Data\Data_Platform\image\pvrtc\</OutDir>
+    <AdditionalOptions>Metal</AdditionalOptions>
+    <TargetExt>ktx</TargetExt>
+    <NMakeBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Textures"
+
+set Platform=$(ApplicationType)
+set API=$(AdditionalOptions)
+set Format=$(TargetExt)
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  MakeAll.makefile"</NMakeBuildCommandLine>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+    <NMakeReBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Textures"
+
+set Platform=$(ApplicationType)
+set API=$(AdditionalOptions)
+set Format=$(TargetExt)
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  MakeAll.makefile"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>@echo off</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Bin\Data\Data_Platform\image\pvrtc\</OutDir>
+    <AdditionalOptions>Metal</AdditionalOptions>
+    <TargetExt>ktx</TargetExt>
+    <NMakeBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Textures"
+
+set Platform=$(ApplicationType)
+set API=$(AdditionalOptions)
+set Format=$(TargetExt)
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  MakeAll.makefile"</NMakeBuildCommandLine>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+    <NMakeReBuildCommandLine>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd "$(SolutionDir)..\..\Source\TerminalProjects\Textures"
+
+set Platform=$(ApplicationType)
+set API=$(AdditionalOptions)
+set Format=$(TargetExt)
+set OutDir=$(OutDir)
+bash -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f  MakeAll.makefile"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>@echo off</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <CustomBuild>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+      <Message>
+      </Message>
+    </CustomBuild>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <CustomBuild>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+      <Message>
+      </Message>
+    </CustomBuild>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <CustomBuild>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+      <Message>
+      </Message>
+    </CustomBuild>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <CustomBuild>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+      <Message>
+      </Message>
+    </CustomBuild>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

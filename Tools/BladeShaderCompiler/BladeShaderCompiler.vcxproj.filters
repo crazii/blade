@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{2a5975ed-22f4-41d5-85a0-27cea782516f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{cee678f1-003a-4e55-9420-2588f024399b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\targetver.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\ShaderCompilerApplication.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ShaderCompilerApplication.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BladeShaderCompiler.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

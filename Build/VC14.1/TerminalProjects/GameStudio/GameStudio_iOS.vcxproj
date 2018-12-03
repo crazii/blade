@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C887E84E-7355-415D-B7D8-696C71A30C0B}</ProjectGuid>
+    <RootNamespace>GameStudio</RootNamespace>
+    <Keyword>iOS</Keyword>
+    <ApplicationType>iOS</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="..\..\..\Shared\TerminalProjects\GameStudio\GameStudio_Files.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(SolutionDir)..\..\Bin\$(Configuration)_$(ApplicationType)_$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">lib$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">lib$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">lib$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">lib$(ProjectName)</TargetName>
+    <CustomBuildBeforeTargets Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">AntBuild</CustomBuildBeforeTargets>
+    <CustomBuildBeforeTargets Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">AntBuild</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <CustomBuildAfterTargets>Build</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <CustomBuildAfterTargets>Build</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\BladeApplication\header;$(SolutionDir)..\..\Source\TerminalProjects\GameLibrary\header</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDK_MATH_NO_SOFTFP=1;_DEBUG</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>-march=armv7-a -mhard-float -mfpu=neon -flax-vector-conversions -fvisibility=hidden</AdditionalOptions>
+      <Warnings>AllWarnings</Warnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lBladeApplication;-lBladeFramework;-lBladeBase;-lGameLibrary;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(TargetDir)APK\libs\$(ArchStlDirName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AndroidSystemLibs>c;m_hard;log;gcc;android</AndroidSystemLibs>
+      <SoName>$(TargetName)$(TargetExt)</SoName>
+      <AdditionalOptions>-ldl -Wl,--no-warn-mismatch</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <AntBuild>
+      <AntLibraryName>$(TargetName)</AntLibraryName>
+      <AntBuildPath>$(TargetDir)$(ProjectName)</AntBuildPath>
+    </AntBuild>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+      <Outputs>
+      </Outputs>
+      <Inputs>
+      </Inputs>
+    </CustomBuildStep>
+    <CustomBuild>
+      <Command>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd $(SolutionDir)..\..\Source\TerminalProjects\GameStudio\Android
+
+REM Let the makefile to handle path style based on CYGWIN
+set CYGWIN=1
+set OutDir=$(OutDir)$(ProjectName)
+set ExtraDir=$(SolutionDir)..\..\Source\BladeFramework\source\platform\android\project
+set CurrentFile=%(FullPath)
+
+$(SolutionDir)\..\..\Bin\Tools\cygwin\bin\bash --login -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f CopyAll.makefile"</Command>
+      <Message>
+      </Message>
+      <Outputs>$(OutDir)none.exist</Outputs>
+      <AdditionalInputs>
+      </AdditionalInputs>
+    </CustomBuild>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\BladeApplication\header;$(SolutionDir)..\..\Source\TerminalProjects\GameLibrary\header</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDK_MATH_NO_SOFTFP=1;_DEBUG</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>-march=armv7-a -mhard-float -mfpu=neon -flax-vector-conversions -fvisibility=hidden</AdditionalOptions>
+      <Warnings>AllWarnings</Warnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lBladeApplication;-lBladeFramework;-lBladeBase;-lGameLibrary;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(TargetDir)APK\libs\$(ArchStlDirName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AndroidSystemLibs>c;m_hard;log;gcc;android</AndroidSystemLibs>
+      <SoName>$(TargetName)$(TargetExt)</SoName>
+      <AdditionalOptions>-ldl -Wl,--no-warn-mismatch</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <AntBuild>
+      <AntLibraryName>$(TargetName)</AntLibraryName>
+      <AntBuildPath>$(TargetDir)$(ProjectName)</AntBuildPath>
+    </AntBuild>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+      <Outputs>
+      </Outputs>
+      <Inputs>
+      </Inputs>
+    </CustomBuildStep>
+    <CustomBuild>
+      <Command>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd $(SolutionDir)..\..\Source\TerminalProjects\GameStudio\Android
+
+REM Let the makefile to handle path style based on CYGWIN
+set CYGWIN=1
+set OutDir=$(OutDir)$(ProjectName)
+set ExtraDir=$(SolutionDir)..\..\Source\BladeFramework\source\platform\android\project
+set CurrentFile=%(FullPath)
+
+$(SolutionDir)\..\..\Bin\Tools\cygwin\bin\bash --login -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f CopyAll.makefile"</Command>
+      <Message>
+      </Message>
+      <Outputs>$(OutDir)none.exist</Outputs>
+      <AdditionalInputs>
+      </AdditionalInputs>
+    </CustomBuild>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\BladeApplication\header;$(SolutionDir)..\..\Source\TerminalProjects\GameLibrary\header</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDK_MATH_NO_SOFTFP=1;NDEBUG</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>-march=armv7-a -mhard-float -mfpu=neon -flax-vector-conversions -fvisibility=hidden</AdditionalOptions>
+      <Warnings>AllWarnings</Warnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lBladeApplication;-lBladeFramework;-lBladeBase;-lGameLibrary;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(TargetDir)APK\libs\$(ArchStlDirName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AndroidSystemLibs>c;m_hard;log;gcc;android</AndroidSystemLibs>
+      <SoName>$(TargetName)$(TargetExt)</SoName>
+      <AdditionalOptions>-ldl -Wl,--no-warn-mismatch</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <AntBuild>
+      <AntLibraryName>$(TargetName)</AntLibraryName>
+      <AntBuildPath>$(TargetDir)$(ProjectName)</AntBuildPath>
+      <AntBuildType>Debug</AntBuildType>
+    </AntBuild>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+      <Outputs>
+      </Outputs>
+      <Inputs>
+      </Inputs>
+    </CustomBuildStep>
+    <CustomBuild>
+      <Command>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd $(SolutionDir)..\..\Source\TerminalProjects\GameStudio\Android
+
+REM Let the makefile to handle path style based on CYGWIN
+set CYGWIN=1
+set OutDir=$(OutDir)$(ProjectName)
+set ExtraDir=$(SolutionDir)..\..\Source\BladeFramework\source\platform\android\project
+set CurrentFile=%(FullPath)
+
+$(SolutionDir)\..\..\Bin\Tools\cygwin\bin\bash --login -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f CopyAll.makefile"</Command>
+      <Message>
+      </Message>
+      <Outputs>$(OutDir)none.exist</Outputs>
+      <AdditionalInputs>
+      </AdditionalInputs>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuild>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\TerminalProjects\GameStudio\header;$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\BladeApplication\header;$(SolutionDir)..\..\Source\TerminalProjects\GameLibrary\header</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_NDK_MATH_NO_SOFTFP=1;NDEBUG</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>-march=armv7-a -mhard-float -mfpu=neon -flax-vector-conversions -fvisibility=hidden</AdditionalOptions>
+      <Warnings>AllWarnings</Warnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lBladeApplication;-lBladeFramework;-lBladeBase;-lGameLibrary;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(TargetDir)APK\libs\$(ArchStlDirName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AndroidSystemLibs>c;m_hard;log;gcc;android</AndroidSystemLibs>
+      <SoName>$(TargetName)$(TargetExt)</SoName>
+      <AdditionalOptions>-ldl -Wl,--no-warn-mismatch</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <AntBuild>
+      <AntLibraryName>$(TargetName)</AntLibraryName>
+      <AntBuildPath>$(TargetDir)$(ProjectName)</AntBuildPath>
+      <AntBuildType>Debug</AntBuildType>
+    </AntBuild>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+      <Outputs>
+      </Outputs>
+      <Inputs>
+      </Inputs>
+    </CustomBuildStep>
+    <CustomBuild>
+      <Command>set Path=.;$(SolutionDir)..\..\Bin\Tools\Release_Win32;$(SolutionDir)\..\..\Bin\Tools\cygwin\bin
+set CHERE_INVOKING=1
+set MAILCHECK=
+cd $(SolutionDir)..\..\Source\TerminalProjects\GameStudio\Android
+
+REM Let the makefile to handle path style based on CYGWIN
+set CYGWIN=1
+set OutDir=$(OutDir)$(ProjectName)
+set ExtraDir=$(SolutionDir)..\..\Source\BladeFramework\source\platform\android\project
+set CurrentFile=%(FullPath)
+
+$(SolutionDir)\..\..\Bin\Tools\cygwin\bin\bash --login -c "make -j $(NUMBER_OF_PROCESSORS) -r -R -s -f CopyAll.makefile"</Command>
+      <Message>
+      </Message>
+      <Outputs>$(OutDir)none.exist</Outputs>
+      <AdditionalInputs>
+      </AdditionalInputs>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuild>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version="0.01" >
+
+	<material name="sky">
+		<!-- texture uniform in shader: stages binding order
+		<textures>
+			<texture name="skyDiffuse"/>
+		</textures>
+		-->
+	
+		<technique name="default" profile="2_0">
+		
+			<groups>
+				<group name="sky_sphere"/>
+				<group name="sky_box"/>
+			</groups>
+			
+			<pass name="default">
+				<render_property fill_mode="solid" cull_mode="none" dither="disable" clipping="enable" scissor_test="disable">
+					<depth test="enable" test_func="less_equal" write="disable" />
+					<color specular="(1.0,1.0,1.0)" emissive="(0.0,0.0,0.0)" diffuse="(1.0,0.0,0.0)"/>
+				</render_property>
+	
+				<shader_option group="sky_sphere" source="shader:sky.blshader" subshader="skysphere" />
+				<shader_option group="sky_box" source="shader:sky.blshader" subshader="skybox" />
+			</pass>
+		</technique>
+		
+	</material>
+	
+</BladeMaterial>

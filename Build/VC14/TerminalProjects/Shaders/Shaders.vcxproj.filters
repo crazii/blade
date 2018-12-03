@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dx9">
+      <UniqueIdentifier>{8ce2bcd1-1cf6-4c61-8027-8f158efdc519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dx9\inc">
+      <UniqueIdentifier>{8e2d57c3-2d61-4600-94d5-45a0be215e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dx9\postfx">
+      <UniqueIdentifier>{b52bf18a-fc0b-4cae-9c10-a0ce7e914889}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\axis_gizmo_ring_circle.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\default_shape.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\deferred_light.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\aabb.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\geometry_brush_decal.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\mesh.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\sky.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\terrain.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\hud.hlsl">
+      <Filter>dx9</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\motionvector.hlsl">
+      <Filter>dx9\postfx</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\blit.hlsl">
+      <Filter>dx9\postfx</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\taa.hlsl">
+      <Filter>dx9\postfx</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\hdr.hlsl">
+      <Filter>dx9\postfx</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\hbao.hlsl">
+      <Filter>dx9\postfx</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\blur.hlsl">
+      <Filter>dx9\postfx</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\common.hlsl">
+      <Filter>dx9\inc</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\light.hlsl">
+      <Filter>dx9\inc</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\material_color.hlsl">
+      <Filter>dx9\inc</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\skinned_common.hlsl">
+      <Filter>dx9\inc</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\terrain_common.hlsl">
+      <Filter>dx9\inc</Filter>
+    </None>
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\depth_common.hlsl">
+      <Filter>dx9\inc</Filter>
+    </None>
+  </ItemGroup>
+</Project>

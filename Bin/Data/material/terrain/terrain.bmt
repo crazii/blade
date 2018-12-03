@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version = "0.01" >
+	<material name="terrain" >
+	
+	<!-- texture uniform in shader: stages binding order
+	<textures>
+		<texture name="blendMap"/>
+		<texture name="normalMap"/>
+		<texture name="layerMap"/>
+		<texture name="diffAtlas"/>
+		<texture name="normalAtlas"/>
+	</textures>
+	-->
+
+	<!-- shader model 2.0 2_0 -->
+	<technique name="legacy" profile="2_0">
+
+		<groups>
+			<group name="diffuse" >
+				<requirements>
+					<texture index="0-2" />
+				</requirements>
+			</group>
+		</groups>
+
+		<pass name="depth">
+			<render_property fill_mode="solid" cull_mode="CW">
+				<depth test="enable" test_func="less_equal" write="enable"/>
+				<color_write/><!--disable color writes-->
+			</render_property>
+			<shader_option name="depth" group="diffuse" source="shader:terrain.blshader" subshader="depth"/>
+		</pass>
+		
+		<pass name="shadow" clone="depth">
+			<render_property>
+				<depth bias="5" slope_bias="0.005"/>
+			</render_property>
+		</pass>
+
+		<pass name="default">
+
+			<render_property fill_mode="solid" cull_mode="CW">
+				<depth test="enable" test_func="less_equal" write="disable"/>
+			</render_property>
+			<samplers>
+				<!-- blend map -->
+				<sampler name="blendMap">
+					<filter min="point" mip="point" mag="linear" />
+					<address_mode u="clamp" v="clamp"/>
+				</sampler>
+
+				<!-- layer map -->
+				<sampler name="layerMap">
+					<filter min="point" mip="point" mag="point" />
+				</sampler>
+
+				<!-- diffuse atlas map -->
+				<sampler name="diffAtlas">
+					<filter min="point" mip="point" mag="linear" />
+				</sampler>
+			</samplers>
+
+			<shader_option name="color_atlas" group="diffuse" source="shader:terrain.blshader" subshader="vertex_normal"/>
+		</pass>
+
+	</technique>
+		
+		<!-- use global normal map instead of vertex normals
+		3 textures : blendmap, diffuese-atlasmap, global normalmap
+		4 textures : blendmap, diffuese-atlasmap, global normalmap, normal-atlasmap
+		 -->
+		<!-- shader model 2.0 2_x/3.0 -->
+		<technique name="default" profile="2_a">
+			
+			<groups>
+				<group name="diffuse" >
+					<requirements>
+						<texture index="0-3" />
+						<!-- <alpha_clip/> -->
+					</requirements>
+				</group>
+				
+				<group name="normal" >
+					<requirements>
+						<texture index="0-4" />
+					</requirements>
+				</group>
+
+			</groups>
+
+			<pass name="depth">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="enable"/>
+					<color_write/><!--disable color writes-->
+				</render_property>
+				<shader_option name="depth_only" group="diffuse,normal" source="shader:terrain.blshader" subshader="depth"/>
+			</pass>
+			
+			<pass name="shadow" clone="depth">
+				<render_property>
+					<depth bias="5" slope_bias="0.005"/>
+				</render_property>
+			</pass>
+		
+			<pass name="default">
+			
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="disable"/>
+					<!--
+					<color diffuse="(1,1,1,0)" specular="(1,1,1,0)" emissive="(1,1,1,0)" />
+					<color_write red="enable" green="enable" blue="enable" alpha="enable" />
+					<fog/>
+					<alpha_clip/>
+					<alpha_blend src="src_alpha" dest="inv_src_alpha" op="add" alpha_src="one" alpha_dest="src" alpha_op="add" independent="enable"/>
+					<stencil read_mask="0x0" write_mask="0x0" front_test="less" back_est="less" front_pass_op="keep" front_fail_op="zero" back_pass_op="zero" back_fail_op="keep" />
+					<scissors>
+						<sissor left="0" top="0" right="0" bottom="0" />
+					</scissors>
+					<samplers>
+						<sampler max_anisotropy="4" test="never" type="diffuse">
+							<mipmap_lod min="3" max="0" bias="0">
+							<address_mode u="border" v="border" w="border" />
+							<filter min="linear" mip="linear" mag="linear" />
+						</sampler>
+						<sampler/>
+					</samplers>
+					-->
+				</render_property>
+				<samplers>
+					<!-- blend map -->
+					<sampler name="blendMap">
+						<filter min="point" mip="point" mag="linear" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+
+					<!-- global normal map -->
+					<sampler name="normalMap">
+						<filter min="linear" mip="linear" mag="linear" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+
+					<!-- layer map -->
+					<sampler name="layerMap">
+						<filter min="point" mip="point" mag="point" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+
+					<!-- diffuse atlas map -->
+					<sampler name="diffAtlas">
+						<filter min="linear" mip="linear" mag="linear" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+
+					<!-- normal atlas map -->
+					<sampler name="normalAtlas">
+						<filter min="linear" mip="linear" mag="linear" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+				</samplers>
+				
+				<shader_option name="color_atlas" group="diffuse" source="shader:terrain.blshader" subshader="normal_map"/>		
+				<shader_option name="normalmap_atlas" group="normal" source="shader:terrain.blshader" subshader="detail_normal_map"/>
+			</pass>
+					
+			<!-- LOD 0 range: block (default/middle 32) size with diagonal (16*1.414)*1.5
+			when at center point of diagonal (C)
+			make sure neighbor block (T) is LOD level 0
+			|   +   |   T   |
+			|  / \  |  / \  |
+			| /   \ | /   \ |
+			|/     \|/     \|
+			+=======+=======+
+			|\     /|
+			| \   C |
+			|  \ /  |
+			|   +   |
+			-->
+			<LOD level="0" sort_group="normal" dist_start="0" dist_end="34.0" />
+			<LOD level="1" sort_group="diffuse" dist_start="20.0" dist_end="MAX" />
+			
+		</technique>
+		
+		<technique name="deferred_shading" profile="3_0">
+			<groups>
+				<group name="diffuse" >
+					<requirements>
+						<texture index="0-3" />
+						<!-- <alpha_clip/> -->
+					</requirements>
+				</group>
+				
+				<group name="normal" >
+					<requirements>
+						<texture index="0-4" />
+					</requirements>
+				</group>
+			</groups>
+
+			<pass name="depth">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="less_equal" write="enable"/>
+					<color_write/><!--disable color writes-->
+				</render_property>
+				<shader_option name="depth_only" group="diffuse,normal" source="shader:terrain.blshader" subshader="depth"/>
+			</pass>
+			
+			<pass name="shadow" clone="depth">
+				<render_property>
+					<depth bias="5" slope_bias="0.005"/>
+				</render_property>
+			</pass>
+			
+			<pass name="ds_geometry">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="enable" test_func="equal" write="disable"/>
+				</render_property>
+				<samplers>
+					<!-- blend map -->
+					<sampler name="blendMap">
+						<filter min="point" mip="point" mag="linear" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+
+					<!-- global normal map -->
+					<sampler name="normalMap">
+						<filter min="linear" mip="linear" mag="linear" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+
+					<!-- layer map -->
+					<sampler name="layerMap">
+						<filter min="point" mip="point" mag="point" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+
+					<!-- diffuse atlas map -->
+					<sampler name="diffAtlas">
+						<filter min="linear" mip="linear" mag="linear" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+
+					<!-- normal atlas map -->
+					<sampler name="normalAtlas">
+						<filter min="linear" mip="linear" mag="linear" />
+						<address_mode u="clamp" v="clamp"/>
+					</sampler>
+				</samplers>
+				
+				<shader_option name="color_atlas" group="diffuse" source="shader:terrain.blshader" subshader="normal_map"/>
+				<shader_option name="normalmap_atlas" group="normal" source="shader:terrain.blshader" subshader="detail_normal_map"/>
+			</pass>
+			
+			<LOD level="0" sort_group="normal" dist_start="0" dist_end="50.0" />
+			<LOD level="1" sort_group="diffuse" dist_start="40.0" dist_end="MAX" />
+		</technique>
+	</material>
+</BladeMaterial>

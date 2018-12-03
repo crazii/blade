@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Textures\Common.makefile" />
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Textures\Sky.makefile" />
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Textures\Terrain.makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\Shared.inc" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\Locale.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\UI.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\Locale.UI.makefile" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Textures\MakeAll.makefile" />
+  </ItemGroup>
+</Project>

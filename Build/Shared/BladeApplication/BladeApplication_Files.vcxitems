@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{966CD75D-4E54-418F-8401-E93CAEBE8632}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\AppConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\Application.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\BladeApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\ConsoleLogRedirector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\EditorApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\GameApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\IAppConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\ICmdParser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\ToolApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\header\ToolLog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\CmdParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\Application.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\ApplicationPCH.cc">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\AppReg.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\CmdParser.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\ConsoleLogRedirector.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\EditorApplication.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\GameApplication.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeApplication\source\ToolApplication.cc" />
+  </ItemGroup>
+</Project>

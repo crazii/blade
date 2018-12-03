@@ -1,0 +1,149 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+
+<render_scheme name="Deferred Shading" profiles="3_0,4_0,5_0" >
+
+	<!-- render buffer definition, the default final output is not needed, as it is controlled by program -->
+	<!-- pre-defined buffers are "FINAL", "NONE", "EMPTY", both are not readable & cannot be set as input
+		NONE and EMPTY are almost the same except that EMPTY will auto use the size as depth, not as the size of final target -->
+	<render_buffers>
+		<buffer name="depth_buffer" width="100%" height="100%" type="depth" format="D24S8" access="read_write"/>
+		<buffer name="color_buffer" width="100%" height="100%" type="color" format="ARGB" access="read_write"/>
+		<buffer name="normal_buffer" width="100%" height="100%" type="color" format="ARGB" access="read_write"/>
+
+	<buffer name="AO_buffer" width="50%" height="50%" type="color" format="R8" access="read_write"/>
+    <buffer name="motion_buffer" width="100%" height="100%" type="color" format="R16G16F" access="read_write"/>
+		<buffer name="[Shadow]shadow_depth" width="2048" height="2048" type="depth" format="D16" access="read_write"/>
+	</render_buffers>
+	
+	<render_operators>
+		<operator type="Shadows" prefix="[Shadow]"/>
+	</render_operators>
+
+	<!-- types definition -->
+	<render_types>
+		<type name="Terrain"/>
+		<type name="Static Mesh"/>
+		<type name="Static Mesh Alpha"/>
+		<type name="Skinned Mesh"/>
+		<type name="Skinned Mesh Alpha"/>
+		<type name="Atmosphere"/>
+		<type name="Light"/>
+		<type name="Effect"/>
+		<type name="RenderHelper"/>
+	</render_types>
+	
+	<!-- shadow pass -->
+	<render_output name="[Shadow]Cascade0" target="EMPTY" target_depth="[Shadow]shadow_depth">
+		<camera reference="LightCamera0" />
+		<view reference="NONE" left="0" top="0" right="50%" bottom="50%" >
+			<clear color="NONE" depth="1.0" stencil="NONE" />
+		</view>
+		<render_step type="Terrain" enable="true" pass="shadow" texturing="false" />
+		<render_step type="Static Mesh" enable="true" pass="shadow" texturing="false" />
+		<render_step type="Skinned Mesh" enable="true" pass="shadow" texturing="false"/>
+		<render_step type="Static Mesh Alpha" enable="true" pass="alpha_shadow" sorter="Textures"/>
+		<render_step type="Skinned Mesh Alpha" enable="true" pass="alpha_shadow" sorter="Animations,Textures"/>	
+	</render_output>
+
+	<render_output name="[Shadow]Cascade1" reference="[Shadow]Cascade0">
+		<camera reference="LightCamera1" />
+		<view left="50%" top="0" right="100%" bottom="50%" />
+	</render_output>
+	<render_output name="[Shadow]Cascade2" reference="[Shadow]Cascade0">
+		<camera reference="LightCamera2" />
+		<view left="0" top="50%" right="50%" bottom="100%" />
+	</render_output>
+	<render_output name="[Shadow]Cascade3" reference="[Shadow]Cascade0">
+		<camera reference="LightCamera3" />
+		<view left="50%" top="50%" right="100%" bottom="100%" />
+	</render_output>
+
+	<!-- Pre depth -->
+ 	<render_output name="Pre-Depth" target="NONE" target_depth="depth_buffer">
+		<view reference="FINAL">
+			<clear color="NONE" depth="1.0" stencil="0"/>
+		</view>
+		<camera reference="MAIN" />   
+		<render_step type="Terrain" enable="true" pass="depth" texturing="false"/>
+		<render_step type="Static Mesh" enable="true" pass="depth" texturing="false"/>
+		<render_step type="Skinned Mesh" enable="true" pass="depth" sorter="Animations" texturing="false"/>
+		<!--<render_step type="Static Mesh Alpha" enable="true" pass="alpha_depth" sorter="Textures"/>
+		<render_step type="Skinned Mesh Alpha" enable="true" pass="alpha_depth" sorter="Animations,Textures"/>-->	
+	</render_output>
+
+	<!-- G Buffer -->
+	<render_output name="Geometry" target0="color_buffer" target1="normal_buffer" target_depth="depth_buffer">
+		<view reference="FINAL">
+			<clear color="(0,0,0,0)" depth="NONE" stencil="NONE"/>
+		</view>
+		<camera reference="MAIN" />
+		<render_step type="Atmosphere" enable="true" pass="default" />
+		<render_step type="Terrain" enable="true" pass="ds_geometry" />
+		<render_step type="Static Mesh" enable="true" pass="ds_geometry" sorter="Textures"/>
+		<render_step type="Skinned Mesh" enable="true" pass="ds_geometry" sorter="Animations,Textures"/>
+
+    <!-- move alpha test/clip after normal rendering to take advantage of early z,
+    it should render at least before HBAO since HBAO uses depth. TODO: use single geometry pass that write depth -->
+    <render_step type="Static Mesh Alpha" enable="true" pass="alpha_depth" sorter="Textures"/>
+    <render_step type="Skinned Mesh Alpha" enable="true" pass="alpha_depth" sorter="Animations,Textures"/>
+    <!--note: the follow two pass can be disabled if using alpha blending, but alpha blending is too slow for PC, to be tested on mobile -->
+    <render_step type="Static Mesh Alpha" enable="true" pass="ds_geometry" />
+    <render_step type="Skinned Mesh Alpha" enable="true" pass="ds_geometry" />
+  </render_output>
+
+	<render_output name="PostEffect_HBAO" image_effect="HBAO" target="AO_buffer" input0="depth_buffer" input1="normal_buffer" />
+	
+	<!-- shading pass -->
+	<!-- you can use semantics to access input buffer in shader, i.e. "RENDERBUFFER_INPUT0", if it has read access -->
+	<render_output name="Shading" target="FINAL" target_depth="NONE" input0="color_buffer" input1="normal_buffer" input2="depth_buffer" input3="[Shadow]shadow_depth" input4="AO_buffer">
+		<view reference="FINAL">
+			<clear color="(0,0,0,0)" depth="NONE" stencil="NONE"/>
+		</view>
+		<camera reference="MAIN" />
+		<render_step type="Light" enable="true" pass="default" texturing="false" />
+	</render_output>
+	
+	<!-- alpha blend pass -->
+	<!-- sorter for render_output will merge all render_steps and sort in mixed one shot -->
+	<render_output name="Alpha Blending" target="FINAL" target_depth="depth_buffer" input0="[Shadow]shadow_depth" enable="true" sorter="BackToFront" >
+		<view reference="FINAL" />
+		<camera reference="MAIN" />
+		
+		<!-- note: 
+		if a pass is specified, group is ignored: runtime will enumerate all shader options to see if the shader option has any renderables.
+		if no pass specified, runtime will use pass 0
+		-->
+		<!--<render_step type="Static Mesh Alpha" enable="true" pass="alpha_blending"/>
+		<render_step type="Skinned Mesh Alpha" enable="true" pass="alpha_blending"/>-->
+		<render_step type="Effect" enable="true" pass="" />
+	</render_output>
+	
+	<!-- 
+	post effect framework will managed the input/output buffers, and pass int to post effect instance,
+	with extra input & outputs defined here.
+	extra inputs can be defined using input0...input8
+	extra outputs defned by target...target4
+
+	for render_output with both image_effect & render_step, image_effect are done BEFORE render_step
+	if image_effect need be done after render_step, use another render_output with input as previous output
+	-->
+	<!-- 
+	<render_output name="PostEffect_Motion" image_effect="MotionVector" input0="depth_buffer" target="motion_buffer">
+		<render_step type="Skinned Mesh" pass="motion" />
+		<render_step type="Moving Static Mesh" pass="motion" />
+	</render_output>
+	-->
+	<render_output name="PostEffect_TAA" image_effect="TAA" input0="depth_buffer" input1="motion_buffer" />
+	<render_output name="PostEffect_HDR" image_effect="HDR" />
+	
+	
+
+	<!-- GUI pass -->
+	<render_output name="GUI" target="FINAL" target_depth="depth_buffer" enable="true" sorter="BackToFront" >
+		<view reference="FINAL" />
+		<camera reference="MAIN" />
+
+		<render_step type="RenderHelper" enable="true" pass="" />
+	</render_output>
+		
+</render_scheme>

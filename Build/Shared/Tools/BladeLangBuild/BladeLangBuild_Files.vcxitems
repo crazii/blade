@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{BD1A1ED4-224B-44AA-9C63-0E3D972575B8}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeBase\header\BladeBase_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeFramework\header\BladeFramework_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeFramework\header\interface\public\geometry\GeometryInterface_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\BladeFramework\header\interface\public\graphics\GraphicsInterface_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\EditorFramework\header\BladeEditor_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\EditorPlugins\AtmosphereEditor\header\BladeAtmosphereEditor_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\EditorPlugins\ModelViewer\header\BladeModelViewer_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\EditorPlugins\TerrainEditor\header\BladeTerrainEditor_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\EditorPlugins\WorldEditor\header\WorldEditor_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\GraphicsPlugins\BladeAtmosphere\header\BladeAtmosphere_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\header\BladeModel_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\GraphicsPlugins\BladeTerrain\header\BladeTerrain_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header\BladeGraphics_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\SubsystemPlugins\BladeUI\header\BladeUI_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\SubsystemPlugins\BladeWindow\header\BladeWindow_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\Plugins\UIPlugins\shared\header\UIPlugin_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeLangBuild\header\LangBuildApplication.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeLangBuild\source\BladeLangBuild.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Tools\BladeLangBuild\source\LangBuildApplication.cc" />
+  </ItemGroup>
+</Project>

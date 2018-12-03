@@ -1,0 +1,2801 @@
+<!-- Text Stage -->
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+	<entity Name="big_Terrain_1_0" pages="1">
+		<element type="Terrain Element" name="terrain" scene_type="GraphicsScene" resource="big:terrains/1_0.blt" name="Terrain Element" value="" version="0.01A">
+			<config name="Position" value="(512.000,0.000,0.000)"/>
+			<config name="Bounding" value="(0.000,0.000,0.000),(512.000,0.000,512.000):0"/>
+			<config name="Index X" value="1"/>
+			<config name="Index Z" value="0"/>
+		</element>
+		<element type="TerrainEditor" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="TerrainEditor" value="" version="0.01 ">
+			<config name="Editable Class" value="TerrainEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_0[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(512.164,0.000,368.256)"/>
+			<config name="Rotation" value="(0.000,0.983,0.000,-0.186)"/>
+			<config name="Scale" value="(0.577,0.577,0.577)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_1[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(513.157,0.000,364.287)"/>
+			<config name="Rotation" value="(0.000,0.574,0.000,-0.819)"/>
+			<config name="Scale" value="(0.951,0.951,0.951)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_2[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(534.985,0.000,357.342)"/>
+			<config name="Rotation" value="(0.000,0.883,0.000,0.469)"/>
+			<config name="Scale" value="(0.616,0.616,0.616)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_3[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(544.907,0.000,361.311)"/>
+			<config name="Rotation" value="(0.000,0.417,0.000,0.909)"/>
+			<config name="Scale" value="(0.988,0.988,0.988)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554441"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_4[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(562.766,0.000,365.279)"/>
+			<config name="Rotation" value="(0.000,0.140,0.000,0.990)"/>
+			<config name="Scale" value="(0.776,0.776,0.776)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554497"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_5[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(544.907,0.000,362.303)"/>
+			<config name="Rotation" value="(0.000,0.210,0.000,-0.978)"/>
+			<config name="Scale" value="(0.533,0.533,0.533)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_6[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(555.821,0.000,363.295)"/>
+			<config name="Rotation" value="(0.000,0.332,0.000,-0.943)"/>
+			<config name="Scale" value="(0.601,0.601,0.601)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_7[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(543.914,0.000,361.311)"/>
+			<config name="Rotation" value="(0.000,0.502,0.000,-0.865)"/>
+			<config name="Scale" value="(0.624,0.624,0.624)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_9[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(547.883,0.000,362.303)"/>
+			<config name="Rotation" value="(0.000,0.152,0.000,-0.988)"/>
+			<config name="Scale" value="(0.767,0.767,0.767)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_0[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(529.032,0.000,364.287)"/>
+			<config name="Rotation" value="(0.000,0.772,0.000,-0.635)"/>
+			<config name="Scale" value="(0.682,0.682,0.682)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33559105"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_1[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(533.000,0.000,367.264)"/>
+			<config name="Rotation" value="(0.000,0.803,0.000,0.596)"/>
+			<config name="Scale" value="(0.883,0.883,0.883)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_2[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(520.102,0.000,365.279)"/>
+			<config name="Rotation" value="(0.000,0.375,0.000,-0.927)"/>
+			<config name="Scale" value="(0.809,0.809,0.809)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_3[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(540.938,0.000,364.287)"/>
+			<config name="Rotation" value="(0.000,0.586,0.000,-0.810)"/>
+			<config name="Scale" value="(0.580,0.580,0.580)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_4[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(561.774,0.000,367.264)"/>
+			<config name="Rotation" value="(0.000,0.428,0.000,0.904)"/>
+			<config name="Scale" value="(0.753,0.753,0.753)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33559617"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_5[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(544.907,0.000,362.303)"/>
+			<config name="Rotation" value="(0.000,0.832,0.000,0.554)"/>
+			<config name="Scale" value="(0.806,0.806,0.806)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_6[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(510.180,0.000,370.240)"/>
+			<config name="Rotation" value="(0.000,0.925,0.000,-0.381)"/>
+			<config name="Scale" value="(0.913,0.913,0.913)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_7[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(512.164,0.000,365.279)"/>
+			<config name="Rotation" value="(0.000,0.930,0.000,-0.369)"/>
+			<config name="Scale" value="(0.907,0.907,0.907)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_8[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(559.789,0.000,363.295)"/>
+			<config name="Rotation" value="(0.000,0.931,0.000,-0.365)"/>
+			<config name="Scale" value="(0.829,0.829,0.829)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554497"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_10[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(531.016,0.000,360.318)"/>
+			<config name="Rotation" value="(0.000,1.000,0.000,-0.026)"/>
+			<config name="Scale" value="(0.601,0.601,0.601)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_11[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(508.196,0.000,369.248)"/>
+			<config name="Rotation" value="(0.000,0.028,0.000,-1.000)"/>
+			<config name="Scale" value="(0.730,0.730,0.730)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_12[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(558.550,1.125,246.132)"/>
+			<config name="Rotation" value="(0.000,0.572,0.000,-0.820)"/>
+			<config name="Scale" value="(0.717,0.717,0.717)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_13[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(570.457,0.313,244.148)"/>
+			<config name="Rotation" value="(0.000,0.845,0.000,0.534)"/>
+			<config name="Scale" value="(0.644,0.644,0.644)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_14[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(538.707,5.500,244.148)"/>
+			<config name="Rotation" value="(0.000,0.793,0.000,0.610)"/>
+			<config name="Scale" value="(0.568,0.568,0.568)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_15[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(546.644,3.813,244.148)"/>
+			<config name="Rotation" value="(0.000,0.484,0.000,-0.875)"/>
+			<config name="Scale" value="(0.982,0.982,0.982)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_16[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(575.417,0.875,236.210)"/>
+			<config name="Rotation" value="(0.000,0.247,0.000,-0.969)"/>
+			<config name="Scale" value="(0.959,0.959,0.959)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_17[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(577.402,0.000,247.124)"/>
+			<config name="Rotation" value="(0.000,0.402,0.000,-0.916)"/>
+			<config name="Scale" value="(0.844,0.844,0.844)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_18[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(513.902,8.625,240.179)"/>
+			<config name="Rotation" value="(0.000,0.414,0.000,0.910)"/>
+			<config name="Scale" value="(0.763,0.763,0.763)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_19[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(565.496,1.125,240.179)"/>
+			<config name="Rotation" value="(0.000,0.867,0.000,-0.498)"/>
+			<config name="Scale" value="(0.714,0.714,0.714)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_20[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(521.839,8.500,241.171)"/>
+			<config name="Rotation" value="(0.000,0.787,0.000,0.616)"/>
+			<config name="Scale" value="(0.952,0.952,0.952)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_21[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(519.977,12.188,219.600)"/>
+			<config name="Rotation" value="(0.000,0.910,0.000,0.414)"/>
+			<config name="Scale" value="(0.519,0.519,0.519)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_24[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(500.697,6.625,254.619)"/>
+			<config name="Rotation" value="(0.000,0.574,0.000,-0.819)"/>
+			<config name="Scale" value="(0.621,0.621,0.621)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_43[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(513.999,0.000,451.065)"/>
+			<config name="Rotation" value="(0.000,0.162,0.000,0.987)"/>
+			<config name="Scale" value="(0.827,0.827,0.827)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_44[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(530.866,0.000,452.057)"/>
+			<config name="Rotation" value="(0.000,0.688,0.000,0.725)"/>
+			<config name="Scale" value="(0.827,0.827,0.827)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_45[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(540.788,0.000,446.104)"/>
+			<config name="Rotation" value="(0.000,0.281,0.000,0.960)"/>
+			<config name="Scale" value="(0.776,0.776,0.776)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_47[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(517.968,0.000,444.120)"/>
+			<config name="Rotation" value="(0.000,0.073,0.000,0.997)"/>
+			<config name="Scale" value="(0.759,0.759,0.759)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_48[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(545.749,0.000,451.065)"/>
+			<config name="Rotation" value="(0.000,0.980,0.000,-0.201)"/>
+			<config name="Scale" value="(0.787,0.787,0.787)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_49[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(560.632,0.000,448.089)"/>
+			<config name="Rotation" value="(0.000,0.828,0.000,0.561)"/>
+			<config name="Scale" value="(0.740,0.740,0.740)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_50[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(514.991,0.000,453.050)"/>
+			<config name="Rotation" value="(0.000,0.868,0.000,-0.496)"/>
+			<config name="Scale" value="(0.913,0.913,0.913)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_51[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(528.882,0.000,452.057)"/>
+			<config name="Rotation" value="(0.000,0.127,0.000,-0.992)"/>
+			<config name="Scale" value="(0.557,0.557,0.557)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_52[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(532.850,0.000,453.050)"/>
+			<config name="Rotation" value="(0.000,0.900,0.000,0.436)"/>
+			<config name="Scale" value="(0.653,0.653,0.653)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_53[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(537.811,0.000,448.089)"/>
+			<config name="Rotation" value="(0.000,0.121,0.000,0.993)"/>
+			<config name="Scale" value="(0.554,0.554,0.554)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_54[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(540.788,0.000,449.081)"/>
+			<config name="Rotation" value="(0.000,0.076,0.000,0.997)"/>
+			<config name="Scale" value="(0.537,0.537,0.537)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_55[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(571.546,0.000,449.081)"/>
+			<config name="Rotation" value="(0.000,0.047,0.000,-0.999)"/>
+			<config name="Scale" value="(0.533,0.533,0.533)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_57[P_1_1]" pages="4">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(515.255,0.000,515.717)"/>
+			<config name="Rotation" value="(0.000,0.673,0.000,-0.740)"/>
+			<config name="Scale" value="(0.645,0.645,0.645)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="301989889"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_10[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(532.008,0.000,360.318)"/>
+			<config name="Rotation" value="(0.000,0.795,0.000,-0.607)"/>
+			<config name="Scale" value="(0.813,0.813,0.813)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_11[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(518.118,0.000,372.225)"/>
+			<config name="Rotation" value="(0.000,0.991,0.000,0.133)"/>
+			<config name="Scale" value="(0.885,0.885,0.885)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_12[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(531.016,0.000,363.295)"/>
+			<config name="Rotation" value="(0.000,0.998,0.000,0.070)"/>
+			<config name="Scale" value="(0.800,0.800,0.800)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555009"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_13[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(529.032,0.000,363.295)"/>
+			<config name="Rotation" value="(0.000,0.880,0.000,0.476)"/>
+			<config name="Scale" value="(0.714,0.714,0.714)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33559105"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_14[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(523.078,0.000,361.311)"/>
+			<config name="Rotation" value="(0.000,0.749,0.000,0.663)"/>
+			<config name="Scale" value="(0.838,0.838,0.838)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_15[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(559.542,0.625,249.108)"/>
+			<config name="Rotation" value="(0.000,0.581,0.000,0.814)"/>
+			<config name="Scale" value="(0.821,0.821,0.821)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_16[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(563.511,1.313,241.171)"/>
+			<config name="Rotation" value="(0.000,0.979,0.000,-0.204)"/>
+			<config name="Scale" value="(0.566,0.566,0.566)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33559624"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_17[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(576.410,0.188,243.155)"/>
+			<config name="Rotation" value="(0.000,0.995,0.000,0.103)"/>
+			<config name="Scale" value="(0.742,0.742,0.742)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_18[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(501.996,6.938,246.132)"/>
+			<config name="Rotation" value="(0.000,0.934,0.000,-0.357)"/>
+			<config name="Scale" value="(0.904,0.904,0.904)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_19[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(539.699,5.938,242.163)"/>
+			<config name="Rotation" value="(0.000,0.363,0.000,-0.932)"/>
+			<config name="Scale" value="(0.872,0.872,0.872)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555016"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_20[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(560.535,1.000,245.140)"/>
+			<config name="Rotation" value="(0.000,0.788,0.000,0.615)"/>
+			<config name="Scale" value="(0.734,0.734,0.734)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_21[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(524.816,7.188,246.132)"/>
+			<config name="Rotation" value="(0.000,0.064,0.000,0.998)"/>
+			<config name="Scale" value="(0.842,0.842,0.842)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_22[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(541.683,4.875,244.148)"/>
+			<config name="Rotation" value="(0.000,0.964,0.000,0.267)"/>
+			<config name="Scale" value="(0.812,0.812,0.812)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_23[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(513.902,7.875,245.140)"/>
+			<config name="Rotation" value="(0.000,0.114,0.000,-0.993)"/>
+			<config name="Scale" value="(0.530,0.530,0.530)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_24[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(611.136,0.000,243.155)"/>
+			<config name="Rotation" value="(0.000,0.260,0.000,0.966)"/>
+			<config name="Scale" value="(0.834,0.834,0.834)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_25[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(515.886,7.375,248.116)"/>
+			<config name="Rotation" value="(0.000,0.809,0.000,0.588)"/>
+			<config name="Scale" value="(0.834,0.834,0.834)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_26[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(585.339,0.000,246.132)"/>
+			<config name="Rotation" value="(0.000,0.995,0.000,-0.104)"/>
+			<config name="Scale" value="(0.953,0.953,0.953)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_27[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(504.972,7.313,246.132)"/>
+			<config name="Rotation" value="(0.000,0.362,0.000,-0.932)"/>
+			<config name="Scale" value="(0.823,0.823,0.823)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_28[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(545.652,3.813,245.140)"/>
+			<config name="Rotation" value="(0.000,0.988,0.000,-0.152)"/>
+			<config name="Scale" value="(0.556,0.556,0.556)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555016"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_29[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(552.597,2.813,243.155)"/>
+			<config name="Rotation" value="(0.000,0.000,0.000,-1.000)"/>
+			<config name="Scale" value="(0.537,0.537,0.537)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33559624"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_30[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(556.566,1.500,245.140)"/>
+			<config name="Rotation" value="(0.000,0.546,0.000,-0.838)"/>
+			<config name="Scale" value="(0.896,0.896,0.896)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_31[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(555.574,1.313,247.124)"/>
+			<config name="Rotation" value="(0.000,0.241,0.000,0.970)"/>
+			<config name="Scale" value="(0.514,0.514,0.514)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33559624"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_32[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(602.207,0.000,245.140)"/>
+			<config name="Rotation" value="(0.000,0.867,0.000,0.499)"/>
+			<config name="Scale" value="(0.981,0.981,0.981)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_33[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(510.767,10.438,219.503)"/>
+			<config name="Rotation" value="(0.000,0.916,0.000,-0.402)"/>
+			<config name="Scale" value="(0.558,0.558,0.558)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_35[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(493.751,6.438,252.634)"/>
+			<config name="Rotation" value="(0.000,0.853,0.000,-0.522)"/>
+			<config name="Scale" value="(0.913,0.913,0.913)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_42[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(513.595,6.125,256.603)"/>
+			<config name="Rotation" value="(0.000,0.610,0.000,0.793)"/>
+			<config name="Scale" value="(0.773,0.773,0.773)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_69[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(505.069,0.000,453.050)"/>
+			<config name="Rotation" value="(0.000,0.927,0.000,0.375)"/>
+			<config name="Scale" value="(0.827,0.827,0.827)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_71[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(511.022,0.000,451.065)"/>
+			<config name="Rotation" value="(0.000,0.938,0.000,-0.345)"/>
+			<config name="Scale" value="(0.829,0.829,0.829)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_72[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(551.702,0.000,453.050)"/>
+			<config name="Rotation" value="(0.000,0.696,0.000,-0.718)"/>
+			<config name="Scale" value="(0.928,0.928,0.928)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_73[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(521.936,0.000,450.073)"/>
+			<config name="Rotation" value="(0.000,0.890,0.000,0.456)"/>
+			<config name="Scale" value="(0.610,0.610,0.610)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_74[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(513.999,0.000,454.042)"/>
+			<config name="Rotation" value="(0.000,0.232,0.000,-0.973)"/>
+			<config name="Scale" value="(0.655,0.655,0.655)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_75[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(535.827,0.000,456.026)"/>
+			<config name="Rotation" value="(0.000,0.982,0.000,0.189)"/>
+			<config name="Scale" value="(0.900,0.900,0.900)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_77[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(561.624,0.000,454.042)"/>
+			<config name="Rotation" value="(0.000,0.881,0.000,0.472)"/>
+			<config name="Scale" value="(0.876,0.876,0.876)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_78[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(505.069,0.000,450.073)"/>
+			<config name="Rotation" value="(0.000,0.671,0.000,-0.741)"/>
+			<config name="Scale" value="(0.503,0.503,0.503)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_79[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(539.796,0.000,451.065)"/>
+			<config name="Rotation" value="(0.000,0.138,0.000,-0.990)"/>
+			<config name="Scale" value="(0.586,0.586,0.586)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_80[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(567.577,0.000,451.065)"/>
+			<config name="Rotation" value="(0.000,0.768,0.000,-0.640)"/>
+			<config name="Scale" value="(0.537,0.537,0.537)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_81[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(539.796,0.000,453.050)"/>
+			<config name="Rotation" value="(0.000,0.372,0.000,-0.928)"/>
+			<config name="Scale" value="(0.736,0.736,0.736)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554505"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_202[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(501.719,12.813,172.123)"/>
+			<config name="Rotation" value="(0.000,0.992,0.000,-0.130)"/>
+			<config name="Scale" value="(0.633,0.633,0.633)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_216[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(778.768,2.688,305.387)"/>
+			<config name="Rotation" value="(0.000,0.953,0.000,-0.303)"/>
+			<config name="Scale" value="(0.772,0.772,0.772)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_217[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(790.675,4.875,308.364)"/>
+			<config name="Rotation" value="(0.000,0.927,0.000,0.376)"/>
+			<config name="Scale" value="(0.766,0.766,0.766)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_218[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(827.386,4.313,304.395)"/>
+			<config name="Rotation" value="(0.000,0.987,0.000,0.162)"/>
+			<config name="Scale" value="(0.678,0.678,0.678)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_219[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(812.503,7.563,300.426)"/>
+			<config name="Rotation" value="(0.000,0.257,0.000,0.966)"/>
+			<config name="Scale" value="(0.668,0.668,0.668)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_220[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(768.846,0.750,306.379)"/>
+			<config name="Rotation" value="(0.000,0.383,0.000,-0.924)"/>
+			<config name="Scale" value="(0.674,0.674,0.674)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_221[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(830.362,3.875,302.411)"/>
+			<config name="Rotation" value="(0.000,0.190,0.000,0.982)"/>
+			<config name="Scale" value="(0.852,0.852,0.852)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_222[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(799.604,7.000,304.395)"/>
+			<config name="Rotation" value="(0.000,0.495,0.000,-0.869)"/>
+			<config name="Scale" value="(0.573,0.573,0.573)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_223[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(797.620,6.000,309.356)"/>
+			<config name="Rotation" value="(0.000,0.996,0.000,-0.090)"/>
+			<config name="Scale" value="(0.841,0.841,0.841)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_224[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(840.284,1.438,308.364)"/>
+			<config name="Rotation" value="(0.000,0.092,0.000,-0.996)"/>
+			<config name="Scale" value="(0.912,0.912,0.912)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_225[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(852.944,0.125,314.644)"/>
+			<config name="Rotation" value="(0.000,1.000,0.000,0.027)"/>
+			<config name="Scale" value="(0.791,0.791,0.791)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_226[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(830.123,3.313,309.683)"/>
+			<config name="Rotation" value="(0.000,1.000,0.000,-0.018)"/>
+			<config name="Scale" value="(0.634,0.634,0.634)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_227[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(905.662,0.000,326.214)"/>
+			<config name="Rotation" value="(0.000,0.960,0.000,-0.279)"/>
+			<config name="Scale" value="(0.740,0.740,0.740)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_228[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(875.897,0.000,331.174)"/>
+			<config name="Rotation" value="(0.000,0.987,0.000,-0.159)"/>
+			<config name="Scale" value="(0.840,0.840,0.840)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_229[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(906.655,0.000,337.128)"/>
+			<config name="Rotation" value="(0.000,0.998,0.000,0.061)"/>
+			<config name="Scale" value="(0.548,0.548,0.548)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33558618"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_230[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(925.524,0.000,350.990)"/>
+			<config name="Rotation" value="(0.000,0.914,0.000,0.406)"/>
+			<config name="Scale" value="(0.653,0.653,0.653)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_231[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(932.469,0.000,354.959)"/>
+			<config name="Rotation" value="(0.000,0.828,0.000,-0.561)"/>
+			<config name="Scale" value="(0.593,0.593,0.593)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_232[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(936.438,0.063,358.928)"/>
+			<config name="Rotation" value="(0.000,0.570,0.000,0.821)"/>
+			<config name="Scale" value="(0.743,0.743,0.743)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_233[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(915.602,0.000,358.928)"/>
+			<config name="Rotation" value="(0.000,0.005,0.000,1.000)"/>
+			<config name="Scale" value="(0.787,0.787,0.787)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_234[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(962.235,1.688,353.967)"/>
+			<config name="Rotation" value="(0.000,0.855,0.000,0.519)"/>
+			<config name="Scale" value="(0.899,0.899,0.899)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554522"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_235[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(976.125,3.063,356.944)"/>
+			<config name="Rotation" value="(0.000,0.992,0.000,-0.123)"/>
+			<config name="Scale" value="(0.849,0.849,0.849)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554522"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_236[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(925.524,0.000,358.928)"/>
+			<config name="Rotation" value="(0.000,0.930,0.000,-0.369)"/>
+			<config name="Scale" value="(0.680,0.680,0.680)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_237[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(941.399,0.125,350.990)"/>
+			<config name="Rotation" value="(0.000,0.632,0.000,0.775)"/>
+			<config name="Scale" value="(0.694,0.694,0.694)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_238[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(958.215,0.563,387.374)"/>
+			<config name="Rotation" value="(0.000,0.337,0.000,-0.941)"/>
+			<config name="Scale" value="(0.657,0.657,0.657)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_239[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(977.066,1.375,389.358)"/>
+			<config name="Rotation" value="(0.000,0.348,0.000,-0.937)"/>
+			<config name="Scale" value="(0.670,0.670,0.670)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_240[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(942.340,0.000,383.405)"/>
+			<config name="Rotation" value="(0.000,0.416,0.000,0.909)"/>
+			<config name="Scale" value="(0.510,0.510,0.510)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_241[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(987.609,2.375,417.942)"/>
+			<config name="Rotation" value="(0.000,0.639,0.000,0.769)"/>
+			<config name="Scale" value="(0.932,0.932,0.932)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555154"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_242[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(1009.437,5.188,419.927)"/>
+			<config name="Rotation" value="(0.000,0.610,0.000,0.793)"/>
+			<config name="Scale" value="(0.929,0.929,0.929)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_243[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(955.859,0.188,417.942)"/>
+			<config name="Rotation" value="(0.000,0.362,0.000,0.932)"/>
+			<config name="Scale" value="(0.526,0.526,0.526)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_244[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(983.640,2.250,418.934)"/>
+			<config name="Rotation" value="(0.000,0.083,0.000,-0.997)"/>
+			<config name="Scale" value="(0.809,0.809,0.809)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555154"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_245[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(980.482,4.125,433.305)"/>
+			<config name="Rotation" value="(0.000,0.131,0.000,-0.991)"/>
+			<config name="Scale" value="(0.630,0.630,0.630)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555154"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_246[P_2_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(1028.075,7.813,446.161)"/>
+			<config name="Rotation" value="(0.000,0.347,0.000,0.938)"/>
+			<config name="Scale" value="(0.736,0.736,0.736)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="67108865"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_247[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(950.685,1.375,451.122)"/>
+			<config name="Rotation" value="(0.000,0.981,0.000,0.193)"/>
+			<config name="Scale" value="(0.560,0.560,0.560)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_248[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(1001.286,9.000,452.114)"/>
+			<config name="Rotation" value="(0.000,0.127,0.000,-0.992)"/>
+			<config name="Scale" value="(0.852,0.852,0.852)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_249[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(1006.247,9.250,452.114)"/>
+			<config name="Rotation" value="(0.000,0.810,0.000,-0.587)"/>
+			<config name="Scale" value="(0.824,0.824,0.824)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_250[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(976.482,5.000,452.114)"/>
+			<config name="Rotation" value="(0.000,0.788,0.000,0.615)"/>
+			<config name="Scale" value="(0.765,0.765,0.765)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_251[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(934.203,0.375,451.150)"/>
+			<config name="Rotation" value="(0.000,0.084,0.000,-0.996)"/>
+			<config name="Scale" value="(0.584,0.584,0.584)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_252[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(967.880,3.563,451.817)"/>
+			<config name="Rotation" value="(0.000,0.687,0.000,0.727)"/>
+			<config name="Scale" value="(0.954,0.954,0.954)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_253[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(795.407,13.125,493.503)"/>
+			<config name="Rotation" value="(0.000,0.091,0.000,-0.996)"/>
+			<config name="Scale" value="(0.502,0.502,0.502)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_254[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(812.274,17.563,496.479)"/>
+			<config name="Rotation" value="(0.000,0.460,0.000,-0.888)"/>
+			<config name="Scale" value="(0.912,0.912,0.912)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_255[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(766.633,8.625,496.479)"/>
+			<config name="Rotation" value="(0.000,0.911,0.000,0.411)"/>
+			<config name="Scale" value="(0.758,0.758,0.758)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_256[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(797.391,13.500,490.526)"/>
+			<config name="Rotation" value="(0.000,0.625,0.000,-0.781)"/>
+			<config name="Scale" value="(0.678,0.678,0.678)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_257[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(777.547,9.938,495.487)"/>
+			<config name="Rotation" value="(0.000,0.960,0.000,-0.281)"/>
+			<config name="Scale" value="(0.998,0.998,0.998)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_258[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(818.227,15.875,488.542)"/>
+			<config name="Rotation" value="(0.000,0.666,0.000,-0.746)"/>
+			<config name="Scale" value="(0.618,0.618,0.618)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554506"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_259[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(793.422,12.688,494.495)"/>
+			<config name="Rotation" value="(0.000,0.553,0.000,0.833)"/>
+			<config name="Scale" value="(0.856,0.856,0.856)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_260[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(824.180,18.688,493.503)"/>
+			<config name="Rotation" value="(0.000,0.390,0.000,-0.921)"/>
+			<config name="Scale" value="(0.801,0.801,0.801)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_261[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(828.149,19.813,495.487)"/>
+			<config name="Rotation" value="(0.000,0.022,0.000,1.000)"/>
+			<config name="Scale" value="(0.803,0.803,0.803)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554506"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_262[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(813.266,15.938,490.526)"/>
+			<config name="Rotation" value="(0.000,0.222,0.000,-0.975)"/>
+			<config name="Scale" value="(0.981,0.981,0.981)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_263[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(790.446,12.063,494.495)"/>
+			<config name="Rotation" value="(0.000,0.776,0.000,-0.631)"/>
+			<config name="Scale" value="(0.607,0.607,0.607)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_264[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(751.750,6.188,497.471)"/>
+			<config name="Rotation" value="(0.000,0.354,0.000,0.935)"/>
+			<config name="Scale" value="(0.728,0.728,0.728)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree03_265[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree03.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(784.492,10.625,496.479)"/>
+			<config name="Rotation" value="(0.000,0.651,0.000,-0.759)"/>
+			<config name="Scale" value="(0.532,0.532,0.532)"/>
+			<config name="Local Bounding" value="(-17.105,-0.913,-21.843),(15.561,18.628,17.621):0"/>
+			<config name="Space Mask" value="33559114"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_214[P_0_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(504.235,13.000,164.754)"/>
+			<config name="Rotation" value="(0.000,0.185,0.000,-0.983)"/>
+			<config name="Scale" value="(0.853,0.853,0.853)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="1"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_226[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(760.909,2.000,304.395)"/>
+			<config name="Rotation" value="(0.000,0.103,0.000,-0.995)"/>
+			<config name="Scale" value="(0.709,0.709,0.709)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_227[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(805.557,7.063,304.395)"/>
+			<config name="Rotation" value="(0.000,0.238,0.000,0.971)"/>
+			<config name="Scale" value="(0.517,0.517,0.517)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_228[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(822.425,5.375,304.395)"/>
+			<config name="Rotation" value="(0.000,0.856,0.000,0.517)"/>
+			<config name="Scale" value="(0.720,0.720,0.720)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_229[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(770.831,1.000,307.372)"/>
+			<config name="Rotation" value="(0.000,0.761,0.000,0.648)"/>
+			<config name="Scale" value="(0.607,0.607,0.607)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_230[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(804.565,6.938,305.387)"/>
+			<config name="Rotation" value="(0.000,0.911,0.000,-0.412)"/>
+			<config name="Scale" value="(0.734,0.734,0.734)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_231[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(810.518,7.000,304.395)"/>
+			<config name="Rotation" value="(0.000,0.760,0.000,0.650)"/>
+			<config name="Scale" value="(0.922,0.922,0.922)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_232[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(828.378,3.875,306.379)"/>
+			<config name="Rotation" value="(0.000,0.640,0.000,0.768)"/>
+			<config name="Scale" value="(0.757,0.757,0.757)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_233[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(781.745,3.313,298.442)"/>
+			<config name="Rotation" value="(0.000,0.884,0.000,-0.468)"/>
+			<config name="Scale" value="(0.592,0.592,0.592)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_234[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(774.800,1.938,302.411)"/>
+			<config name="Rotation" value="(0.000,0.263,0.000,-0.965)"/>
+			<config name="Scale" value="(0.544,0.544,0.544)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_235[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(810.518,7.000,304.395)"/>
+			<config name="Rotation" value="(0.000,1.000,0.000,0.013)"/>
+			<config name="Scale" value="(0.997,0.997,0.997)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_236[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(798.612,6.563,306.379)"/>
+			<config name="Rotation" value="(0.000,0.149,0.000,0.989)"/>
+			<config name="Scale" value="(0.599,0.599,0.599)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_237[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(777.776,2.500,303.403)"/>
+			<config name="Rotation" value="(0.000,0.929,0.000,0.369)"/>
+			<config name="Scale" value="(0.780,0.780,0.780)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_238[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(773.807,1.750,302.411)"/>
+			<config name="Rotation" value="(0.000,0.986,0.000,0.165)"/>
+			<config name="Scale" value="(0.784,0.784,0.784)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_239[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(772.815,1.313,307.372)"/>
+			<config name="Rotation" value="(0.000,0.978,0.000,-0.209)"/>
+			<config name="Scale" value="(0.811,0.811,0.811)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_240[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(809.526,8.250,296.457)"/>
+			<config name="Rotation" value="(0.000,0.962,0.000,0.272)"/>
+			<config name="Scale" value="(0.837,0.837,0.837)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_241[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(824.409,4.750,306.379)"/>
+			<config name="Rotation" value="(0.000,0.811,0.000,-0.585)"/>
+			<config name="Scale" value="(0.628,0.628,0.628)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_242[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(801.589,6.750,307.372)"/>
+			<config name="Rotation" value="(0.000,0.020,0.000,1.000)"/>
+			<config name="Scale" value="(0.813,0.813,0.813)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554946"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_243[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(840.284,1.813,302.411)"/>
+			<config name="Rotation" value="(0.000,0.965,0.000,0.263)"/>
+			<config name="Scale" value="(0.772,0.772,0.772)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_244[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(889.787,0.000,333.159)"/>
+			<config name="Rotation" value="(0.000,0.245,0.000,-0.970)"/>
+			<config name="Scale" value="(0.732,0.732,0.732)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_245[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(876.889,0.000,332.167)"/>
+			<config name="Rotation" value="(0.000,0.901,0.000,0.433)"/>
+			<config name="Scale" value="(0.780,0.780,0.780)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_246[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(893.756,0.000,333.159)"/>
+			<config name="Rotation" value="(0.000,0.857,0.000,0.515)"/>
+			<config name="Scale" value="(0.571,0.571,0.571)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_247[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(897.725,0.000,331.174)"/>
+			<config name="Rotation" value="(0.000,0.497,0.000,0.868)"/>
+			<config name="Scale" value="(0.692,0.692,0.692)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_248[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(901.694,0.000,327.206)"/>
+			<config name="Rotation" value="(0.000,0.994,0.000,0.110)"/>
+			<config name="Scale" value="(0.728,0.728,0.728)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_249[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(882.842,0.000,334.151)"/>
+			<config name="Rotation" value="(0.000,0.632,0.000,-0.775)"/>
+			<config name="Scale" value="(0.968,0.968,0.968)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_250[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(882.842,0.000,331.174)"/>
+			<config name="Rotation" value="(0.000,0.506,0.000,-0.862)"/>
+			<config name="Scale" value="(0.968,0.968,0.968)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_251[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(848.116,0.125,333.159)"/>
+			<config name="Rotation" value="(0.000,0.692,0.000,-0.721)"/>
+			<config name="Scale" value="(0.794,0.794,0.794)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33558658"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_252[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(869.944,0.000,332.167)"/>
+			<config name="Rotation" value="(0.000,0.480,0.000,-0.877)"/>
+			<config name="Scale" value="(0.560,0.560,0.560)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555074"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_253[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(820.334,2.063,332.167)"/>
+			<config name="Rotation" value="(0.000,0.222,0.000,0.975)"/>
+			<config name="Scale" value="(0.962,0.962,0.962)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554498"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_254[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(934.453,0.063,353.967)"/>
+			<config name="Rotation" value="(0.000,0.179,0.000,-0.984)"/>
+			<config name="Scale" value="(0.885,0.885,0.885)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_255[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(884.844,0.000,358.928)"/>
+			<config name="Rotation" value="(0.000,0.326,0.000,0.945)"/>
+			<config name="Scale" value="(0.977,0.977,0.977)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_256[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(936.438,0.000,361.904)"/>
+			<config name="Rotation" value="(0.000,0.463,0.000,0.886)"/>
+			<config name="Scale" value="(0.816,0.816,0.816)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_257[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(891.789,0.000,346.029)"/>
+			<config name="Rotation" value="(0.000,0.391,0.000,-0.920)"/>
+			<config name="Scale" value="(0.662,0.662,0.662)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_258[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(934.453,0.000,356.944)"/>
+			<config name="Rotation" value="(0.000,0.935,0.000,0.354)"/>
+			<config name="Scale" value="(1.000,1.000,1.000)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_259[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(966.203,2.313,357.936)"/>
+			<config name="Rotation" value="(0.000,0.927,0.000,-0.374)"/>
+			<config name="Scale" value="(0.920,0.920,0.920)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554522"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_260[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(933.461,0.000,361.904)"/>
+			<config name="Rotation" value="(0.000,0.294,0.000,-0.956)"/>
+			<config name="Scale" value="(0.617,0.617,0.617)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_261[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(931.477,0.000,360.912)"/>
+			<config name="Rotation" value="(0.000,0.476,0.000,0.879)"/>
+			<config name="Scale" value="(0.832,0.832,0.832)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555034"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_262[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(1002.863,4.438,390.351)"/>
+			<config name="Rotation" value="(0.000,0.243,0.000,0.970)"/>
+			<config name="Scale" value="(0.836,0.836,0.836)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_263[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(958.215,0.688,384.398)"/>
+			<config name="Rotation" value="(0.000,0.122,0.000,-0.993)"/>
+			<config name="Scale" value="(0.822,0.822,0.822)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_264[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(985.996,2.875,383.405)"/>
+			<config name="Rotation" value="(0.000,0.699,0.000,-0.715)"/>
+			<config name="Scale" value="(0.761,0.761,0.761)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_265[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(1012.785,10.375,382.413)"/>
+			<config name="Rotation" value="(0.000,0.979,0.000,0.202)"/>
+			<config name="Scale" value="(0.509,0.509,0.509)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_266[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(949.285,0.125,389.358)"/>
+			<config name="Rotation" value="(0.000,0.396,0.000,-0.918)"/>
+			<config name="Scale" value="(0.660,0.660,0.660)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_267[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(944.324,0.125,381.421)"/>
+			<config name="Rotation" value="(0.000,0.833,0.000,-0.553)"/>
+			<config name="Scale" value="(0.720,0.720,0.720)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_268[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(985.004,3.250,379.437)"/>
+			<config name="Rotation" value="(0.000,0.779,0.000,0.627)"/>
+			<config name="Scale" value="(0.714,0.714,0.714)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554442"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_269[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(986.435,5.375,433.305)"/>
+			<config name="Rotation" value="(0.000,0.960,0.000,0.281)"/>
+			<config name="Scale" value="(0.608,0.608,0.608)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555154"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_270[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(1015.208,8.500,432.313)"/>
+			<config name="Rotation" value="(0.000,0.532,0.000,-0.847)"/>
+			<config name="Scale" value="(0.626,0.626,0.626)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_271[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(985.443,5.875,438.266)"/>
+			<config name="Rotation" value="(0.000,0.466,0.000,-0.885)"/>
+			<config name="Scale" value="(0.832,0.832,0.832)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_272[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(979.458,5.563,451.122)"/>
+			<config name="Rotation" value="(0.000,0.787,0.000,0.617)"/>
+			<config name="Scale" value="(0.642,0.642,0.642)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_273[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(970.529,3.875,450.130)"/>
+			<config name="Rotation" value="(0.000,0.992,0.000,-0.127)"/>
+			<config name="Scale" value="(0.824,0.824,0.824)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_274[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(1018.154,8.688,451.122)"/>
+			<config name="Rotation" value="(0.000,0.449,0.000,-0.893)"/>
+			<config name="Scale" value="(0.508,0.508,0.508)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_275[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(934.810,0.500,452.114)"/>
+			<config name="Rotation" value="(0.000,0.942,0.000,-0.335)"/>
+			<config name="Scale" value="(0.866,0.866,0.866)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_276[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(943.133,1.500,456.111)"/>
+			<config name="Rotation" value="(0.000,0.960,0.000,-0.281)"/>
+			<config name="Scale" value="(0.995,0.995,0.995)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_277[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(966.945,4.125,459.088)"/>
+			<config name="Rotation" value="(0.000,0.117,0.000,-0.993)"/>
+			<config name="Scale" value="(0.870,0.870,0.870)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554514"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_278[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(828.149,19.250,494.495)"/>
+			<config name="Rotation" value="(0.000,0.896,0.000,-0.444)"/>
+			<config name="Scale" value="(0.704,0.704,0.704)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554506"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_279[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(790.446,12.688,488.542)"/>
+			<config name="Rotation" value="(0.000,0.516,0.000,0.856)"/>
+			<config name="Scale" value="(0.753,0.753,0.753)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_280[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(777.547,10.500,493.503)"/>
+			<config name="Rotation" value="(0.000,0.888,0.000,0.459)"/>
+			<config name="Scale" value="(0.613,0.613,0.613)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_281[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(791.438,12.938,487.549)"/>
+			<config name="Rotation" value="(0.000,0.668,0.000,-0.745)"/>
+			<config name="Scale" value="(0.518,0.518,0.518)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_282[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(817.235,17.000,491.518)"/>
+			<config name="Rotation" value="(0.000,0.710,0.000,0.704)"/>
+			<config name="Scale" value="(0.781,0.781,0.781)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33559626"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_283[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(786.477,10.875,498.464)"/>
+			<config name="Rotation" value="(0.000,0.956,0.000,-0.292)"/>
+			<config name="Scale" value="(0.976,0.976,0.976)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_284[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(820.211,16.063,488.542)"/>
+			<config name="Rotation" value="(0.000,0.906,0.000,-0.422)"/>
+			<config name="Scale" value="(0.600,0.600,0.600)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554506"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_285[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(787.469,12.250,489.534)"/>
+			<config name="Rotation" value="(0.000,0.402,0.000,0.915)"/>
+			<config name="Scale" value="(0.719,0.719,0.719)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_286[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(809.297,17.125,498.464)"/>
+			<config name="Rotation" value="(0.000,0.744,0.000,0.668)"/>
+			<config name="Scale" value="(0.665,0.665,0.665)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_287[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(795.407,13.188,492.510)"/>
+			<config name="Rotation" value="(0.000,0.429,0.000,0.903)"/>
+			<config name="Scale" value="(0.734,0.734,0.734)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_288[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(777.547,9.563,497.471)"/>
+			<config name="Rotation" value="(0.000,0.941,0.000,-0.338)"/>
+			<config name="Scale" value="(0.811,0.811,0.811)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_289[P_1_0]" pages="2">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(843.032,16.313,497.471)"/>
+			<config name="Rotation" value="(0.000,0.913,0.000,-0.408)"/>
+			<config name="Scale" value="(0.831,0.831,0.831)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33554433"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_290[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(795.407,12.813,497.471)"/>
+			<config name="Rotation" value="(0.000,0.645,0.000,-0.764)"/>
+			<config name="Scale" value="(0.923,0.923,0.923)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+	<entity Name="tree06_291[P_1_0]" pages="1">
+		<element type="Model Element" name="model" scene_type="GraphicsScene" resource="model:/tree/static/tree06.blm" name="Model Element" value="" version="0.01A">
+			<config name="Position" value="(787.469,11.375,494.495)"/>
+			<config name="Rotation" value="(0.000,0.992,0.000,-0.130)"/>
+			<config name="Scale" value="(0.776,0.776,0.776)"/>
+			<config name="Local Bounding" value="(-15.251,-0.641,-15.014),(11.056,19.747,11.181):0"/>
+			<config name="Space Mask" value="33555018"/>
+			<config name="Dynamic Moving" value="FALSE"/>
+			<config name="SubMesh List" value="0" version="0.01 "/>
+		</element>
+		<element type="EditorElement" name="[ELM_SKIP][Editor]" scene_type="[SCN_SKIP]EditorScene" resource="" name="EditorElement" value="" version="0.01 ">
+			<config name="Editable Class" value="ModelEditable"/>
+		</element>
+	</entity>
+</page>

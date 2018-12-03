@@ -1,0 +1,6 @@
+if [ ! -f /etc/man_db.conf ]
+then
+    /usr/bin/mkdir -p /etc
+    /usr/bin/cp /etc/defaults/etc/man_db.conf /etc/man_db.conf
+fi
+

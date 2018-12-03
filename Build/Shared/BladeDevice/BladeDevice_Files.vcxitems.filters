@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{982f0452-21b8-4c34-8920-dc78c9d0ef07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\graphics">
+      <UniqueIdentifier>{596c181c-a8e4-4aa3-8dae-b63b7a28edb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\graphics\windows">
+      <UniqueIdentifier>{6dca2927-ee22-4f27-8f6f-e2428a3bb2a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\graphics\windows\D3D9">
+      <UniqueIdentifier>{57d8e783-6466-4915-b686-47eca84009b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\graphics\GLES">
+      <UniqueIdentifier>{9275c380-57c3-4f13-91c0-28d9af8601a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\graphics\GLES\public">
+      <UniqueIdentifier>{ef525ea1-bd5b-4eb9-a3fa-6d0c04a4a638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\graphics\OGL">
+      <UniqueIdentifier>{4647ba5f-15ce-4c47-81e9-ca7571624744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\input">
+      <UniqueIdentifier>{1d0682c4-fca6-4cc5-a3b2-a6d0f7631b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\input\windows">
+      <UniqueIdentifier>{66def6d7-454c-4e40-887e-86c4ba0ee1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\input\linux">
+      <UniqueIdentifier>{be7211ef-b30d-48b0-a043-a84d91aee8aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\input\android">
+      <UniqueIdentifier>{7962c90b-6e08-4f2d-ac70-7a9d33ea470d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\window">
+      <UniqueIdentifier>{8a76a200-0d57-481b-9036-9b5d15940e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\window\windows">
+      <UniqueIdentifier>{b58da845-552d-4951-8bd4-4e0cd5dbee07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\window\linux">
+      <UniqueIdentifier>{3d7392e7-7dfe-4b7a-9df3-63706252f91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\window\android">
+      <UniqueIdentifier>{bc14c7d4-6001-40bf-9097-7848bb719584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\sound">
+      <UniqueIdentifier>{41cba59a-10bc-4442-8f55-238b63c5db7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\network">
+      <UniqueIdentifier>{3aeff893-7389-4840-9d0a-22c9e7862849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\platform">
+      <UniqueIdentifier>{f5958548-41a1-455f-ae7a-d68325f5a6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\file">
+      <UniqueIdentifier>{f3251721-a2b8-498c-ac6a-f3983ef268e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\file\android">
+      <UniqueIdentifier>{b5db3ea6-f0f0-448c-8f40-b4f7e17fd7bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{e0318b67-3270-4c94-9f23-1c3b03e32a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\sound">
+      <UniqueIdentifier>{aa66edbe-901f-4f11-a57a-c82bbf7264ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\graphics">
+      <UniqueIdentifier>{a7db2845-d46f-41ec-a8c2-eabc743da189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\graphics\windows">
+      <UniqueIdentifier>{afba5cb1-36c9-4f12-a6ee-d8a68a22e9cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\graphics\windows\D3D9">
+      <UniqueIdentifier>{577808f3-f263-45a3-a78d-4b7db4c73503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\graphics\GLES">
+      <UniqueIdentifier>{7b771877-7313-4763-9817-fa4d6b683f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\graphics\OGL">
+      <UniqueIdentifier>{4ad6fbbc-8565-4dae-b658-be7e05be92b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\graphics\android">
+      <UniqueIdentifier>{9a551807-ca4a-485e-8b10-7c316a256cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\input">
+      <UniqueIdentifier>{44f1d913-677f-4a21-99e6-34653cc44d95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\input\windows">
+      <UniqueIdentifier>{00593015-e734-4318-bde4-d750b58a9b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\input\linux">
+      <UniqueIdentifier>{29eca2d6-cd94-4eb9-b48c-b64ec3703bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\input\android">
+      <UniqueIdentifier>{099a387a-f03e-4565-86c6-1b952b26d718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\window">
+      <UniqueIdentifier>{1455e314-6132-492f-b66f-203b3401c12e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\window\linux">
+      <UniqueIdentifier>{be7a27d6-9525-48ea-9fb8-048652908287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\window\windows">
+      <UniqueIdentifier>{d0155cdf-2925-444f-98ed-0686061b4e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\window\android">
+      <UniqueIdentifier>{f9d1f10d-a13e-4d08-a7cc-c21eac17073d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\network">
+      <UniqueIdentifier>{60a0a84b-9227-47b9-a234-03314aeb91f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\file">
+      <UniqueIdentifier>{91b94040-662b-47a0-a96b-16e68ba1c893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\file\android">
+      <UniqueIdentifier>{8d3c0a02-e084-48a3-a0a0-2e11b72979d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\BladeDevice.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\BladeWin32API.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\IndexBuffer.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\IPixelBuffer.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\PixelBuffer.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\RenderTarget.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\RenderWindow.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\Shader.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\ShaderIntermediate.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\Texture.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\Util.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\VertexBuffer.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\VertexDeclaration.h">
+      <Filter>header\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3DIncludeLoader.h">
+      <Filter>header\graphics\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3DShaderIntermediate.h">
+      <Filter>header\graphics\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\dxerr.h">
+      <Filter>header\graphics\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\SoftwareShader.h">
+      <Filter>header\graphics\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9Shader.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9TypeConverter.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3DXIncludeLoader.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9CubeTexture.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9GraphicsResourceManager.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9Header.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9IndexBuffer.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9PixelBuffer.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9RenderDevice.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9RenderSurface.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9RenderWindow.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9Resource.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9Texture.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9VertexBuffer.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9VertexDeclaration.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\D3D9VolumeTexture.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\windows\D3D9\ID3D9Helper.h">
+      <Filter>header\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESContext.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESCubeTexture.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESFrameBuffer.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESGraphicsResourceManager.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESHeader.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESIndexBuffer.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESRenderDevice.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESRenderWindow.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESShader.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESShaderIntermediate.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESTexture.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESUtil.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESVertexBuffer.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESVertexDeclaration.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESVolumeTexture.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\public\GLESAttributeNames.h">
+      <Filter>header\graphics\GLES\public</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\public\GLESPixelFormat.h">
+      <Filter>header\graphics\GLES\public</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\OGL\OGLRenderDevice.h">
+      <Filter>header\graphics\OGL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\DInput8Base.h">
+      <Filter>header\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\DInput8Keyboard.h">
+      <Filter>header\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\DInput8Mouse.h">
+      <Filter>header\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32GlobalKeyboardDevice.h">
+      <Filter>header\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32KeyboardDevice.h">
+      <Filter>header\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32KeyMap.h">
+      <Filter>header\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32MouseBase.h">
+      <Filter>header\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\windows\Win32MouseDevice.h">
+      <Filter>header\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\input\android\AndroidTouchDevice.h">
+      <Filter>header\input\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\window\windows\Win32WindowDevice.h">
+      <Filter>header\window\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\window\windows\Win32WindowMessagePump.h">
+      <Filter>header\window\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\window\android\AndroidWindowDevice.h">
+      <Filter>header\window\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\window\android\AndroidWindowMessagePump.h">
+      <Filter>header\window\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\file\android\ApkFileDevice.h">
+      <Filter>header\file\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\file\android\ApkFileStream.h">
+      <Filter>header\file\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9StateBlock.h">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9Util.h">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESStateBlock.h">
+      <Filter>source\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\android\GLESContextEGL.h">
+      <Filter>source\graphics\android</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\DInput8KeyMap.h">
+      <Filter>source\input\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\header\graphics\GLES\GLESRenderTarget.h">
+      <Filter>header\graphics\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\android\AndroidGLESRenderWindow.h">
+      <Filter>source\graphics\android</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\BladeDevicePCH.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\IndexBuffer.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\PixelBuffer.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\RenderTarget.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\RenderWindow.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\Shader.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\ShaderIntermediate.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\Texture.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\VertexBuffer.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\VertexDeclaration.cc">
+      <Filter>source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\dxerr.cpp">
+      <Filter>source\graphics\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9CubeTexture.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9GraphicsResourceManager.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9IndexBuffer.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9PixelBuffer.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9RenderDevice.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9RenderSurface.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9RenderWindow.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9Shader.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9Texture.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9Util.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9VertexBuffer.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9VertexDeclaration.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3D9VolumeTexture.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3DIncludeLoader.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\windows\D3D9\D3DShaderIntermediate.cc">
+      <Filter>source\graphics\windows\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESContext.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESCubeTexture.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESGraphicsResourceManager.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESIndexBuffer.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESRenderDevice.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESShader.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESShaderIntermediate.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESTexture.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESUtil.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESVertexBuffer.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESVertexDeclaration.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESVolumeTexture.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\android\GLESContextEGL.cc">
+      <Filter>source\graphics\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\DInput8Base.cc">
+      <Filter>source\input\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\DInput8Keyboard.cc">
+      <Filter>source\input\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\DInput8Mouse.cc">
+      <Filter>source\input\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\Win32GlobalKeyboardDevice.cc">
+      <Filter>source\input\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\Win32KeyboardDevice.cc">
+      <Filter>source\input\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\Win32MouseBase.cc">
+      <Filter>source\input\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\windows\Win32MouseDevice.cc">
+      <Filter>source\input\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\input\android\AndroidTouchDevice.cc">
+      <Filter>source\input\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\window\windows\Win32WindowDevice.cc">
+      <Filter>source\window\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\window\windows\Win32WindowMessagePump.cc">
+      <Filter>source\window\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\window\android\AndroidWindowDevice.cc">
+      <Filter>source\window\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\window\android\AndroidWindowMessagePump.cc">
+      <Filter>source\window\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\file\android\ApkFileDevice.cc">
+      <Filter>source\file\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\file\android\ApkFileStream.cc">
+      <Filter>source\file\android</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\GLES\GLESRenderTarget.cc">
+      <Filter>source\graphics\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\BladeDevice\source\graphics\android\AndroidGLESRenderWindow.cc">
+      <Filter>source\graphics\android</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

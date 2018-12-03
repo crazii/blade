@@ -1,0 +1,35 @@
+#!/usr/bin/sh
+# To the extent possible under law, the author(s) have dedicated all 
+# copyright and related and neighboring rights to this software to the 
+# public domain worldwide. This software is distributed without any warranty. 
+# You should have received a copy of the CC0 Public Domain Dedication along 
+# with this software. 
+# If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
+
+# base-files version 4.2-3
+
+# Create symbolic links from some /etc files to the Windows equivalents
+# Set perms to /tmp directory
+
+FILES="hosts protocols services networks"
+OSNAME="$(/usr/bin/uname -s)"
+WINETC="$(/usr/bin/cygpath -S -u)/drivers/etc"
+
+if [ ! -d "${WINETC}" ]; then
+  echo "Directory ${WINETC} does not exist; exiting" >&2
+  echo "If directory name is garbage you need to update your cygwin package" >&2
+  exit 1
+fi
+
+for mketc in ${FILES}
+do
+  if [ ! -e "/etc/${mketc}" -a ! -L "/etc/${mketc}" ]
+  then
+    /usr/bin/ln -s -v "${WINETC}/${mketc}" "/etc/${mketc}"
+  fi
+done
+
+# see http://cygwin.com/ml/cygwin-apps/2014-03/msg00011.html
+# /usr/bin/chmod 1777 /tmp 2>/dev/null
+
+exit 0

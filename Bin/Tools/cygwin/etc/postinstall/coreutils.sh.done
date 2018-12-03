@@ -1,0 +1,6 @@
+if [ ! -f /etc/DIR_COLORS ]
+then
+    /usr/bin/mkdir -p /etc
+    /usr/bin/cp /etc/defaults/etc/DIR_COLORS /etc/DIR_COLORS
+fi
+

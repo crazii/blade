@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version = "0.01" >
+
+	<material name="geometry_brush_decal">
+		<!-- texture uniform in shader: stages binding order
+		<textures>
+			<texture name="brushDiffuse"/>
+		</textures>
+		-->
+	
+		<technique name="default" profile="2_0">
+			
+			<pass name="default">
+				<render_property fill_mode="solid" cull_mode="none">
+					<depth test="enable" test_func="less" write="disable"  bias="-5" slope_bias="-0.005" />
+					<alpha_blend src="src_alpha" dest="inv_src_alpha" />
+				</render_property>
+				
+				<samplers>
+					<sampler name="brushDiffuse">
+					  <address_mode u="clamp" v="clamp"/>
+					</sampler>
+				</samplers>
+				
+				<shader_option source="shader:geometry_brush_decal.blshader" />				
+			</pass>
+		</technique>
+	</material>
+	
+</BladeMaterial>

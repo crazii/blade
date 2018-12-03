@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D08A0D34-2C5A-44A5-B02B-17B46333D662}</ProjectGuid>
+    <RootNamespace>Shaders</RootNamespace>
+    <Keyword>iOS</Keyword>
+    <ApplicationType>iOS</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;*.blshader</ExtensionsToDeleteOnClean>
+    <OutDir>$(SolutionDir)..\..\Bin\Data\Data_Platform\shader\Metal\</OutDir>
+    <TargetExt>METAL</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;*.blshader</ExtensionsToDeleteOnClean>
+    <OutDir>$(SolutionDir)..\..\Bin\Data\Data_Platform\shader\Metal\</OutDir>
+    <TargetExt>METAL</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;*.blshader</ExtensionsToDeleteOnClean>
+    <OutDir>$(SolutionDir)..\..\Bin\Data\Data_Platform\shader\Metal\</OutDir>
+    <TargetExt>METAL</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <IntDir>$(SolutionDir)..\..\Intermediate\$(Configuration)_$(ApplicationType)_$(Platform)\$(ProjectName)\</IntDir>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;*.blshader</ExtensionsToDeleteOnClean>
+    <OutDir>$(SolutionDir)..\..\Bin\Data\Data_Platform\shader\Metal\</OutDir>
+    <TargetExt>METAL</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuild>
+      <Command>"$(SolutionDir)..\..\Bin\Tools\Release_Win32\BladeShaderCompiler.exe" "%(FullPath)" --output="$(OutDir)\" --include="%(RelativeDir)..\inc" -O=3 --target=$(ApplicationType) --api=$(TargetExt)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>"%(FullPath)" --output="$(OutDir)\" --include="%(RelativeDir)..\inc" -O=3 --target=$(ApplicationType) --api=$(TargetExt)</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)%(Filename).blshader</Outputs>
+      <AdditionalInputs>
+      </AdditionalInputs>
+      <LinkObjects>false</LinkObjects>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuild>
+      <Command>"$(SolutionDir)..\..\Bin\Tools\Release_Win32\BladeShaderCompiler.exe" "%(FullPath)" --output="$(OutDir)\" --include="%(RelativeDir)..\inc" -O=3 --target=$(ApplicationType) --api=$(TargetExt)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>"%(FullPath)" --output="$(OutDir)\" --include="%(RelativeDir)..\inc" -O=3 --target=$(ApplicationType) --api=$(TargetExt)</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)%(Filename).blshader</Outputs>
+      <AdditionalInputs>
+      </AdditionalInputs>
+      <LinkObjects>false</LinkObjects>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <CustomBuild>
+      <Command>"$(SolutionDir)..\..\Bin\Tools\Release_Win32\BladeShaderCompiler.exe" "%(FullPath)" --output="$(OutDir)\" --include="%(RelativeDir)..\inc" -O=3 --target=$(ApplicationType) --api=$(TargetExt)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>"%(FullPath)" --output="$(OutDir)\" --include="%(RelativeDir)..\inc" -O=3 --target=$(ApplicationType) --api=$(TargetExt)</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)%(Filename).blshader</Outputs>
+      <AdditionalInputs>
+      </AdditionalInputs>
+      <LinkObjects>false</LinkObjects>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <CustomBuild>
+      <Command>"$(SolutionDir)..\..\Bin\Tools\Release_Win32\BladeShaderCompiler.exe" "%(FullPath)" --output="$(OutDir)\" --include="%(RelativeDir)..\inc" -O=3 --target=$(ApplicationType) --api=$(TargetExt)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>"%(FullPath)" --output="$(OutDir)\" --include="%(RelativeDir)..\inc" -O=3 --target=$(ApplicationType) --api=$(TargetExt)</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)%(Filename).blshader</Outputs>
+      <AdditionalInputs>
+      </AdditionalInputs>
+      <LinkObjects>false</LinkObjects>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\default_shape.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\axis_gizmo_ring_circle.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\deferred_light.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\aabb.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\geometry_brush_decal.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\common.hlsl" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\light.hlsl" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\material_color.hlsl" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\skinned_common.hlsl" />
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\terrain_common.hlsl" />
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\mesh.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\sky.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\terrain.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\hud.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\motionvector.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\blit.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\taa.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\hdr.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\inc\depth_common.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\hbao.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\Source\TerminalProjects\Shaders\dx9\postfx\blur.hlsl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>BladeMaxExport</ProjectName>
+    <ProjectGuid>{6671F0BA-6FB8-4f35-8392-0676D05113A8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="..\..\..\Shared\Tools\BladeMaxExport\BladeMaxExport_Files.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(ADSK_3DSMAX_SDK_2013)\maxsdk\ProjectSettings\PropertySheets\3dsmax.cpp.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(ADSK_3DSMAX_SDK_2013)\maxsdk\ProjectSettings\PropertySheets\3dsmax.cpp.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(ADSK_3DSMAX_SDK_2013)\maxsdk\ProjectSettings\PropertySheets\3dsmax.cpp.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(ADSK_3DSMAX_SDK_2013)\maxsdk\ProjectSettings\PropertySheets\3dsmax.cpp.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ADSK_3DSMAX_x86_2013)\plugins\Blade_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\Intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ADSK_3DSMAX_x86_2013)\plugins\Blade_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\..\Intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ADSK_3DSMAX_x86_2013)\plugins\Blade_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\Intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ADSK_3DSMAX_x64_2013)\plugins\Blade_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\..\Intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    </CustomBuildBeforeTargets>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\midl\Win32\BladeMaxExport.tlb</TypeLibraryName>
+      <HeaderFileName>.\midl\Win32\%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>.\midl\Win32\%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>.\midl\Win32\%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/LD  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ADSK_3DSMAX_SDK_2013)\maxsdk\include;.\header;$(BLADE_SDK_DIR)include\BladeBase;$(BLADE_SDK_DIR)include\BladeFramework;$(BLADE_SDK_DIR)include\Plugins\GraphicsPlugins\BladeModel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SECURE_SCL=0;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>user32.lib;odbc32.lib;odbccp32.lib;comctl32.lib;core.lib;geom.lib;gfx.lib;mesh.lib;maxutil.lib;maxscrpt.lib;paramblk2.lib;igame.lib;BladeBase.lib;BladeFramework.lib;EditorFramework.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\Lib;$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Lib;$(ADSK_3DSMAX_SDK_2013)\maxsdk\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;libci.lib;msvcirt.lib;libcmt.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <BaseAddress>
+      </BaseAddress>
+      <ImportLibrary>
+      </ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\midl\x64\BladeMaxExport.tlb</TypeLibraryName>
+      <HeaderFileName>.\midl\x64\%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>.\midl\x64\%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>.\midl\x64\%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/LD  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ADSK_3DSMAX_SDK_2013)\maxsdk\include;.\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SECURE_SCL=0;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/opt:lbr   /ignore:4013   %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>user32.lib;odbc32.lib;odbccp32.lib;comctl32.lib;core.lib;geom.lib;gfx.lib;mesh.lib;maxutil.lib;maxscrpt.lib;paramblk2.lib;igame.lib;BladeBase.lib;BladeFramework.lib;EditorFramework.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\Lib;$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Lib;$(ADSK_3DSMAX_SDK_2013)\maxsdk\x64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;libci.lib;msvcirt.lib;libcmt.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <BaseAddress>
+      </BaseAddress>
+      <ImportLibrary>.\x64\Release\BladeMaxExport.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\midl\Win32\.tlb</TypeLibraryName>
+      <HeaderFileName>.\midl\Win32\%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>.\midl\Win32\%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>.\midl\Win32\%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/LD  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ADSK_3DSMAX_SDK_2013)\maxsdk\include;.\header;$(BLADE_SDK_DIR)include\BladeBase;$(BLADE_SDK_DIR)include\BladeFramework;$(BLADE_SDK_DIR)include\Plugins\GraphicsPlugins\BladeModel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4013   %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>user32.lib;odbc32.lib;odbccp32.lib;comctl32.lib;core.lib;geom.lib;gfx.lib;mesh.lib;maxutil.lib;maxscrpt.lib;paramblk2.lib;igame.lib;BladeBase.lib;BladeFramework.lib;EditorFramework.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\Lib;$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Lib;$(ADSK_3DSMAX_SDK_2013)\maxsdk\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;libci.lib;msvcirt.lib;libcmt.lib;libcmtd.lib;msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <BaseAddress>
+      </BaseAddress>
+      <ImportLibrary>
+      </ImportLibrary>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeBase.dll" "$(TargetDir)"
+
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeFramework.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeGraphics.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeModel.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\EditorFramework.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeDevice.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUIPlugin.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUI.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeWindow.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeImageFI.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\FreeImage.dll" "$(TargetDir)"
+
+
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeBase.pdb" "$(TargetDir)"
+
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeFramework.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeGraphics.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeModel.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\EditorFramework.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeDevice.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUIPlugin.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUI.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeWindow.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeImageFI.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\FreeImage.pdb" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\midl\x64\BladeMaxExport.tlb</TypeLibraryName>
+      <HeaderFileName>.\midl\x64\%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>.\midl\x64\%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>.\midl\x64\%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/LD  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ADSK_3DSMAX_SDK_2013)\maxsdk\include;.\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4013   %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>user32.lib;odbc32.lib;odbccp32.lib;comctl32.lib;core.lib;geom.lib;gfx.lib;mesh.lib;maxutil.lib;maxscrpt.lib;paramblk2.lib;igame.lib;BladeBase.lib;BladeFramework.lib;EditorFramework.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\Lib;$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Lib;$(ADSK_3DSMAX_SDK_2013)\maxsdk\x64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;libci.lib;msvcirt.lib;libcmt.lib;libcmtd.lib;msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <BaseAddress>
+      </BaseAddress>
+      <ImportLibrary>.\x64\Debug\BladeMaxExport.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\EditorFramework\header;$(SolutionDir)..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header;$(SolutionDir)..\..\Source\Plugins\GraphicsPlugins\BladeModel\header;$(SolutionDir)..\..\Tools\MaxExport;$(SolutionDir)..\..\Tools\MaxExport\header;$(ADSK_3DSMAX_SDK_2013)\maxsdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Link>
+    <PostBuildEvent>
+      <Message>copy DLL to MAX plugin folder...</Message>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\EditorFramework\header;$(SolutionDir)..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header;$(SolutionDir)..\..\Source\Plugins\GraphicsPlugins\BladeModel\header;$(SolutionDir)..\..\Tools\MaxExport;$(SolutionDir)..\..\Tools\MaxExport\header;$(ADSK_3DSMAX_SDK_2013)\maxsdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>false</SDLCheck>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeBase.dll" "$(TargetDir)"
+
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeFramework.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeGraphics.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeModel.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\EditorFramework.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeDevice.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUIPlugin.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUI.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeWindow.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeImageFI.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\FreeImage.dll" "$(TargetDir)"
+</Command>
+      <Message>copy DLL to MAX plugin folder...</Message>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\EditorFramework\header;$(SolutionDir)..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header;$(SolutionDir)..\..\Source\Plugins\GraphicsPlugins\BladeModel\header;$(SolutionDir)..\..\Tools\MaxExport;$(SolutionDir)..\..\Tools\MaxExport\header;$(ADSK_3DSMAX_SDK_2013)\maxsdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Message>copy DLL to MAX plugin folder...</Message>
+      <Command>copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeBase.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeFramework.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeGraphics.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeModel.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\EditorFramework.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeDevice.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUIPlugin.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUI.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeWindow.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeImageFI.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\FreeImage.dll" "$(TargetDir)"
+
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeBase.pdb" "$(TargetDir)"
+
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeFramework.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeGraphics.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeModel.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\EditorFramework.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeDevice.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUIPlugin.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUI.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeWindow.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeImageFI.pdb" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\FreeImage.pdb" "$(TargetDir)"
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Source\BladeBase\header;$(SolutionDir)..\..\Source\BladeFramework\header;$(SolutionDir)..\..\Source\EditorFramework\header;$(SolutionDir)..\..\Source\Plugins\SubsystemPlugins\BladeGraphics\header;$(SolutionDir)..\..\Source\Plugins\GraphicsPlugins\BladeModel\header;$(SolutionDir)..\..\Tools\MaxExport;$(SolutionDir)..\..\Tools\MaxExport\header;$(ADSK_3DSMAX_SDK_2013)\maxsdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>false</SDLCheck>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Message>copy DLL to MAX plugin folder...</Message>
+      <Command>copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeBase.dll" "$(TargetDir)"
+
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\BladeFramework.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeGraphics.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeModel.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\EditorFramework.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeDevice.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUIPlugin.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeUI.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeWindow.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\BladeImageFI.dll" "$(TargetDir)"
+copy "$(SolutionDir)..\..\Bin\$(Configuration)_$(Platform)\Plugins\FreeImage.dll" "$(TargetDir)"
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

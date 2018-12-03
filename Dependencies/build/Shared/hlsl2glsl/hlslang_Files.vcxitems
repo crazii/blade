@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{31FD6C61-CADB-4D4C-96E5-5A6FEB2081B6}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslCommon.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslFunction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslOutput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslStruct.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslSymbol.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslCrossCompiler.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslLinker.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslSupportLib.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\propagateMutable.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\typeSamplers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\ConstantFolding.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Gen_hlslang.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Gen_hlslang_tab.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\HLSL2GLSL.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\InfoSink.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Initialize.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Intermediate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\intermOut.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\IntermTraverse.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\ParseHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\PoolAlloc.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_common.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_lexer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_preprocessor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\sourceloc.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\RemoveTree.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\SymbolTable.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\OSDependent\Linux\ossource.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <ObjectFileName>$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\OSDependent\Windows\ossource.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslCommon.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslFunction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslOutput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslStruct.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslSymbol.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslCrossCompiler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslLinker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslSupportLib.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\propagateMutable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\typeSamplers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\BaseTypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\Common.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\ConstantUnion.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\InfoSink.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\InitializeGlobals.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\InitializeParseContext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\intermediate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\PoolAlloc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\Types.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\hlslang_tab.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Initialize.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\localintermediate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\ParseHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\sourceloc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\RemoveTree.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\SymbolTable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\OSDependent\Linux\osinclude.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\OSDependent\Windows\osinclude.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\hlsl2glsl\hlsl2glsl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\hlslang.l">
+      <Message>Executing flex on %(FullPath)</Message>
+      <Command>%(RootDir)%(Directory)..\..\tools\flex.exe %(FullPath)
+if EXIST %(RootDir)%(Directory)gen_hlslang.cpp del %(RootDir)%(Directory)gen_hlslang.cpp
+move gen_hlslang.cpp %(RootDir)%(Directory)gen_hlslang.cpp
+cd %(RootDir)%(Directory)
+rename gen_hlslang.cpp Gen_hlslang.cpp
+</Command>
+      <AdditionalInputs>hlslang_tab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs>%(RootDir)%(Directory)Gen_hlslang.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\hlslang.y">
+      <Message>Executing Bison on %(FullPath)</Message>
+      <Command>SET BISON_SIMPLE=%(RootDir)%(Directory)..\..\tools\bison.simple
+SET BISON_HAIRY=%(RootDir)%(Directory)..\..\tools\bison.simple
+cd %(RootDir)%(Directory)
+%(RootDir)%(Directory)..\..\tools\bison.exe -d -t -v %(Filename).y
+if EXIST %(RootDir)%(Directory)Gen_%(Filename)_tab.cpp del %(RootDir)%(Directory)Gen_%(Filename)_tab.cpp
+rename %(RootDir)%(Directory)%(Filename)_tab.c Gen_%(Filename)_tab.cpp
+</Command>
+      <Outputs>%(RootDir)%(Directory)Gen_%(Filename)_tab.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_lexer.re" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\LICENSE.txt" />
+  </ItemGroup>
+</Project>

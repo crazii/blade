@@ -1,0 +1,39 @@
+#!/usr/bin/env make -f
+
+#GNU makefile for copy library files
+
+ifndef SrcPath
+$(error $$(SrcPath) not defined.)
+endif
+
+ifndef TargetPath
+$(error $$(TargetPath) not defined.)
+endif
+
+##############################################################################################
+# files
+##############################################################################################
+
+FILELIST = BladeBase.dll BladeFramework.dll EditorFramework.dll BladeApplication.dll GameLibrary.dll
+#FILELIST += tbb.dll tbbmalloc.dll tbbmalloc_proxy.dll
+
+PLUGINS = $(shell find $(SrcPath)Plugins -type f -maxdepth 1 -name "*.dll")
+PLUGINS := $(subst $(SrcPath),$(TargetPath),$(PLUGINS))
+
+TARGETFILES = $(addprefix $(TargetPath),$(FILELIST))
+TARGETFILES += $(PLUGINS)
+
+
+##############################################################################################
+# rules
+##############################################################################################
+
+all: $(TargetPath)Plugins $(TARGETFILES)
+
+$(TargetPath)Plugins :
+	@mkdir $(TargetPath)Plugins
+	
+
+$(TargetPath)% : $(SrcPath)%
+	@echo "$< => $@"
+	@cp -u $< $@

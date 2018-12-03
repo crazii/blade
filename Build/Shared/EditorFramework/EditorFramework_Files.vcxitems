@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{C8B8CA59-E2BF-453F-8918-5E6AB4DFF82F}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\BladeEditor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\BladeEditor_blang.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\CommonEditorTools.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\EditorHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\EditorElement.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\EditorEvents.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\EditorFileInfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\IEditorConfigManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\IEditorFramework.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\IEditorToolManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\IFileUINotify.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\IImporterManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\EditableBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\EditorFileBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\EditorToolTypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\IEditable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\IEditableManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\IEditor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\IEditorFile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\IEditorLogic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\IEditorTool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\IImporter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\header\interface\public\ImporterParams.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\CommonMenuToolNotify.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorCommand.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorConfigManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorFramework.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorLogic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorSystem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorToolManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\ImporterManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\LightEditable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\ViewportCommand.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\BladeEditor.cc">
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\BladeEditorPCH.cc">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\CommonEditorTools.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\EditorHelper.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\CommonMenuToolNotify.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditableBase.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorCommand.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorConfigManager.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorElement.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorFileBase.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorFramework.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorFramework_UI.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorLogic.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorScene.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorSystem.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorToolManager.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\EditorToolTypes.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Source\EditorFramework\source\interface_imp\ImporterManager.cc" />
+  </ItemGroup>
+</Project>

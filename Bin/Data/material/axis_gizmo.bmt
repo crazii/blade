@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version="0.01" >
+
+	<material name="AxisGizmo">
+		<technique name="default" profile="2_0">
+			<groups>
+				<group name="default"/>
+				<group name="ring_circle"/>
+			</groups>
+      
+			<pass name="default">
+				<render_property fill_mode="solid" cull_mode="none">
+					<depth test="disable" write="disable"/>
+					<alpha_blend src="src_alpha" dest="inv_src_alpha" />
+				</render_property>
+				
+				<shader_option group="default" source="shader:default_shape.blshader" />
+				<shader_option group="ring_circle" source="shader:axis_gizmo_ring_circle.blshader" />
+			</pass>
+		</technique>
+	</material>
+	
+</BladeMaterial>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GLSL Code Gen">
+      <UniqueIdentifier>{d4f760d0-0204-4b59-805b-42cbd26bf6c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7448084f-4eb3-44ec-83af-421e78a229c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{85c73a84-fdf0-45dd-a7df-356a9dbd9ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Machine Independent">
+      <UniqueIdentifier>{27dacaf5-0592-4042-b043-23d2a795c1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Machine Independent\Generated Source">
+      <UniqueIdentifier>{af48fd14-4306-4d8c-9e96-6ee24268843d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Machine Independent\CPP">
+      <UniqueIdentifier>{cd84b57e-0964-4fb6-82da-c8a29b64199f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSDependent">
+      <UniqueIdentifier>{12764d29-5ee2-45a1-b099-dbb30a2489e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSDependent\Windows">
+      <UniqueIdentifier>{032e196a-b801-4db7-a0b7-f7441a22524a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSDependent\Linux">
+      <UniqueIdentifier>{ca3a5764-6b3d-449c-a1ab-48f1127d3da7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslCommon.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslFunction.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslOutput.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslStruct.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslSymbol.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslCrossCompiler.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslLinker.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslSupportLib.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\propagateMutable.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\typeSamplers.cpp">
+      <Filter>GLSL Code Gen</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\ConstantFolding.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\HLSL2GLSL.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\InfoSink.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Initialize.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Intermediate.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\intermOut.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\IntermTraverse.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\ParseHelper.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\PoolAlloc.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\RemoveTree.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\SymbolTable.cpp">
+      <Filter>Machine Independent</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Gen_hlslang.cpp">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Gen_hlslang_tab.cpp">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader.cpp">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_common.cpp">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_lexer.cpp">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_preprocessor.cpp">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\sourceloc.cpp">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\OSDependent\Windows\ossource.cpp">
+      <Filter>OSDependent\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\OSDependent\Linux\ossource.cpp">
+      <Filter>OSDependent\Linux</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslCommon.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslFunction.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslOutput.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslStruct.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\glslSymbol.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslCrossCompiler.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslLinker.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\hlslSupportLib.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\propagateMutable.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\GLSLCodeGen\typeSamplers.h">
+      <Filter>GLSL Code Gen</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\BaseTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\ConstantUnion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\InfoSink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\InitializeGlobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\InitializeParseContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\intermediate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\PoolAlloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\SymbolTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\Include\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\hlsl2glsl\hlsl2glsl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\Initialize.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\localintermediate.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\ParseHelper.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\RemoveTree.h">
+      <Filter>Machine Independent</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\hlslang_tab.h">
+      <Filter>Machine Independent\Generated Source</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_internal.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\sourceloc.h">
+      <Filter>Machine Independent\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\OSDependent\Windows\osinclude.h">
+      <Filter>OSDependent\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\OSDependent\Linux\osinclude.h">
+      <Filter>OSDependent\Linux</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\hlslang.l">
+      <Filter>Machine Independent</Filter>
+    </CustomBuild>
+    <CustomBuild Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\hlslang.y">
+      <Filter>Machine Independent</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\hlslang\MachineIndependent\preprocessor\mojoshader_lexer.re">
+      <Filter>Machine Independent\CPP</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\code\hlsl2glsl\LICENSE.txt" />
+  </ItemGroup>
+</Project>

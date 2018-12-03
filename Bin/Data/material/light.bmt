@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version="0.01" >
+
+	<material name="Light">
+	
+		<technique name="default" profile="3_0">
+
+			<groups>
+				<group name="directional"/>
+				<group name="point"/>
+				<group name="spot"/>
+				<group name="ambient"/>
+			</groups>
+		
+			<pass name="default">
+				<render_property fill_mode="solid" cull_mode="none">
+					<depth test="disable" write="disable"/>
+					<alpha_blend src="one" dest="one" op="add"/>
+				</render_property>
+					
+				<shader_option group="directional" source="shader:deferred_light.blshader" subshader="directional_light"/>
+				<shader_option group="point" source="shader:deferred_light.blshader" subshader="point_light"/>
+				<shader_option group="spot" source="shader:deferred_light.blshader" subshader="spot_light"/>
+				<shader_option group="ambient" source="shader:deferred_light.blshader" subshader="ambient_light"/>
+			</pass>
+			
+			<pass name="light bounding volume helper">
+				<render_property fill_mode="wireframe" cull_mode="CW">
+					<depth test="enable" write="disable"/>
+				</render_property>
+				<shader_option source="shader:default_shape.blshader"/>
+			</pass>
+			<pass name="directional helper">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="disable" write="disable"/>
+				</render_property>
+				<shader_option source="shader:default_shape.blshader"/>
+			</pass>
+		</technique>
+		
+		<technique name="helper_only" profile="2_0">
+			<groups>
+				<group name="directional"/>
+				<group name="point"/>
+				<group name="spot"/>
+			</groups>
+			<pass name="light bounding volume helper">
+				<render_property fill_mode="wireframe" cull_mode="CW">
+					<depth test="enable" write="disable"/>
+				</render_property>
+				<shader_option source="shader:default_shape.blshader"/>
+			</pass>
+			<pass name="directional helper">
+				<render_property fill_mode="solid" cull_mode="CW">
+					<depth test="disable" write="disable"/>
+				</render_property>
+				<shader_option source="shader:default_shape.blshader"/>
+			</pass>
+		</technique>
+	</material>
+	
+</BladeMaterial>

@@ -1,0 +1,8 @@
+.exe
+.lib
+.exp
+.log
+.txt
+.ilk
+.map
+.uilayout

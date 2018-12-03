@@ -1,0 +1,115 @@
+last-cache
+	E:\Data\cygwin32
+mirrors-lst
+	http://mirrors.163.com/cygwin/;mirrors.163.com;Asia;China
+	http://cygwin.mirror.constant.com/;cygwin.mirror.constant.com;United States;New Jersey
+	http://mirrors.go-parts.com/cygwin/;mirrors.go-parts.com;Asia;Japan
+	ftp://mirrors-ru.go-parts.com/cygwin/;mirrors-ru.go-parts.com;Asia;Russia
+	http://mirrors-ru.go-parts.com/cygwin/;mirrors-ru.go-parts.com;Asia;Russia
+	ftp://mirrors-uk.go-parts.com/cygwin/;mirrors-uk.go-parts.com;Europe;UK
+	http://mirrors-uk.go-parts.com/cygwin/;mirrors-uk.go-parts.com;Europe;UK
+	http://mirrors-usa.go-parts.com/cygwin/;mirrors-usa.go-parts.com;United States;Oregon
+	http://cygwin.mirrors.hoobly.com/;cygwin.mirrors.hoobly.com;United States;Pennsylvania
+	http://mirrors.koehn.com/cygwin/cygwin-ftp/;mirrors.koehn.com;United States;Missouri
+	http://www.netgull.com/cygwin/;www.netgull.com;United States;California
+	ftp://cygwin.mirrors.pair.com/;cygwin.mirrors.pair.com;United States;Pennsylvania
+	http://cygwin.mirrors.pair.com/;cygwin.mirrors.pair.com;United States;Pennsylvania
+	http://cygwin.parentingamerica.com/;cygwin.parentingamerica.com;Canada;Montreal
+	http://cygwin.skazkaforyou.com/;cygwin.skazkaforyou.com;Canada;Montreal
+	ftp://mirrors.xmission.com/cygwin/;mirrors.xmission.com;United States;Utah
+	http://mirrors.xmission.com/cygwin/;mirrors.xmission.com;United States;Utah
+	ftp://ftp.gtlib.gatech.edu/pub/cygwin/;ftp.gtlib.gatech.edu;United States;Georgia
+	http://www.gtlib.gatech.edu/pub/cygwin/;www.gtlib.gatech.edu;United States;Georgia
+	http://lug.mtu.edu/cygwin/;lug.mtu.edu;United States;Michigan
+	ftp://mirror.cs.vt.edu/pub/cygwin/cygwin/;mirror.cs.vt.edu;United States;Virginia
+	http://mirror.cs.vt.edu/pub/cygwin/cygwin/;mirror.cs.vt.edu;United States;Virginia
+	ftp://mirror.mcs.anl.gov/pub/cygwin/;mirror.mcs.anl.gov;United States;Illinois
+	http://mirror.mcs.anl.gov/cygwin/;mirror.mcs.anl.gov;United States;Illinois
+	http://mirrors.chauf.net/cygwin/;mirrors.chauf.net;Europe;France
+	http://cygwin.mirror.gtcomm.net/;cygwin.mirror.gtcomm.net;Canada;Montreal
+	http://cygwin.jpacheco.net/;cygwin.jpacheco.net;Latin America;Mexico
+	ftp://mirror.nexcess.net/cygwin/;mirror.nexcess.net;United States;Michigan
+	http://mirror.nexcess.net/cygwin/;mirror.nexcess.net;United States;Michigan
+	ftp://mirror.internode.on.net/pub/cygwin/;mirror.internode.on.net;Australasia;Australia
+	http://mirror.internode.on.net/pub/cygwin/;mirror.internode.on.net;Australasia;Australia
+	http://cygwin.refractal.net/;cygwin.refractal.net;United States;New Jersey
+	http://cygwin.mirror.uk.sargasso.net/;cygwin.mirror.uk.sargasso.net;Europe;UK
+	ftp://mirrors.sonic.net/cygwin/;mirrors.sonic.net;United States;California
+	http://mirrors.sonic.net/cygwin/;mirrors.sonic.net;United States;California
+	ftp://mirror.steadfast.net/cygwin/;mirror.steadfast.net;United States;Illinois
+	http://mirror.steadfast.net/cygwin/;mirror.steadfast.net;United States;Illinois
+	ftp://mirrors.syringanetworks.net/cygwin/;mirrors.syringanetworks.net;United States;Idaho
+	http://mirrors.syringanetworks.net/cygwin/;mirrors.syringanetworks.net;United States;Idaho
+	http://sourceware.mirrors.tds.net/pub/sourceware.org/cygwin/;sourceware.mirrors.tds.net;United States;Wisconsin
+	ftp://artfiles.org/cygwin.org/pub/cygwin/;artfiles.org;Europe;Germany
+	http://artfiles.org/cygwin.org/pub/cygwin/;artfiles.org;Europe;Germany
+	http://cygwin.cathedral-networks.org/;cygwin.cathedral-networks.org;Europe;Norway
+	http://cygwin.cybermirror.org/;cygwin.cybermirror.org;Europe;Germany
+	http://mirrors.kernel.org/sourceware/cygwin/;mirrors.kernel.org;United States;California
+	ftp://ftp.mirrorservice.org/sites/sourceware.org/pub/cygwin/;ftp.mirrorservice.org;Europe;UK
+	http://www.mirrorservice.org/sites/sourceware.org/pub/cygwin/;www.mirrorservice.org;Europe;UK
+	ftp://cygwin.osuosl.org/pub/cygwin/;cygwin.osuosl.org;United States;Oregon
+	http://cygwin.osuosl.org/;cygwin.osuosl.org;United States;Oregon
+	http://mirror.team-cymru.org/cygwin/;mirror.team-cymru.org;United States;Illinois
+	ftp://gd.tuwien.ac.at/gnu/cygwin/;gd.tuwien.ac.at;Europe;Austria
+	http://gd.tuwien.ac.at/gnu/cygwin/;gd.tuwien.ac.at;Europe;Austria
+	http://linorg.usp.br/cygwin/;linorg.usp.br;Latin America;Brazil
+	ftp://cygwin.mirror.rafal.ca/pub/cygwin/;cygwin.mirror.rafal.ca;Canada;Ontario
+	http://cygwin.mirror.rafal.ca/;cygwin.mirror.rafal.ca;Canada;Ontario
+	ftp://mirror.switch.ch/mirror/cygwin/;mirror.switch.ch;Europe;Switzerland
+	http://mirror.switch.ch/ftp/mirror/cygwin/;mirror.switch.ch;Europe;Switzerland
+	ftp://mirrors.neusoft.edu.cn/mirror/cygwin/;mirrors.neusoft.edu.cn;Asia;China
+	http://mirrors.neusoft.edu.cn/cygwin/;mirrors.neusoft.edu.cn;Asia;China
+	http://mirrors.ustc.edu.cn/cygwin/;mirrors.ustc.edu.cn;Asia;China
+	ftp://ftp.gwdg.de/pub/linux/sources.redhat.com/cygwin/;ftp.gwdg.de;Europe;Germany
+	http://ftp.gwdg.de/pub/linux/sources.redhat.com/cygwin/;ftp.gwdg.de;Europe;Germany
+	ftp://ftp-stud.hs-esslingen.de/pub/Mirrors/sources.redhat.com/cygwin/;ftp-stud.hs-esslingen.de;Europe;Germany
+	http://ftp-stud.hs-esslingen.de/pub/Mirrors/sources.redhat.com/cygwin/;ftp-stud.hs-esslingen.de;Europe;Germany
+	http://linux.rz.ruhr-uni-bochum.de/download/cygwin/;linux.rz.ruhr-uni-bochum.de;Europe;Germany
+	ftp://ftp.inf.tu-dresden.de/software/windows/cygwin32/;ftp.inf.tu-dresden.de;Europe;Germany
+	http://ftp.inf.tu-dresden.de/software/windows/cygwin32/;ftp.inf.tu-dresden.de;Europe;Germany
+	ftp://ftp.hawo.stw.uni-erlangen.de/cygwin/;ftp.hawo.stw.uni-erlangen.de;Europe;Germany
+	http://ftp.hawo.stw.uni-erlangen.de/cygwin/;ftp.hawo.stw.uni-erlangen.de;Europe;Germany
+	ftp://ftp.funet.fi/pub/mirrors/cygwin.com/pub/cygwin/;ftp.funet.fi;Europe;Finland
+	ftp://ftp.ntua.gr/pub/pc/cygwin/;ftp.ntua.gr;Europe;Greece
+	ftp://ftp.cc.uoc.gr/mirrors/cygwin/;ftp.cc.uoc.gr;Europe;Greece
+	http://ftp.cc.uoc.gr/mirrors/cygwin/;ftp.cc.uoc.gr;Europe;Greece
+	ftp://ftp.fsn.hu/pub/cygwin/;ftp.fsn.hu;Europe;Hungary
+	http://ftp.fsn.hu/pub/cygwin/;ftp.fsn.hu;Europe;Hungary
+	ftp://ftp.heanet.ie/pub/cygwin/;ftp.heanet.ie;Europe;Ireland
+	http://ftp.heanet.ie/pub/cygwin/;ftp.heanet.ie;Europe;Ireland
+	http://mirror.isoc.org.il/pub/cygwin/;mirror.isoc.org.il;Asia;Israel
+	http://mirror.pkill.info/cygwin/;mirror.pkill.info;Asia;Hong Kong
+	http://cygwin.asis.io/;cygwin.asis.io;Asia;Iran
+	ftp://bo.mirror.garr.it/mirrors/sourceware.org/cygwin/;bo.mirror.garr.it;Europe;Italy
+	http://bo.mirror.garr.it/mirrors/sourceware.org/cygwin/;bo.mirror.garr.it;Europe;Italy
+	ftp://ftp.jaist.ac.jp/pub/cygwin/;ftp.jaist.ac.jp;Asia;Japan
+	http://ftp.jaist.ac.jp/pub/cygwin/;ftp.jaist.ac.jp;Asia;Japan
+	ftp://ftp.yz.yamagata-u.ac.jp/pub/cygwin/;ftp.yz.yamagata-u.ac.jp;Asia;Japan
+	http://ftp.yz.yamagata-u.ac.jp/pub/cygwin/;ftp.yz.yamagata-u.ac.jp;Asia;Japan
+	ftp://ftp.iij.ad.jp/pub/cygwin/;ftp.iij.ad.jp;Asia;Japan
+	http://ftp.iij.ad.jp/pub/cygwin/;ftp.iij.ad.jp;Asia;Japan
+	ftp://mirror.lagoon.nc/pub/cygwin/;mirror.lagoon.nc;Australasia;New Caledonia
+	http://mirror.lagoon.nc/pub/cygwin/;mirror.lagoon.nc;Australasia;New Caledonia
+	ftp://ftp.snt.utwente.nl/pub/software/cygwin/;ftp.snt.utwente.nl;Europe;Netherlands
+	http://ftp.snt.utwente.nl/pub/software/cygwin/;ftp.snt.utwente.nl;Europe;Netherlands
+	ftp://cygwin.uib.no/pub/cygwin/;cygwin.uib.no;Europe;Norway
+	http://cygwin.uib.no/;cygwin.uib.no;Europe;Norway
+	ftp://mirrors.vianett.no/pub/cygwin/;mirrors.vianett.no;Europe;Norway
+	http://mirrors.vianett.no/cygwin/;mirrors.vianett.no;Europe;Norway
+	ftp://ucmirror.canterbury.ac.nz/pub/cygwin/;ucmirror.canterbury.ac.nz;Australasia;New Zealand
+	http://ucmirror.canterbury.ac.nz/cygwin/;ucmirror.canterbury.ac.nz;Australasia;New Zealand
+	http://stingray.cyber.net.pk/pub/cygwin/;stingray.cyber.net.pk;Asia;Pakistan
+	http://ftp.eq.uc.pt/software/pc/prog/cygwin/;ftp.eq.uc.pt;Europe;Portugal
+	ftp://ftp.rnl.tecnico.ulisboa.pt/pub/cygwin/;ftp.rnl.tecnico.ulisboa.pt;Europe;Portugal
+	http://ftp.rnl.tecnico.ulisboa.pt/pub/cygwin/;ftp.rnl.tecnico.ulisboa.pt;Europe;Portugal
+	ftp://mirrors.fe.up.pt/pub/cygwin/;mirrors.fe.up.pt;Europe;Portugal
+	http://mirrors.fe.up.pt/pub/cygwin/;mirrors.fe.up.pt;Europe;Portugal
+	http://download.nus.edu.sg/mirror/cygwin/;download.nus.edu.sg;Asia;Singapore
+	ftp://cygwin.ip-connect.vn.ua/mirror/cygwin.com/;cygwin.ip-connect.vn.ua;Europe;Ukraine
+last-mirror
+	http://mirrors.163.com/cygwin/
+net-method
+	Direct
+last-action
+	Download,Install

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version="0.01" >
+
+	<material name="blit_copy">
+		<technique name="default" profile="2_0">
+      
+			<pass name="blit_color">
+				<render_property fill_mode="solid" cull_mode="none">
+					<depth test="disable" write="disable"/>
+				</render_property>
+				
+				<shader_option source="shader:blit.blshader" subshader="color"/>
+			</pass>
+			
+			<pass name="blit_depth2color_linearize">
+				<render_property fill_mode="solid" cull_mode="none">
+					<depth test="disable" write="disable"/>
+				</render_property>
+				
+				<shader_option source="shader:blit.blshader" subshader="depth2color_linearize"/>
+			</pass>
+			
+			<pass name="blit_depth">
+				<render_property fill_mode="solid" cull_mode="none">
+					<color_write />
+					<depth test="disable" write="enable"/>
+				</render_property>
+				
+				<shader_option source="shader:blit.blshader" subshader="depth"/>
+			</pass>
+			
+			<pass name="blit_depth_linearize">
+				<render_property fill_mode="solid" cull_mode="none">
+					<color_write />
+					<depth test="disable" write="enable"/>
+				</render_property>
+				
+				<shader_option source="shader:blit.blshader" subshader="depth_linearize"/>
+			</pass>
+			
+		</technique>
+	</material>
+	
+</BladeMaterial>

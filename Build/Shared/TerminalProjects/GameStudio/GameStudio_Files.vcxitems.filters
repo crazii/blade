@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{62b00a9c-7e09-4255-b2a3-28b3a3281f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{f40bf73a-933b-442b-8831-4cefeab17fae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\demo">
+      <UniqueIdentifier>{f996bcd4-bb3c-4761-9c0b-8a9d607bd026}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\header\App.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\header\ClientConfig.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\header\DebugLogRedirector.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\resource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\App.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\AppMain.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\App_EventHandle.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\ClientConfig.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\DebugLogRedirector.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\TerminalProjects\GameStudio\source\demo\Demo.cc">
+      <Filter>source\demo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

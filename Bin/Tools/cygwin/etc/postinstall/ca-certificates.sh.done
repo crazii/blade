@@ -1,0 +1,8 @@
+if [ ! -f /etc/pki/ca-trust/ca-legacy.conf ]
+then
+    /usr/bin/mkdir -p /etc/pki/ca-trust
+    /usr/bin/cp /etc/defaults/etc/pki/ca-trust/ca-legacy.conf /etc/pki/ca-trust/ca-legacy.conf
+fi
+
+/usr/bin/ca-legacy install
+/usr/bin/update-ca-trust

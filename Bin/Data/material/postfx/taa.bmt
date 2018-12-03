@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BladeMaterial version="0.01" >
+
+	<material name="TemporalAA">
+    
+		<technique name="default" profile="3_0">
+      
+			<pass name="default">
+				<render_property fill_mode="solid" cull_mode="none">
+					<depth test="disable" write="disable"/>
+				</render_property>
+				
+				<shader_option source="shader:taa.blshader" />
+			</pass>
+		</technique>
+	</material>
+	
+</BladeMaterial>

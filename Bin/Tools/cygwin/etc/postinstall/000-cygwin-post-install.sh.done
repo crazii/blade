@@ -1,0 +1,105 @@
+#!/bin/bash
+#
+# Copyright 2008, 2009, 2010, 2012, 2013, 2014 Red Hat, Inc.
+#
+# This file is part of Cygwin.
+#
+# This software is a copyrighted work licensed under the terms of the
+# Cygwin license.  Please consult the file "CYGWIN_LICENSE" for
+# details.
+#
+export PATH="/bin:$PATH"
+
+SYSCONFDIR="${SYSCONFDIR:=/etc}"
+
+FSTAB="${SYSCONFDIR}/fstab"
+MTAB="${SYSCONFDIR}/mtab"
+NSSWITCH="${SYSCONFDIR}/nsswitch.conf"
+
+# Create fstab file if it doesn't exist.
+if [ -e "${FSTAB}" -a ! -f "${FSTAB}" ]
+then
+  # Try to move
+  mv -f "${FSTAB}" "${FSTAB}.orig"
+  if [ -e "${FSTAB}" -a ! -f "${FSTAB}" ]
+  then
+    echo
+    echo "${FSTAB} is existant but not a file."
+    echo "Since this file is specifying the mount points, this might"
+    echo "result in unexpected trouble.  Please fix that manually."
+    echo
+  fi
+fi
+
+if [ ! -e "${FSTAB}" ]
+then
+  # Create fstab default header
+  cat > ${FSTAB} << EOF
+# /etc/fstab
+#
+#    This file is read once by the first process in a Cygwin process tree.
+#    To pick up changes, restart all Cygwin processes.  For a description
+#    see https://cygwin.com/cygwin-ug-net/using.html#mount-table
+
+# This is default anyway:
+none /cygdrive cygdrive binary,posix=0,user 0 0
+EOF
+fi
+
+# Create nsswitch.conf file if it doesn't exist.
+if [ -e "${NSSWITCH}" -a ! -f "${NSSWITCH}" ]
+then
+  # Try to move
+  mv -f "${NSSWITCH}" "${NSSWITCH}.orig"
+  if [ -e "${NSSWITCH}" -a ! -f "${NSSWITCH}" ]
+  then
+    echo
+    echo "${NSSWITCH} is existant but not a file."
+    echo "Since this file is specifying the mount points, this might"
+    echo "result in unexpected trouble.  Please fix that manually."
+    echo
+  fi
+fi
+
+if [ ! -e "${NSSWITCH}" ]
+then
+  # Create nsswitch.conf default header
+  cat > ${NSSWITCH} << EOF
+# /etc/nsswitch.conf
+#
+#    This file is read once by the first process in a Cygwin process tree.
+#    To pick up changes, restart all Cygwin processes.  For a description
+#    see https://cygwin.com/cygwin-ug-net/ntsec.html#ntsec-mapping-nsswitch
+#
+# Defaults:
+# passwd:   files db
+# group:    files db
+# db_home:  cygwin desc
+# db_shell: cygwin desc
+# db_gecos: cygwin desc
+EOF
+fi
+
+# Create /etc/mtab as symlink to /proc/mounts
+[ ! -L "${MTAB}" ] && ln -sf /proc/mounts ${MTAB}
+
+# Create default /etc/passwd and /etc/group files
+created_passwd=no
+created_group=no
+
+if [ ! -e /etc/passwd -a ! -L /etc/passwd ] ; then
+  mkpasswd -l -c > /etc/passwd
+  chmod 644 /etc/passwd
+  created_passwd=yes
+fi
+if [ ! -e /etc/group -a ! -L /etc/group ] ; then
+  mkgroup -l -c > /etc/group
+  chmod 644 /etc/group
+  created_group=yes
+fi
+
+# Deferred to be sure 544 (Adminstrators) group entry exists
+[ "$created_passwd" = "yes" ] && chgrp --silent 544 /etc/passwd
+[ "$created_group" = "yes"  ] && chgrp --silent 544 /etc/group
+
+exit 0
