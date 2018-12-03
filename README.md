@@ -17,5 +17,5 @@ a cross platform 3d engine using c++98
     set GameStudio (AppPackage_Android for android) as startup project.  
    
    4. Editor mode  
-    Suppred on Windows version (Blade.sln) only.  
+    Supported on Windows version (Blade.sln) only.  
     Right Click "GameStudio" project => Configuration Properties => Debugging => Command Arguments: set "--mode=Editor"  
