@@ -2,14 +2,14 @@
 a cross platform 3d engine using c++98
 
 # Features
-  1. cross platform arthitecture, easy to add support for more platforms. current supported platform is Win32(x64/x86), Android(ARM/ARM64). iOS is planned.  
+  1. cross platform arthitecture, easy to add support for more platforms. current supported platforms are Win32(x64/x86), Android(ARM/ARM64). iOS is planned.  
   2. plugin based framework, maximum decoupling and flexiable customization.  
   3. task based parallel system. each subsystem has own tasks and cooperate using parallel state data.  
   4. multiple rendering API support: D3D9, OpenGL ES 3, Vulkan is planned.  
-  5. graphics features: support for large world & terrains, 3DS Max importer (deprecated), FBX importer, Dual quaternion animation, IK, etc.  
+  5. graphics features: large world & terrains; 3DS Max importer (deprecated); FBX importer; Dual quaternion animation; IK; HBAO, HDR Post Effects. CSM shadow maps, etc. Customizable rendering pipelines, using xml as config script.  
   6. fast build/compilation, for fast prototyping/iteration. Win32 debug takes **1.5 min** on i7 CPU, Android takes about **5 mins**.  
   7. data binding to XML (non-intrusive); simple binary XML format.  
-  9. HBAO, HDR support. CSM shadow maps.
+  8. multi-language supprt.
 
 # How to build
   1. Build dependencies  
@@ -29,3 +29,8 @@ a cross platform 3d engine using c++98
    4. Editor mode  
     Supported on Windows version (Blade.sln) only.  
     Right Click "GameStudio" project => Configuration Properties => Debugging => Command Arguments: set "--mode=Editor"  
+
+# Scree shots
+![Config panel](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/config_panel.jpg)
+![Editor](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/editor.jpg)
+![Terrain Editing](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/editor_terrain.jpg)
