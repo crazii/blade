@@ -29,11 +29,12 @@ name					    location													                        source
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 FreeImage				    Dependencies/code/FreeImage									            http://freeimage.sourceforge.net/
 HLSL2GLSL				    Dependencies/code/hlsl2glsl									            https://github.com/aras-p/hlsl2glslfork
-GLSL Optimizer	    Dependencies/code/glsloptimizer							            https://github.com/aras-p/glsl-optimizer
+GLSL Optimizer				Dependencies/code/glsloptimizer											https://github.com/aras-p/glsl-optimizer
 
-ETCPACK					    Plugins/GraphicsPlugins/BladeImageFI/source/etcpack			https://github.com/Ericsson/ETCPACK
-mt19937 random	    Plugins/GraphicsPlugins/BladePostFX/source/3rdparty			http://www.bedaux.net/mtrand/
-ConvertUTF			    BladeBase/source/3rdparty									              http://unicode.org/Public/PROGRAMS/CVTUTF/ConvertUTF.c
+ETCPACK					    Plugins/GraphicsPlugins/BladeImageFI/source/etcpack						https://github.com/Ericsson/ETCPACK
+mt19937 random				Plugins/GraphicsPlugins/BladePostFX/source/3rdparty						http://www.bedaux.net/mtrand/
+ConvertUTF					BladeBase/source/3rdparty												http://unicode.org/Public/PROGRAMS/CVTUTF/ConvertUTF.c
+poisson-disk-generator		Source/BladeBase/source/math/3rdparty									https://github.com/corporateshark/poisson-disk-generator
 
 The codes above are not part of Blade's source codes, and they have copyrights & licenses of their own.
 Please read license.txt (if exist at the locations) or read the copyright notices in the beginning of the source files.
