@@ -31,6 +31,13 @@ Blade uses lower camel case naming conventions i.e. "isValid()" not "IsValid()",
       Also, by doing this, Blade can establish a universal SDK, not multiple VS2015 sdk & VS2017 sdk.  
       
   2. hide implementation details using **interface** or **Pimpl**.
-      the purpose is to reduece depedency & also can improve C++ compling speed.
+      the purpose is to reduece depedency & also can improve C++ compling speed.  
+      
+  3. **DO NOT include platform dependent headers in public headers**  
+      to avoid header polution, and directly use platform API by mistake, don't include them.  
+      i.e. don't include <Windows.h> in public headers, otherwise someone at sometime (with bad coding status)  
+      may use ::Sleep() or ::MesssageBox() directly by mistake, then it will break other platform compilation.  
+      one exception is "PlatformData.h", also it is public & shared among some modules, you shall not include it  
+      unless it is really necessary(and you need to define 'BLADE_USE_PLATFORM_DATA_EXPLICIT' to use it.  
       
 # to be continued.
