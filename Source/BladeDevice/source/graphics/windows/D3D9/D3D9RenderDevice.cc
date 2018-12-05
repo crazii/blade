@@ -1014,7 +1014,15 @@ namespace Blade
 				const StreamInfo& info = geom.mVertexSource->getStreamInfo(i);
 				const HVBUFFER& hvb = info.buffer;
 				if (hvb == NULL)
+				{
+					result = mD3D9Device->SetStreamSource(static_cast<UINT>(i), NULL, 0, 0);
+					assert(SUCCEEDED(result));
+					result = mD3D9Device->SetStreamSourceFreq(static_cast<UINT>(i), 1);
+					assert(SUCCEEDED(result));
+					++validsource;
 					continue;
+				}
+				assert(validsource == info.source);
 
 				D3D9VertexBuffer* vb = static_cast<D3D9VertexBuffer*>(hvb);
 				result = mD3D9Device->SetStreamSource((UINT)validsource, vb->getD3D9Resource(), (UINT)info.offset, (UINT)vb->getVertexSize());

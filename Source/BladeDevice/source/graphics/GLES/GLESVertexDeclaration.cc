@@ -78,7 +78,9 @@ namespace Blade
 
 			HVBUFFER buffer;
 			GLint location = shader->getVertexAttributeLocation(elem.getUsage(), elem.getIndex());
-			if( location == -1 || sourceIndex > maxSource || (buffer=source->getStreamInfo(sourceIndex).buffer) == NULL ) //may have gap
+			StreamInfo& streamInfo = source->getStreamInfo(sourceIndex);
+			assert(streamInfo.source == sourceIndex);
+			if( location == -1 || sourceIndex > maxSource || (buffer=streamInfo.buffer) == NULL ) //may have gap
 				continue;
 			if (location >= msAttribLimit)
 			{
