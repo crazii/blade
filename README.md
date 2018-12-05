@@ -69,7 +69,13 @@ You need Visual Studio 2015/2017 (latest update), with **desktop develepment**, 
   
 
 # Scree shots
-![Config Panel](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/config_panel.jpg)
-![Editor](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/editor.jpg)
-![Terrain Editing](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/editor_terrain.jpg)
-![Terrain Brush](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/terrain_brush.jpg)
+ ## Configuration panel  
+ ![Config Panel](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/config_panel.jpg)
+ ## Editor: model viewer  
+ ![Editor](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/editor.jpg)
+ ## Editor: scene & terrain editing  
+ ![Terrain Editing](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/editor_terrain.jpg)
+ ## Terrain height brushing & config  
+ ![Terrain Brush](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/terrain_brush.jpg)
+ ## Dual quaternion animation: bone visualizer & bounding visualizer  
+ ![Dual Quaternion Animation](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/animation.jpg)
