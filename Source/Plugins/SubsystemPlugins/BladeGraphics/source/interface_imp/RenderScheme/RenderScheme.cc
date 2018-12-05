@@ -389,6 +389,14 @@ namespace Blade
 		else if(target != NULL )
 			mPrevListener = target->setListener(this);
 
+		//render target's HDR/LDR will be updated here, and HDR/LDR info will be used as a key to share RTs
+		if (mIFXHelper == NULL)
+		{
+			mIFXHelper = BLADE_NEW ImageEffectHelper(&this->getProfile());
+			mIFXHelper->initialize(device, mOutputList.size() > 0 ? &mOutputList[0] : NULL, mOutputList.size());
+			mIFXHelper->setEnable(mFinalView->isImageEffectEnabled());
+		}
+
 		//create views & targets
 		size_t outputCount = mOutputList.size();
 		for(size_t i = 0; i < outputCount; ++i)
@@ -414,13 +422,6 @@ namespace Blade
 				output->getTarget()->setViewWidth(target->getViewWidth());
 				output->getTarget()->setViewHeight(target->getViewHeight());
 			}
-		}
-
-		if (mIFXHelper == NULL)
-		{
-			mIFXHelper = BLADE_NEW ImageEffectHelper( &this->getProfile() );
-			mIFXHelper->initialize(device, mOutputList.size() > 0 ? &mOutputList[0] : NULL, mOutputList.size());
-			mIFXHelper->setEnable(mFinalView->isImageEffectEnabled());
 		}
 
 		for (OperatorList::const_iterator i = mOperators.begin(); i != mOperators.end(); ++i)
@@ -507,8 +508,14 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	IRenderTarget*	RenderScheme::getRenderTarget(IRenderDevice* device, const RenderOutput* output, size_t width, size_t height)
 	{
+		//note: render targets are shared if they have same color & depth output. on some platform it has optimizations, i.e. on GL it may eliminate succeeding FBO switches for CSM
 		const TargetDescList& descList = output->getDesc().mTargetDescList;
+		assert(mInputBufferID.size() < 64 );	//reserve 1 bit for HDR/LDR: same output before/after HDR is different: they have different texture attachments
+
 		Mask64 outputMask;
+		if (output->isLDR())
+			outputMask.raiseBitAtIndex(63);
+
 		for (size_t i = 0; i < descList.size(); ++i)
 		{
 			const BUFFER_DESC* desc = descList[i];
@@ -519,6 +526,7 @@ namespace Blade
 				id = mInputBufferID.size();
 				mInputBufferID.push_back(name);
 			}
+			assert(id < 63);
 			outputMask.raiseBitAtIndex(id);
 		}
 
@@ -532,6 +540,7 @@ namespace Blade
 				id = mInputBufferID.size();
 				mInputBufferID.push_back(name);
 			}
+			assert(id < 63);
 			outputMask.raiseBitAtIndex(id);
 		}
 

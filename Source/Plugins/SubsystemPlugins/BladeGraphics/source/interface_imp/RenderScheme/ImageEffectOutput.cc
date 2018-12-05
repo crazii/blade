@@ -102,12 +102,17 @@ namespace Blade
 		if (mHasImageFX)
 		{
 			PixelFormat finalFmt = finalTarget->getPixelFormat(0);
-			PixelFormat fmt = mHasHDR ? PixelFormat(PF_R16G16B16A16F) : finalFmt;
-			this->ensureBuffer(mFinal, fmt, finalTarget->getViewWidth(), finalTarget->getViewHeight());
-			if(mHasHDR)
+
+			if (mHasHDR)
+			{
+				this->ensureBuffer(mFinal, PF_R16G16B16A16F, finalTarget->getViewWidth(), finalTarget->getViewHeight());
 				this->ensureBuffer(mFinalLDR, finalFmt, finalTarget->getViewWidth(), finalTarget->getViewHeight());
+			}
 			else
+			{
+				this->ensureBuffer(mFinal, finalFmt, finalTarget->getViewWidth(), finalTarget->getViewHeight());
 				outputLDR = HTEXTURE::EMPTY;
+			}
 		}
 		else
 		{
