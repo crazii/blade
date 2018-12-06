@@ -39,6 +39,8 @@ A cross platform 3d engine using c++98
 # How to build
 You need Visual Studio 2015/2017 (latest update), with **desktop develepment**, **C++ cross platform (mobile) develeopment**, **MFC development** installed. if any project failed to load, right click the project and click reload to check the error messge to see which feature is missing and then re-install Visual studio with required feature (only newly required features are installed, it could be fast).  
 
+  0. Use "git submodule update --init" to init git submodule (art resources).  
+
   1. Build dependencies  
     Open Denpendices/build/VC14.1/ALL/All_Denpendency.sln and batch build all (MENU:Build => Batch Build..., press "Selected All" and then "Build"). At least **Release|Win32** is needed for tools.  
     Open All_Dpendency_Android & batch build all if you want to build Android version.  
@@ -50,7 +52,6 @@ You need Visual Studio 2015/2017 (latest update), with **desktop develepment**, 
     If you don't have 3DS Max SDK installed, you can **unload the projects manually: BladeMaxExport, BladeMaxExportLoader.** they'll probablt failed to load anyway; just ignore them.  
     
   3. Build Blade & Run  
-    Before build, you may need update testing art resources using "**git submodule update --init --recursive**" to update the art submodule.  
       * Open Build/VC14.1/Blade.sln (or Blade_Android.sln for android).  
       * Select the build type and build.  
       * Set GameStudio (AppPackage_Android for android) as startup project.  
