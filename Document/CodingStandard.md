@@ -28,8 +28,8 @@ Blade uses lower camel case naming conventions i.e. "isValid()" not "IsValid()",
         
       by this restriction, Blade can link against different version MSVC CRT libs,  
       i.e. perform a release build (using /MD) of the projects with one single project with opmization disabled(/Od) and linking agaist debug CRT (/MDd),
-      so that the single project can be debugged, without bearing the low overall performance if debug build.  
-      also, by doing this, Blade can establish a universal SDK, not multiple VS2015 sdk & VS2017 sdk.  
+      so that the single project can be debugged, without bearing the low overall performance of debug build.  
+      also, by doing this, blade can establish a universal SDK, not multiple VS2015 sdk & VS2017 sdk.  
       
   2. hide implementation details using **interface** or **Pimpl**.
       the purpose is to reduece depedency & also can improve C++ compling speed.  
@@ -42,7 +42,7 @@ Blade uses lower camel case naming conventions i.e. "isValid()" not "IsValid()",
       unless it is really necessary(and you need to define 'BLADE_USE_PLATFORM_DATA_EXPLICIT' to use it.  
       
   4. headers: visibility and dependency  
-      to control (de)coupling, blade has strict rules on dependency and doesn't set all source locations as include paths for all modules.
+      to control (de)coupling, blade has strict rules on dependency and doesn't set all source locations as include paths for all modules.  
       generally, blade doesn't allow mutual dependency between modules, only single direction dependency allowed. i.e. foundation libraries shall not include framework library headers, nor plugin headers.  
       each project/module's source folder contains source/ and header/. header files in source/ are private and only visible to project/moduel itself.  
       headers files in header/ are public but only dependent modules can include them. i.e. headers of subsystem BladeGraphics should be only visible to graphics plugins. BladeTerrain headers are only visible to TerrainEditor.  
