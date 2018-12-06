@@ -12,6 +12,7 @@ Blade uses lower camel case naming conventions i.e. "isValid()" not "IsValid()",
   6. functor names have '**Fn**' prefix.  
   7. typedefs always use **UPPER CASE**.  
   8. static/global variables uses **UPPER CASE** (recommended).  
+  9. macro defines is recommonded in **UPPER CASE**. to avoid conflict with other sources/libs, use **BLADE_** prefix. i.e. "BLADE_COMPILER". macros with args may use lower cases.
   
 # scopes: namespace, class members  
   1. do not using namespace in public headers to avoid name polution  
@@ -21,14 +22,14 @@ Blade uses lower camel case naming conventions i.e. "isValid()" not "IsValid()",
   
 # other restrictions
   1. **DO NOT use STL objects as public class members. DO NOT use STL objects as public function parameters.**  
-      Different CRT lib object may have different memory layouts (size/data layouts etc.),  
+      different CRT lib object may have different memory layouts (size/data layouts etc.),  
       thus if client dll/exe have different CRT runtime, the object datas and corresponding code will mismatch if it has STL objects.
       function parameters are the same. this usually causes crashes.  
         
       by this restriction, Blade can link against different version MSVC CRT libs,  
       i.e. perform a release build (using MD) of the projects with one single project with opmization disabled(/Od) and linking agaist debug CRT (MDd),
       so that the single project can be debugged, without bearing the low overall performance if debug build.  
-      Also, by doing this, Blade can establish a universal SDK, not multiple VS2015 sdk & VS2017 sdk.  
+      also, by doing this, Blade can establish a universal SDK, not multiple VS2015 sdk & VS2017 sdk.  
       
   2. hide implementation details using **interface** or **Pimpl**.
       the purpose is to reduece depedency & also can improve C++ compling speed.  
@@ -39,5 +40,11 @@ Blade uses lower camel case naming conventions i.e. "isValid()" not "IsValid()",
       may use DWORD, INT_PTR, ::Sleep() or ::MesssageBox() directly by mistake, then it will break other platform compilation.  
       one exception is "PlatformData.h", also it is public & shared among some modules, you shall not include it  
       unless it is really necessary(and you need to define 'BLADE_USE_PLATFORM_DATA_EXPLICIT' to use it.  
+      
+  4. headers: visibility and dependency  
+      to control (de)coupling, blade has strict rules on dependency and doesn't set all source locations as include path for all modules.  
+      each project/module folder contains source/ and header/. header files in source/ are private and only visible to project/moduel itself.  
+      headers files in header/ are public but only dependent modules can include them. i.e. headers of subsystem BladeGraphics should be only visible to graphics plugins. BladeTerrain headers are only visible to TerrainEditor.  
+      header/interface vs. header/interface/public: public interfaces are used for client inheritances, although modules may have default impelemntations for public interfaces. common interface are abstraction for internal implementations and usually don't need/allow to inherit.  
       
 # to be continued.
