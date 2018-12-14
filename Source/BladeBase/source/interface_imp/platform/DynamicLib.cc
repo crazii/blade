@@ -16,13 +16,15 @@
 //////////////////////////////////////////////////////////////////////////
 #if BLADE_IS_WINDOWS_CLASS_SYSTEM
 
-#	define Bld_DlSymbol( _handle, _symbol )	GetProcAddress( (HMODULE)_handle, _symbol )
-#	define Bld_DlClose( _handle )			FreeLibrary( (HMODULE)_handle )
-#	define Bld_DlCloseOK( _close_ret )		( (_close_ret) != 0 )
+#	define Blade_DlSymbol( _handle, _symbol )	GetProcAddress( (HMODULE)_handle, _symbol )
+#	define Blade_DlClose( _handle )			FreeLibrary( (HMODULE)_handle )
+#	define Blade_DlCloseOK( _close_ret )		( (_close_ret) != 0 )
 
 static inline HMODULE bladeLoadLibrary(const Blade::TString& libPath, bool persitent)
 {
 	HMODULE ret = ::LoadLibraryEx(libPath.c_str(), NULL, LOAD_WITH_ALTERED_SEARCH_PATH);
+	if (ret == NULL)
+		ret = ::LoadLibraryEx(libPath.c_str(), NULL, LOAD_LIBRARY_SEARCH_DEFAULT_DIRS);	//seems that different Windows SDK/runtime have different behaviors (when older VS installed, code above will work), try app path also.
 	if( persitent && ret != NULL )
 		::GetModuleHandleEx(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS|GET_MODULE_HANDLE_EX_FLAG_PIN, (LPCTSTR)(ret), &(HMODULE&)ret);
 	return ret;
@@ -32,9 +34,9 @@ static inline HMODULE bladeLoadLibrary(const Blade::TString& libPath, bool persi
 
 #	include <dlfcn.h>
 
-#	define Bld_DlSymbol( _handle, _symbol )	dlsym( _handle, _symbol )
-#	define Bld_DlClose( _handle )			dlclose( _handle )
-#	define Bld_DlCloseOK( _close_ret )		( (_close_ret) == 0 )
+#	define Blade_DlSymbol( _handle, _symbol )	dlsym( _handle, _symbol )
+#	define Blade_DlClose( _handle )			dlclose( _handle )
+#	define Blade_DlCloseOK( _close_ret )		( (_close_ret) == 0 )
 
 static void*	bladeLoadLibrary(const Blade::TString& libPath, bool persitent)
 {
@@ -58,7 +60,7 @@ static void*	bladeLoadLibrary(const Blade::TString& libPath, bool persitent)
 
 #endif
 
-#	define Bld_DlLoad( _file, _persistent )	bladeLoadLibrary( _file, _persistent)
+#	define Blade_DlLoad( _file, _persistent )	bladeLoadLibrary( _file, _persistent)
 
 namespace Blade
 {
@@ -106,7 +108,7 @@ namespace Blade
 			::GetFullPathName(platformPath.c_str(),MAX_PATH, buffer, NULL);
 			platformPath = buffer;
 
-			mLibHandle = ::Bld_DlLoad(platformPath, mPersistent);
+			mLibHandle = ::Blade_DlLoad(platformPath, mPersistent);
 
 			if( mLibHandle == NULL )
 			{
@@ -127,7 +129,7 @@ namespace Blade
 
 #elif BLADE_PLATFORM == BLADE_PLATFORM_LINUX || BLADE_PLATFORM == BLADE_PLATFORM_ANDROID
 
-			mLibHandle = ::Bld_DlLoad(name, mPersistent);
+			mLibHandle = ::Blade_DlLoad(name, mPersistent);
 
 #else
 #	error not implemented.
@@ -146,11 +148,11 @@ namespace Blade
 		if( mLibHandle != NULL )
 		{
 			if( mPersistent )
-				::Bld_DlClose( mLibHandle);
+				::Blade_DlClose( mLibHandle);
 			else
 			{
-				//while( Bld_DlCloseOK( ::Bld_DlClose(mLibHandle) ) );
-				::Bld_DlClose( mLibHandle);
+				//while( Blade_DlCloseOK( ::Blade_DlClose(mLibHandle) ) );
+				::Blade_DlClose( mLibHandle);
 			}
 			mLibHandle = NULL;
 		}
@@ -161,7 +163,7 @@ namespace Blade
 	{
 		if( mLibHandle != NULL )
 		{
-			return Bld_DlSymbol( mLibHandle,symbol );
+			return Blade_DlSymbol( mLibHandle,symbol );
 		}
 		return NULL;
 	}
