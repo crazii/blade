@@ -476,7 +476,7 @@ namespace Blade
 		if (index < mData->size())
 		{
 			InstanceVariableMapDataImpl::const_iterator i = mData->begin();
-			std::advance(i, index);
+			std::advance(i, (InstanceVariableMapDataImpl::difference_type)index);
 			return i->second.getBuffer();
 		}
 		return NULL;

@@ -98,8 +98,8 @@ namespace Blade
 		, DockWindow(WIDGET_TYPE)
 		, m_bRecalcLayout(FALSE)
 		, m_bSizeChanged(FALSE)
-		, mTotalBarCount(0)
 		, m_nWidthButtons(MIN_BUTTONS)
+		, mTotalBarCount(0)
 	{
 		m_rectClient.SetRectEmpty();
 		m_nActiveTab = -1;

@@ -20,7 +20,7 @@ namespace Blade
 	{
 	public:
 
-		STDMETHOD(Open)(D3D_INCLUDE_TYPE /*IncludeType*/, LPCSTR pFileName, LPCVOID /*pParentData*/, LPCVOID *ppData, UINT *pByteLen)
+		STDMETHOD(Open)(D3D_INCLUDE_TYPE /*IncludeType*/, LPCSTR pFileName, LPCVOID /*pParentData*/, LPCVOID *ppData, UINT *pByteLen) throw()
 		{
 			TString FileName = StringConverter::StringToTString( pFileName, Char_Traits<char>::length(pFileName) );
 			HFILEDEVICE hFolder;

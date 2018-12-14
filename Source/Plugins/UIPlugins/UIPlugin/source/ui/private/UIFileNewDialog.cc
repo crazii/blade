@@ -14,10 +14,10 @@ using namespace Blade;
 //////////////////////////////////////////////////////////////////////////
 CUIFileNewDialog::CUIFileNewDialog(CWnd* pParent /* = NULL */)
 :CUIDialog(CUIFileNewDialog::IDD,pParent)
-,mSelectFile(INVALID_INDEX)
-, mNewFileName(TEXT(""))
-, mFilePathConfig(BTString("PATH"))
 ,mFileInfo(BLADE_TEMPCONT_INIT)
+,mSelectFile(INVALID_INDEX)
+,mNewFileName(TEXT(""))
+,mFilePathConfig(BTString("PATH"))
 {
 	mFilePathConfig.initStringValue(BTString("../Data"),CUIH_PATH);
 	//mFileOption.SetAllVisible(true);

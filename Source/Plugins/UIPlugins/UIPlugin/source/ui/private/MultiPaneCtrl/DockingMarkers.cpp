@@ -377,14 +377,14 @@ DockingMarkersDraw *DockingMarkers::SelectWindow::GetDrawManager() const
 /////////////////////////////////////////////////////////////////////////////
 // 
 DockingMarkers::DockingMarkers() :
-	m_Layout(0,0,
-		MarkerPane(CPoint(0,0),0,CRect(0,0,0,0)), MarkerPane(CPoint(0,0),0,CRect(0,0,0,0)),
-		MarkerPane(CPoint(0,0),0,CRect(0,0,0,0)), MarkerPane(CPoint(0,0),0,CRect(0,0,0,0)), 
-		MarkerPane(CPoint(0,0),0,CRect(0,0,0,0)), 
-		MarkerFrame(0,CRect(0,0,0,0)), MarkerFrame(0,CRect(0,0,0,0)),
-		MarkerFrame(0,CRect(0,0,0,0)), MarkerFrame(0,CRect(0,0,0,0)), 		
-		RGB(0,0,0)),
 	pane1(this), pane2(this), frame(this),
+	m_Layout(0, 0,
+		MarkerPane(CPoint(0, 0), 0, CRect(0, 0, 0, 0)), MarkerPane(CPoint(0, 0), 0, CRect(0, 0, 0, 0)),
+		MarkerPane(CPoint(0, 0), 0, CRect(0, 0, 0, 0)), MarkerPane(CPoint(0, 0), 0, CRect(0, 0, 0, 0)),
+		MarkerPane(CPoint(0, 0), 0, CRect(0, 0, 0, 0)),
+		MarkerFrame(0, CRect(0, 0, 0, 0)), MarkerFrame(0, CRect(0, 0, 0, 0)),
+		MarkerFrame(0, CRect(0, 0, 0, 0)), MarkerFrame(0, CRect(0, 0, 0, 0)),
+		RGB(0, 0, 0)),
 	m_SelectWnd(this)
 {
 	m_pAbilityManager = this;

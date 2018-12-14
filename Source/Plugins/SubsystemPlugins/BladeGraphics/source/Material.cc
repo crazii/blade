@@ -61,7 +61,7 @@ namespace Blade
 		if( index < mData->mTechniqueList.size() )
 		{
 			TechniqueList::const_iterator i = mData->mTechniqueList.begin();
-			std::advance(i, index);
+			std::advance(i, (TechniqueList::difference_type)index);
 			return *i;
 		}
 		else

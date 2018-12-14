@@ -28,9 +28,9 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	UIMediaLibrary::UIMediaLibrary(CWnd* pParent/* = NULL*/)
 		:CUIDialog(UIMediaLibrary::IDD, pParent)
-		, mSelectedType(0)
 		, mReceiver(NULL)
 		, mDefaultType(0)
+		, mSelectedType(0)
 		, mShowDefaultOnly(true)
 	{
 	}

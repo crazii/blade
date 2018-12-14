@@ -37,9 +37,9 @@ class UIExpandData : public IConfigUIData, public Blade::Allocatable
 
 
 COptionList::COptionList()
-:mForceShowAll(false)
-,mRefreshExpandIndex(INVALID_INDEX)
+:mRefreshExpandIndex(INVALID_INDEX)
 ,mTimerID( UINT_PTR(-1) )
+,mForceShowAll(false)
 {
 	mPaintPhase = 0;
 
