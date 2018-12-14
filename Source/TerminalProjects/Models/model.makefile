@@ -101,7 +101,7 @@ define all_types_rule
 #grouped source in folder to merge into one file
 #note: $1 cannot share between expansions, so *.FBX & *.fbx will generate two diffferent rules.
 #but here we need one unique rules for all files with mixed extensions. HOWTO:
-$$(OutDir)%.$$(TARGET_FILE_TYPE) $$(OutDir)%.$$(TARGET_SKELETON_TYPE) : %/*.$1 
+$$(OutDir)%.$$(TARGET_FILE_TYPE) $$(OutDir)%.$$(TARGET_SKELETON_TYPE) : $(ROOTDIR)/%/*.$1 
 		@echo $$(MC) $$^ $$(MCFLAGS) $$(call add_flags,$$<) --output=$(OutDir)$$*.$(TARGET_FILE_TYPE)
 		$$(MC) $$^ $$(MCFLAGS) $$(call add_flags,$$<) --output=$(OutDir)$$*.$(TARGET_FILE_TYPE)
 		
