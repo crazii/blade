@@ -197,9 +197,9 @@ namespace Blade
 	void	ShaderCompilerApplication::initPlugins()
 	{
 		ParamList params;
+		params[BTString("BladeImageFI")] = true;
 		params[BTString("BladeDevice")] = true;
 		params[BTString("BladeWindow")] = true;
-		params[BTString("BladeImageFI")] = true;
 		params[BTString("BladeGraphics")] = true;
 		//UI system for configs if needed
 		params[BTString("BladeUI")] = true;
