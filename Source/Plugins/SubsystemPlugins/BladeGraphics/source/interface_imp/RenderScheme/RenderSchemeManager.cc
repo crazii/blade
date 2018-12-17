@@ -54,6 +54,8 @@ namespace Blade
 	{
 		const TString path = BTString("media:renderscheme");
 		HFILEDEVICE hFolder = IResourceManager::getSingleton().loadFolder( path );
+		if (hFolder == NULL)	//probably tools
+			return;
 
 		TStringParam fileList;
 		hFolder->findFile(fileList, BTString("*.scheme"), IFileDevice::FF_FILE|IFileDevice::FF_RECURSIVE);

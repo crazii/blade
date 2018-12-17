@@ -307,6 +307,7 @@ namespace Blade
 #else
 		size_t count = CodeConverter::TStringToOtherString<wchar>(mbcString, len, dest, buffer.getCapacity());
 #endif
+		assert(count != size_t(-1));
 		assert(count + sizeof(wchar) <= buffer.getCapacity());
 		//code converter doesn't add \0, we need to append it
 		dest[count] = wchar();
