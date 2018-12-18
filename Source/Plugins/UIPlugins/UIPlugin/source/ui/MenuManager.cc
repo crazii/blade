@@ -193,7 +193,7 @@ namespace Blade
 		if (cmd == NULL)
 			return 0;
 
-		std::pair<CommandIDMap::iterator, bool> ret = mCommandIDs.insert(std::make_pair(cmd, 0));
+		std::pair<CommandIDMap::iterator, bool> ret = mCommandIDs.insert(std::make_pair(cmd, (UINT_PTR)0));
 		if (!ret.second)
 			ret.first->second;
 

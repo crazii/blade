@@ -21,8 +21,8 @@ namespace Blade
 	UIToolBox::UIToolBox(const TString& name, ICONSIZE is, UINT nID, CFrameWnd* pParent,size_t existingWidth, 
 		bool autoDock/* = true*/, bool gripper/* = true*/, CFrameWnd* Owner/* = NULL*/)
 		:mToolbar(name)
-		,mAutoDock(autoDock)
 		,mIconSize(is)
+		,mAutoDock(autoDock)
 	{
 		AFX_MANAGE_STATE( ::AfxGetStaticModuleState() );
 		assert(pParent != NULL);
