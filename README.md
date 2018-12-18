@@ -1,7 +1,8 @@
 # blade
 A cross platform 3d engine using c++98    
 
-Dev Wiki: https://github.com/crazii/blade/wiki
+Dev Wiki:  https://github.com/crazii/blade/wiki  
+Roadmap:  https://github.com/crazii/blade/wiki/Roadmap  
 
 # Features
   1. Cross platform arthitecture, easy to add support for more platforms. supported platforms are:  
