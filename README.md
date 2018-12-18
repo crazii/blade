@@ -6,9 +6,15 @@ Roadmap:  https://github.com/crazii/blade/wiki/Roadmap
 
 # Features
   1. Cross platform arthitecture, easy to add support for more platforms. supported platforms are:  
-      * Windows (x64/x86)  
-      * Android (ARM/ARM64)  
-      * iOS is planned  
+      * Windows (x64/x86);  
+      * Android (ARM/ARM64);  
+      * iOS is planned;  
+      
+      Supported compilers:
+      * MSVC 
+      * GCC
+      * Clang
+      
   2. Plugin based framework, maximum decoupling and flexiable customization.  
   3. Task based parallel system. each subsystem has own tasks and cooperate using parallel state data.  
   4. Multiple rendering API support:
@@ -21,20 +27,20 @@ Roadmap:  https://github.com/crazii/blade/wiki/Roadmap
       * FBX importer;
       * Dual Quternion animation;  
       * IK;  
-      * HBAO, HDR Post Effects.  
-      * CSM shadow maps.  
-      * Customizable rendering pipelines, using xml as config script. (deferred shading & forward shading, and any customized pipeline you want. deferred lighting is not maitained but any completion is welcomed).  
-  6. Editor (to be improved).  
-      * Scene editing  
-      * Terrain editing, height brush & texture splatting  
-      * Mesh viewer  
+      * HBAO, HDR Post Effects;  
+      * CSM shadow maps;  
+      * Customizable rendering pipelines, using xml as config script. (deferred shading & forward shading, and any customized pipeline you want. deferred lighting is not maitained but any completion is welcomed);  
+  6. Editor (to be improved)  
+      * Scene editing;  
+      * Terrain editing, height brush & texture splatting;  
+      * Mesh viewer;  
       
   7. Tool chains (CLI):  
-      * Texture compressor  
-      * Custom package (BPK) packer (CLI), and package viewer (eidtor plugin)  
-      * Shader compiler  
-      * Mesh & skinned animation importer  
-      * Language processor (in a GNU gettext way) & translation editing tool (a plugin for editor)
+      * Texture compressor;  
+      * Custom package (BPK) packer (CLI), and package viewer (eidtor plugin);  
+      * Shader compiler;  
+      * Mesh & skinned animation importer;  
+      * Language processor (in a GNU gettext way) & translation editing tool (a plugin for editor);
   8. fast build/compilation, for fast prototyping/iteration. Win32 debug takes **1.5 min** on i7 CPU, Android takes about **5 mins**.  
   9. data binding to XML (non-intrusive); simple binary XML format.  
   10. multi-language supprt.  
@@ -55,9 +61,9 @@ You need Visual Studio 2015/2017 (latest update), with **desktop develepment**, 
     If you don't have 3DS Max SDK installed, you can **unload the projects manually: BladeMaxExport, BladeMaxExportLoader.** they'll probablt failed to load anyway; just ignore them.  
     
   3. Build Blade & Run  
-      * Open Build/VC14.1/Blade.sln (or Blade_Android.sln for android).  
-      * Select the build type and build.  
-      * Set GameStudio (AppPackage_Android for android) as startup project.  
+      * Open Build/VC14.1/Blade.sln (or Blade_Android.sln for android);  
+      * Select the build type and build;  
+      * Set GameStudio (AppPackage_Android for android) as startup project;  
    
    4. Editor mode  
     Supported on Windows version (Blade.sln) only.  
