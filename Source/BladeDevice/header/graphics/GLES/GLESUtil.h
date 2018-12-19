@@ -235,12 +235,13 @@ namespace Blade
 
 				if( (flags&IGraphicsBuffer::GBLF_DISCARD) )
 					mGLFlags |= GL_MAP_INVALIDATE_RANGE_BIT;
+
+				if ((flags&IGraphicsBuffer::GBLF_NO_DIRTY_UPDATE))
+					mGLFlags |= GL_MAP_FLUSH_EXPLICIT_BIT;
+
+				if ((flags&IGraphicsBuffer::GBLF_NO_OVERWRITE))
+					mGLFlags |= GL_MAP_UNSYNCHRONIZED_BIT;
 			}
-
-			//nowhere to map GBLF_NO_DIRTY_UPDATE
-
-			if( (flags&IGraphicsBuffer::GBLF_NO_OVERWRITE) )
-				mGLFlags |= GL_MAP_UNSYNCHRONIZED_BIT;
 		}
 
 		GLESLockFlagsConverter(GLbitfield  GLFlags)
@@ -257,12 +258,13 @@ namespace Blade
 
 				if( (mGLFlags&GL_MAP_INVALIDATE_RANGE_BIT) )
 					mFLags |= IGraphicsBuffer::GBLF_DISCARD;
+
+				if ((mGLFlags&GL_MAP_FLUSH_EXPLICIT_BIT))
+					mFLags |= IGraphicsBuffer::GBLF_NO_DIRTY_UPDATE;
+
+				if ((mGLFlags&GL_MAP_UNSYNCHRONIZED_BIT))
+					mFLags |= IGraphicsBuffer::GBLF_NO_OVERWRITE;
 			}
-
-			//nowhere to map GBLF_NO_OVERWRITE
-
-			if( (mGLFlags&GL_MAP_UNSYNCHRONIZED_BIT) )
-				mFLags |= IGraphicsBuffer::GBLF_NO_DIRTY_UPDATE;
 		}
 
 		/** @brief  */
