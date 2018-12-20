@@ -142,6 +142,7 @@ namespace Blade
 			if (mSkeleton->getCurrentAnimation() != NULL && mSkeleton->needUpdateBoneTransforms(time.getLoopID()))
 			{
 				ParallelAnimation* pa = ModelConfigManager::getSingleton().getParallelAnimationUpdater(static_cast<IRenderScene*>(this->getElement()->getScene()));
+				assert(pa != NULL);
 				pa->addDelayedAnimation(this, updateBounding);
 			}
 #else
@@ -463,6 +464,12 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void			Model::setModelResource(IModelResourceImpl* modelRes)
 	{
+		ModelConfigManager& configManager = ModelConfigManager::getSingleton();
+		BLADE_UNREFERENCED(configManager);
+		IRenderScene* scene = static_cast<IRenderScene*>(this->getElement()->getScene());
+
+		bool animated = this->hasSkinnedAnimation();	//prev-state
+
 		BLADE_DELETE mSkeleton;
 		mSkeleton = NULL;
 		//disable notification. otherwise space partition mask will be cleared
@@ -470,16 +477,14 @@ namespace Blade
 		this->clearSubMeshes();
 
 		mResource = modelRes;
-
+		if (mResource == NULL)
+		{
 #if MULTITHREAD_ANIMATING
-		if (mResource)
-			ModelConfigManager::getSingleton().createParallelAnimationUpdater(static_cast<IRenderScene*>(this->getElement()->getScene()));
-		else
-			ModelConfigManager::getSingleton().releaseParallelAnimationUpdater(static_cast<IRenderScene*>(this->getElement()->getScene()));
+			if (animated)
+				configManager.releaseParallelAnimationUpdater(scene);
 #endif
-
-		if( mResource == NULL )
 			return;
+		}
 
 		//init skeleton runtime
 		const ISkeletonResource* skeletonRes = this->getSkeletonResource();
@@ -489,6 +494,7 @@ namespace Blade
 			const TimeSource& time = ITimeService::getSingleton().getTimeSource();
 			mSkeleton->initialize(mResource->getSkeleton(), time.getLoopID()-1u);
 		}
+		animated = this->hasSkinnedAnimation();	//new state
 
 		mSubMeshes.resize( mResource->getSubMeshCount() );
 		mSubMeshVisibility.resize( mResource->getSubMeshCount() );
@@ -508,8 +514,11 @@ namespace Blade
 			++index;
 		}
 
-		if( this->hasSkinnedAnimation() )
+		if(animated)
 		{
+#if MULTITHREAD_ANIMATING
+			configManager.createParallelAnimationUpdater(scene);
+#endif
 			mDirtyFlag.raiseBits(DF_ANIMATION);
 			//make aab large enough for all animations
 			//sub mesh will be culled again after animation update
@@ -517,8 +526,6 @@ namespace Blade
 			Vector3 halfSize = modelAAB.getHalfSize();
 			halfSize.x = halfSize.y = halfSize.z = std::max( std::max(halfSize.x, halfSize.y), halfSize.z);
 			modelAAB.set(center-halfSize, center+halfSize);
-
-			IRenderScene* scene = static_cast<IRenderScene*>(this->getElement()->getScene());
 #if BLADE_DEBUG && 0
 			if( mSubMeshes.size() > 1 && ModelConfigManager::getSingleton().isUpdatingSkinnedSubmeshBound() )
 			{

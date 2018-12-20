@@ -166,7 +166,7 @@ namespace Blade
 			ParallelAnimation* updater;
 			RefCount count;
 		};
-		typedef List<SceneParallelAnimation> ParallelAnimationMap;
+		typedef Vector<SceneParallelAnimation> ParallelAnimationMap;
 		ParallelAnimationMap mParallelAnimationMap;
 
 		StaticModelType		mModelType;
