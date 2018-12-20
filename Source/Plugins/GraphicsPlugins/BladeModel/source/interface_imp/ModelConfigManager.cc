@@ -84,7 +84,7 @@ namespace Blade
 				return i->count.count();
 			}
 		}
-		SceneParallelAnimation newItem { scene, BLADE_NEW ParallelAnimation(), 1u, };
+		SceneParallelAnimation newItem = { scene, BLADE_NEW ParallelAnimation(), 1u, };
 		scene->getUpdater()->addForUpdate(newItem.updater);
 		mParallelAnimationMap.push_back(newItem);
 		return 1;

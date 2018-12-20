@@ -38,7 +38,7 @@ namespace Blade
 		/** @brief  */
 		inline void addDelayedAnimation(Model* model, bool updateBounding)
 		{
-			DelayedAnimation da{ model, updateBounding };
+			DelayedAnimation da = { model, updateBounding };
 			mAnimationList.push_back(da);
 		}
 
