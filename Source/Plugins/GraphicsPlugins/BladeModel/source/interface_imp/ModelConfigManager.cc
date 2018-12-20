@@ -80,7 +80,7 @@ namespace Blade
 		{
 			if (i->scene == scene)
 			{
-				i->count.safeIncrement();
+				i->count.increment();
 				return i->count.count();
 			}
 		}
@@ -98,10 +98,13 @@ namespace Blade
 		{
 			if (i->scene == scene)
 			{
-				if (i->count.safeDecrement() == 0)
+				if (i->count.decrement() == 0)
 				{
 					scene->getUpdater()->removeFromUpdate(i->updater);
 					BLADE_DELETE i->updater;
+					ParallelAnimationMap::reverse_iterator ri = mParallelAnimationMap.rbegin();
+					std::swap(*ri, *i);
+					mParallelAnimationMap.pop_back();
 				}
 				return true;
 			}
