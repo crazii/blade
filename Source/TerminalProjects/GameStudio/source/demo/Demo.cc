@@ -63,7 +63,7 @@ namespace Blade
 		IEntity*	mLightEntity;
 	};//class AnimDemoState
 
-
+	const TString ELEMENT_NAME = BTString("Model");
 	//////////////////////////////////////////////////////////////////////////
 	AnimDemoState::AnimDemoState()
 	{
@@ -104,7 +104,6 @@ namespace Blade
 		IGeometry* geom = geomElem->getInterface(IID_GEOMETRY());
 
 		HELEMENT element = graphicsScene->createGraphicsElement(BTString(BLANG_MODEL_ELEMENT));
-		const TString ELEMENT_NAME = BTString("Model");
 		entity->addElement(ELEMENT_NAME, element);
 
 		//load model file
@@ -278,7 +277,7 @@ namespace Blade
 	void initDemoStates()
 	{
 		//set demo state as init state
-		NameRegisterFactory(SceneDemoState, IGameState, IGameState::INIT_STATE);
+		NameRegisterFactory(AnimDemoState, IGameState, IGameState::INIT_STATE);
 	}
 	
 	

@@ -16,7 +16,7 @@
 #include <interface/IRenderScene.h>
 #include <interface/IRenderQueue.h>
 #include <Frustum.h>
-#include <interface/IModelConfigManager.h>
+#include "ModelConfigManager.h"
 #include "ModelType.h"
 #include "ModelBatchCombiner.h"
 #include "BoneVisualizer.h"
@@ -25,6 +25,8 @@
 
 namespace Blade
 {
+#define MULTITHREAD_ANIMATING 1
+
 	///map of squared projected size to skeleton update frequency
 	static const size_t SKELETON_LOD_COUNT = 5;
 	static const scalar SKELETON_LOD_TABLE[SKELETON_LOD_COUNT][2] =
@@ -81,12 +83,12 @@ namespace Blade
 		//TODO: HOWTO: submesh's alpha type?
 		if (this->hasSkinnedAnimation())
 		{
-			static const AppFlag flag = IModelConfigManager::getSingleton().getSkinnedModelType().getAppFlag();
+			static const AppFlag flag = ModelConfigManager::getSingleton().getSkinnedModelType().getAppFlag();
 			return flag.getMask();
 		}
 		else
 		{
-			static const AppFlag flag = IModelConfigManager::getSingleton().getStaticModelType().getAppFlag();
+			static const AppFlag flag = ModelConfigManager::getSingleton().getStaticModelType().getAppFlag();
 			return flag.getMask();
 		}
 
@@ -129,12 +131,23 @@ namespace Blade
 				}
 			}
 
-			const TimeSource& time = ITimeService::getSingleton().getTimeSource();
 			bool updateBounding = !allVisible && skeletonLOD >= 3 && mSubMeshes.size() > 1
-				&& IModelConfigManager::getSingleton().isUpdatingSkinnedSubmeshBound();
+				&& ModelConfigManager::getSingleton().isUpdatingSkinnedSubmeshBound();
+			const TimeSource& time = ITimeService::getSingleton().getTimeSource();
 
+#if MULTITHREAD_ANIMATING
+			//Note: submeshes's bounding need update after updateSkinnedAnimation() && before updateRender(). 
+			//For current implementation, submeshes's bounding updates before updateSkinnedAnimation(), and so sub mesh's visibility is 1 frame delayed after skinned animation
+			//That'll not harm anyway.
+			if (mSkeleton->getCurrentAnimation() != NULL && mSkeleton->needUpdateBoneTransforms(time.getLoopID()))
+			{
+				ParallelAnimation* pa = ModelConfigManager::getSingleton().getParallelAnimationUpdater(static_cast<IRenderScene*>(this->getElement()->getScene()));
+				pa->addDelayedAnimation(this, updateBounding);
+			}
+#else
 			//don't need worry about multiple cameras, since we has loop ID to avoid redundant updates.
 			this->updateSkinnedAnimation(time.getLoopID(), time.getTime(), time.getTimeThisLoop(), updateBounding);
+#endif
 
 			//calculate bone's bounding box and transform it.
 			//but this need update bone transform first, which need a model bounding to culling against camera
@@ -178,22 +191,23 @@ namespace Blade
 			return;
 		assert( mResource->getSubMeshCount() == mSubMeshes.size() );
 
-		if (mSharedMesh != NULL && queue->getUsage() == IRenderQueue::RQU_SHADOW)
-		{
-			queue->addRenderable(mSharedMesh);
+		//merge batch for shadow pass. To be profiled
+		//if (mSharedMesh != NULL && queue->getUsage() == IRenderQueue::RQU_SHADOW)
+		//{
+		//	queue->addRenderable(mSharedMesh);
 
-			size_t index = 0;
-			for (SubMeshList::iterator i = mSubMeshes.begin(); i != mSubMeshes.end(); ++i, ++index)
-			{
-				SubMesh* mesh = *i;
-				if (mSubMeshVisibility[index] && mesh->isVisible() && mesh->hasAlpha() && !mesh->isPreTransformed())
-				{
-					StaticModelType& t = static_cast<StaticModelType&>(mesh->getRenderType());
-					t.getCombiner()->updateRender(mesh, queue);
-				}
-			}
-			return;
-		}
+		//	size_t index = 0;
+		//	for (SubMeshList::iterator i = mSubMeshes.begin(); i != mSubMeshes.end(); ++i, ++index)
+		//	{
+		//		SubMesh* mesh = *i;
+		//		if (mSubMeshVisibility[index] && mesh->isVisible() && mesh->hasAlpha() && !mesh->isPreTransformed())
+		//		{
+		//			StaticModelType& t = static_cast<StaticModelType&>(mesh->getRenderType());
+		//			t.getCombiner()->updateRender(mesh, queue);
+		//		}
+		//	}
+		//	return;
+		//}
 
 		size_t index = 0;
 		for(SubMeshList::iterator i = mSubMeshes.begin(); i != mSubMeshes.end(); ++i, ++index)
@@ -215,7 +229,7 @@ namespace Blade
 
 		if (this->getSkeletonResource() == NULL && mSpaceFlags.checkBits(CSF_DYNAMIC))
 		{
-			static const IGraphicsType& type = IModelConfigManager::getSingleton().getMovingStaticType();
+			static const IGraphicsType& type = ModelConfigManager::getSingleton().getMovingStaticType();
 			index = 0;
 			for (SubMeshList::iterator i = mSubMeshes.begin(); i != mSubMeshes.end(); ++i, ++index)
 			{
@@ -372,7 +386,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void			Model::setAniamtedBoundingVisibleSync(bool visible)
 	{
-		if( !this->hasSkinnedAnimation() || (mSubMeshes.size() > 1 && IModelConfigManager::getSingleton().isUpdatingSkinnedSubmeshBound()) )
+		if( !this->hasSkinnedAnimation() || (mSubMeshes.size() > 1 && ModelConfigManager::getSingleton().isUpdatingSkinnedSubmeshBound()) )
 		{
 			IRenderScene* scene = static_cast<IRenderScene*>(this->getElement()->getScene());
 			for(SubMeshList::iterator i = mSubMeshes.begin(); i != mSubMeshes.end(); ++i)
@@ -405,7 +419,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void			Model::setIKChainPositionSync(const TString& type, index_t index, const Vector3& pos)
 	{
-		if( this->hasSkinnedAnimation() && IModelConfigManager::getSingleton().isIKEnabled() )
+		if( this->hasSkinnedAnimation() && ModelConfigManager::getSingleton().isIKEnabled() )
 		{
 			Vector3 modelPos = pos * mTransform.getInverse();
 			mSkeleton->getIKSolver()->setTarget(type, index, modelPos);
@@ -456,6 +470,14 @@ namespace Blade
 		this->clearSubMeshes();
 
 		mResource = modelRes;
+
+#if MULTITHREAD_ANIMATING
+		if (mResource)
+			ModelConfigManager::getSingleton().createParallelAnimationUpdater(static_cast<IRenderScene*>(this->getElement()->getScene()));
+		else
+			ModelConfigManager::getSingleton().releaseParallelAnimationUpdater(static_cast<IRenderScene*>(this->getElement()->getScene()));
+#endif
+
 		if( mResource == NULL )
 			return;
 
@@ -498,7 +520,7 @@ namespace Blade
 
 			IRenderScene* scene = static_cast<IRenderScene*>(this->getElement()->getScene());
 #if BLADE_DEBUG && 0
-			if( mSubMeshes.size() > 1 && IModelConfigManager::getSingleton().isUpdatingSkinnedSubmeshBound() )
+			if( mSubMeshes.size() > 1 && ModelConfigManager::getSingleton().isUpdatingSkinnedSubmeshBound() )
 			{
 				for(SubMeshList::iterator i = mSubMeshes.begin(); i != mSubMeshes.end(); ++i)
 					scene->getAABBRenderer()->addAABB(*i);

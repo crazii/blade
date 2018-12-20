@@ -41,6 +41,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelResource.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelSerializer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ModelType.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ParallelAnimation.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\Skeleton.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SkeletonResource.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SkeletonResourceState.h" />

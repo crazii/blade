@@ -11,6 +11,7 @@
 #include <interface/public/graphics/IVertexDeclaration.h>
 
 #include "ModelType.h"
+#include "ParallelAnimation.h"
 
 //note: Android GLES shader doesn't work well for shortest path handling, dunno why, maybe related to dynamic branching
 //HACK it at CPU end
@@ -40,6 +41,7 @@ namespace Blade
 namespace Blade
 {
 	class IVertexSource;
+	class IRenderScene;
 
 	enum EModelVertexSourceIndex
 	{
@@ -142,6 +144,13 @@ namespace Blade
 		void				shutdown();
 
 		/** @brief  */
+		size_t				createParallelAnimationUpdater(IRenderScene* scene);
+		/** @brief  */
+		bool				releaseParallelAnimationUpdater(IRenderScene* scene);
+		/** @brief  */
+		ParallelAnimation*	getParallelAnimationUpdater(IRenderScene* scene);
+
+		/** @brief  */
 		const HVDECL&		getVertexDeclaration()	{return mVertexDecl;}
 
 		/** @brief  */
@@ -151,6 +160,15 @@ namespace Blade
 		const HVDECL&		getCombinedBatchDeclarartion() { return mCombinedDecl; }
 
 	protected:
+		struct SceneParallelAnimation
+		{
+			IRenderScene* scene;
+			ParallelAnimation* updater;
+			RefCount count;
+		};
+		typedef List<SceneParallelAnimation> ParallelAnimationMap;
+		ParallelAnimationMap mParallelAnimationMap;
+
 		StaticModelType		mModelType;
 		SkinnedModelType	mSkinnedType;
 		StaticModelAlphaType	mModelAlphaType;

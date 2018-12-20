@@ -11,6 +11,7 @@
 #include <Pass.h>
 #include <RenderUtility.h>
 #include "ModelBatchCombiner.h"
+#include <interface/IRenderScene.h>
 
 namespace Blade
 {
@@ -69,6 +70,58 @@ namespace Blade
 		mCombinedDecl.clear();
 		mBoneVisualizerDecl.clear();
 		ModelBatchCombiner::getSingleton().shutdown();
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	size_t				ModelConfigManager::createParallelAnimationUpdater(IRenderScene* scene)
+	{
+		assert(scene != NULL);
+		for (ParallelAnimationMap::iterator i = mParallelAnimationMap.begin(); i != mParallelAnimationMap.end(); ++i)
+		{
+			if (i->scene == scene)
+			{
+				i->count.safeIncrement();
+				return i->count.count();
+			}
+		}
+		SceneParallelAnimation newItem { scene, BLADE_NEW ParallelAnimation(), 1u, };
+		scene->getUpdater()->addForUpdate(newItem.updater);
+		mParallelAnimationMap.push_back(newItem);
+		return 1;
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	bool				ModelConfigManager::releaseParallelAnimationUpdater(IRenderScene* scene)
+	{
+		assert(scene != NULL);
+		for (ParallelAnimationMap::iterator i = mParallelAnimationMap.begin(); i != mParallelAnimationMap.end(); ++i)
+		{
+			if (i->scene == scene)
+			{
+				if (i->count.safeDecrement() == 0)
+				{
+					scene->getUpdater()->removeFromUpdate(i->updater);
+					BLADE_DELETE i->updater;
+				}
+				return true;
+			}
+		}
+		return false;
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	ParallelAnimation*	ModelConfigManager::getParallelAnimationUpdater(IRenderScene* scene)
+	{
+		assert(scene != NULL);
+		for (ParallelAnimationMap::iterator i = mParallelAnimationMap.begin(); i != mParallelAnimationMap.end(); ++i)
+		{
+			if (i->scene == scene)
+			{
+				assert(i->updater != NULL);
+				return i->updater;
+			}
+		}
+		return NULL;
 	}
 
 }//namespace Blade

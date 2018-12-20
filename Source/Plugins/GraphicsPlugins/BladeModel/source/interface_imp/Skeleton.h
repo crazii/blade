@@ -30,6 +30,9 @@ namespace Blade
 		bool	updateBoneTransforms(uint64 loopID, scalar time, scalar frameTime, bool forceUpdate);
 
 		/** @brief  */
+		bool	needUpdateBoneTransforms(uint64 loopID) const { return mActiveBones.size() > 0 && loopID != mLoopID; }
+
+		/** @brief  */
 		inline const DualQuaternion*	getBlendedTransform() const {return mBoneDQ;}
 
 		/** @brief  */

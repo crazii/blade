@@ -498,6 +498,12 @@ namespace Blade
 					entity->setStatus(ES_DELETE_LOADING);
 					entity = NULL;
 				}
+				else
+				{
+					const Entity::ElementMap& elements = entity->getElements();
+					for (Entity::ElementMap::const_iterator it = elements.begin(); it != elements.end(); ++it)
+						it->second->unloadResource(true);
+				}
 
 				if (notifyPaging && entity->isPagingEnabled())
 					static_cast<PagingManager*>(mPageManager)->removeEntity(entity);
