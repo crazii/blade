@@ -3,7 +3,7 @@ A cross platform 3d engine using c++98
 
 Dev Wiki:  https://github.com/crazii/blade/wiki  
 Roadmap:  https://github.com/crazii/blade/wiki/Roadmap  
-Chat Channel: https://gitter.im/engine-blade/
+Chat Channel: https://gitter.im/engine-blade/  
 Coding Standard: [CodingStandard.md](https://github.com/crazii/blade/blob/master/Document/CodingStandard.md)
 
 # Features
