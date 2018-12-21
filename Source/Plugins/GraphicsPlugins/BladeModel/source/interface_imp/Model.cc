@@ -138,7 +138,7 @@ namespace Blade
 #if MULTITHREAD_ANIMATING
 			//Note: submeshes's bounding need update after updateSkinnedAnimation() && before updateRender(). 
 			//For current implementation, submeshes's bounding updates before updateSkinnedAnimation(), and so sub mesh's visibility is 1 frame delayed after skinned animation
-			//That'll not harm anyway.
+			//That'll do no harm anyway. - Besides the skeleton LOD already skips some bounding updates.
 			if (mSkeleton->getCurrentAnimation() != NULL && mSkeleton->needUpdateBoneTransforms(time.getLoopID()))
 			{
 				ParallelAnimation* pa = ModelConfigManager::getSingleton().getParallelAnimationUpdater(static_cast<IRenderScene*>(this->getElement()->getScene()));
