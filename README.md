@@ -6,6 +6,13 @@ Roadmap:  https://github.com/crazii/blade/wiki/Roadmap
 Chat Channel: https://gitter.im/engine-blade/  
 Coding Standard: [CodingStandard.md](https://github.com/crazii/blade/blob/master/Document/CodingStandard.md)
 
+**Why re-invent another wheel and Why it is open sourced?**  
+This project started about in 2010 with the purpose to study 3d engine teches.  
+Some of its idea is learned for [Ogre](https://www.ogre3d.org/), some from [Nebula Device](https://sourceforge.net/projects/nebulaengine/), some from in house engines in work. Some problems/thinkings encounterecd in real-life work also been put into it.  
+Blade is opene-sourced in Dec/2018, because now the workload for it is exploding, it cannot be accomplished by any single person. Hopefully someone could help to improve it so that it may be put into practical use in the future.  
+Any bug reports, suggestions, criticisms are welcomed. If anything you can learn from it, that'll be great too.    
+
+
 # Features
   1. Cross platform arthitecture, easy to add support for more platforms. supported platforms are:  
       * Windows (x64/x86);  
