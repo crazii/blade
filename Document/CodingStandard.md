@@ -12,7 +12,13 @@ Blade uses lower camel case naming conventions i.e. "isValid()" not "IsValid()",
   6. functor names have '**Fn**' prefix.  
   7. typedefs always use **UPPER CASE**.  
   8. static/global variables uses **UPPER CASE** (recommended).  
-  9. macro defines is recommonded in **UPPER CASE**. to avoid conflict with other sources/libs, use **BLADE_** prefix. i.e. "BLADE_COMPILER". macros with args may use lower cases.
+  9. macro defines is recommonded in **UPPER CASE**. to avoid conflict with other sources/libs, use **BLADE_** prefix. i.e. "BLADE_COMPILER". macros with args may use lower cases.  
+  10. serialization:  
+     **readability**: prefer explicit sized memebers for structures that needs serialization(IO read/write). i.e. use int8/uint8, int16/uint16, int32/uint32, int64/uint64 instead of char/long/int.  
+     **portability**:   
+       * always serialize utf8 encoding for string (auto done in IStream).  
+       * alwyas serialize uint8 for bool.  
+       * do not use bitfields in serialization. unless the data stress is really high and you're ready to handle bitfield order & alignemnt among different platform/compilers.  
   
 # scopes: namespace, class members  
   1. do not using namespace in public headers to avoid name polution  
