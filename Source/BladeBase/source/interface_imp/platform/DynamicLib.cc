@@ -22,9 +22,7 @@
 
 static inline HMODULE bladeLoadLibrary(const Blade::TString& libPath, bool persitent)
 {
-	HMODULE ret = ::LoadLibraryEx(libPath.c_str(), NULL, LOAD_WITH_ALTERED_SEARCH_PATH);
-	if (ret == NULL)
-		ret = ::LoadLibraryEx(libPath.c_str(), NULL, LOAD_LIBRARY_SEARCH_DEFAULT_DIRS);	//seems that different Windows SDK/runtime have different behaviors (when older VS installed, code above will work), try app path also.
+	HMODULE ret = ::LoadLibraryEx(libPath.c_str(), NULL, LOAD_LIBRARY_SEARCH_DEFAULT_DIRS | LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR);
 	if( persitent && ret != NULL )
 		::GetModuleHandleEx(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS|GET_MODULE_HANDLE_EX_FLAG_PIN, (LPCTSTR)(ret), &(HMODULE&)ret);
 	return ret;
