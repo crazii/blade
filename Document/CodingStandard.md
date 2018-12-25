@@ -37,6 +37,8 @@ Blade uses lower camel case naming conventions i.e. "isValid()" not "IsValid()",
       so that the single project can be debugged, without bearing the low overall performance of debug build.  
       also, by doing this, blade can establish a universal SDK, not multiple VS2015 sdk & VS2017 sdk.  
       
+      **There is an built-in alternative: TList&lt;T&gt; (vector-like array) that can be used instead.**  
+      
   2. hide implementation details using **interface** or **Pimpl**.
       the purpose is to reduece depedency & also can improve C++ compling speed.  
       
