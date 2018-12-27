@@ -14,6 +14,7 @@
 #include <interface/IResourceManager.h>
 #include <interface/ITimeService.h>
 #include <interface/public/graphics/IGraphicsService.h>
+#include <interface/public/graphics/IGraphicsInterface.h>
 #include <interface/IPage.h>
 #include <interface/public/geometry/IGeometryService.h>
 #include <interface/public/logic/ILogicService.h>
@@ -146,6 +147,8 @@ namespace Blade
 		HELEMENT hLight = graphicsScene->createGraphicsElement(BTString(BLANG_LIGHT_ELEMENT));
 		mLightEntity = stage->createEntity(BTString("dirLight"));
 		mLightEntity->addElement(BTString("light"), hLight);
+		ILightInterface* light = mLightEntity->getInterface(IID_LIGHT());
+		light->setType(LT_DIRECTIONAL);
 		stage->loadEntity(mLightEntity);
 		mStage = stage;
 	}

@@ -56,6 +56,6 @@ namespace Blade
 
 #define CHECK_RETURN_INTERFACE(_interface_type, _name, _object) \
 	if( &InterfaceID<_interface_type>::getName() == &_name || InterfaceID<_interface_type>::getName() == _name ) \
-		return static_cast<Interface*>(_object)
+		return static_cast<Interface*>(static_cast<_interface_type*>(_object))
 
 #endif // __Blade_Interface_h__

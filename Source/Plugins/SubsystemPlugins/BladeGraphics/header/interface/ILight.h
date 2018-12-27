@@ -7,15 +7,13 @@
 #ifndef __Blade_ILight_h__
 #define __Blade_ILight_h__
 #include <BladeGraphics.h>
-#include <math/Vector3.h>
-#include <interface/public/graphics/Color.h>
-#include <interface/public/graphics/GraphicsDefs.h>
+#include <interface/public/graphics/IGraphicsInterface.h>
 
 namespace Blade
 {
 	class ILightManager;
 
-	class BLADE_GRAPHICS_API ILight
+	class ILight
 	{
 	public:
 		virtual ~ILight()	{}

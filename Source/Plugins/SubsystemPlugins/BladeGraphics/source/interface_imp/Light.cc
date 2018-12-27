@@ -33,16 +33,6 @@ namespace Blade
 	Light::Light(ILightManager* lightManager, ELightType type/* = LT_DIRECTIONAL*/, bool notify/* = true*/)
 		:mLightManager(lightManager)
 		,mWorldTransform(Matrix44::IDENTITY)
-		,mDirection(Vector3::NEGATIVE_UNIT_ALL)
-		,mPadding(0)
-		,mDiffuse(Color::WHITE)
-		,mSpecular(Color::WHITE)
-		,mRange(1)
-		,mSpotInnerAngle(30)
-		,mSpotOutAngle(90)
-		,mAttenuation(0.5f)
-		,mMask(0)
-		,mType(LT_DIRECTIONAL)
 		,mBoundingHelper(this)
 	{
 		mUpdateFlags = CUF_DEFAULT_VISIBLE;
@@ -51,6 +41,17 @@ namespace Blade
 		this->setLocalAABB(AABB::INFINITE);
 		this->setType(type, false);
 		this->setDirection(Vector3::NEGATIVE_UNIT_ALL);
+
+		mAttenuationParam = Vector4::ZERO;
+		mDirection = Vector3::NEGATIVE_UNIT_ALL;
+		mDesc.mDiffuse = Color::WHITE;
+		mDesc.mSpecular = Color::WHITE;
+		mDesc.mRange = 1;
+		mDesc.mSpotInnerAngle = 30;
+		mDesc.mSpotOutAngle = 90;
+		mDesc.mAttenuation = 0.5f;
+		mDesc.mType = LT_POINT;
+		mMask = 0;
 
 		if (notify)
 			static_cast<LightManager*>(mLightManager)->notifyLightCreated(this);
@@ -69,15 +70,15 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	bool					Light::setType(ELightType type, bool notify/* = true*/)
 	{
-		if( mType != (uint32)type )
+		if(mDesc.mType != (uint32)type )
 		{
-			ELightType oldType = (ELightType)mType;
-			mType = type;
-			if(mType == LT_DIRECTIONAL )
+			ELightType oldType = (ELightType)mDesc.mType;
+			mDesc.mType = type;
+			if(mDesc.mType == LT_DIRECTIONAL )
 				this->setLocalAABB(AABB(BT_INFINITE));
 			else
 			{
-				if (mType == LT_POINT)
+				if (mDesc.mType == LT_POINT)
 					this->setLocalAABB(AABB(-1, -1, -1, 1, 1, 1));
 				else
 					this->setLocalAABB(AABB(-0.5, -0.5, -1, 0.5, 0.5, 0));
@@ -90,7 +91,7 @@ namespace Blade
 				static_cast<LightManager*>(mLightManager)->notifyLightTypeChanged(this, oldType, type);
 
 				if ((this->getSpace() != NULL && !(this->getSpace()->getSpaceFlag()&SF_DYNAMIC))
-					&& (oldType == LT_DIRECTIONAL || mType == LT_DIRECTIONAL))
+					&& (oldType == LT_DIRECTIONAL || mDesc.mType == LT_DIRECTIONAL))
 				{
 					ISpace* space = this->getSpace();
 					space->removeContent(this);
@@ -120,7 +121,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void			Light::enableVolumeHelper(bool enable, const Color& color)
 	{
-		const HMATERIALINSTANCE& material = Impl::getLightRenderManager().getLightMaterial((ELightType)mType);
+		const HMATERIALINSTANCE& material = Impl::getLightRenderManager().getLightMaterial((ELightType)mDesc.mType);
 		if (enable)
 		{
 			mMask.raiseBits(LRHM_VOLUME);
@@ -154,7 +155,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void			Light::notifyScaleChange()
 	{
-		if (mType != LT_DIRECTIONAL)
+		if (mDesc.mType != LT_DIRECTIONAL)
 			this->updateAttenuation();
 		Matrix44::generateTransform(mWorldTransform, this->getPosition(), this->getScale(), this->getRotation());
 		SpaceContent::notifyScaleChange();
@@ -163,7 +164,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void			Light::updateRender(IRenderQueue* queue)
 	{
-		if( mType == LT_DIRECTIONAL )
+		if(mDesc.mType == LT_DIRECTIONAL )
 			Impl::getLightRenderManager().enqueueLightQuad(queue, this);
 		else
 			queue->addRenderable(this);
@@ -191,7 +192,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	const MaterialInstance*	Light::getMaterial() const
 	{
-		return Impl::getLightRenderManager().getLightMaterial(ELightType(mType));
+		return Impl::getLightRenderManager().getLightMaterial(ELightType(mDesc.mType));
 	}
 
 	/************************************************************************/
@@ -200,7 +201,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void					Light::updateAttenuation()
 	{
-		if (mType != LT_DIRECTIONAL)
+		if (mDesc.mType != LT_DIRECTIONAL)
 		{
 			scalar range = this->getScale().z;
 #if 0
@@ -233,15 +234,15 @@ namespace Blade
 			//attenuation = 1/(attenuation * Distance)	//linear attenuation
 			float radius = this->getScale().x;
 			scalar outerAngle = std::atan(radius / range) * 2;
-			mRange = range;
-			mSpotOutAngle = Math::Radian2Degree(outerAngle);
-			mSpotInnerAngle = Math::Clamp(mSpotInnerAngle, 0.0f, mSpotOutAngle);
+			mDesc.mRange = range;
+			mDesc.mSpotOutAngle = Math::Radian2Degree(outerAngle);
+			mDesc.mSpotInnerAngle = Math::Clamp(mDesc.mSpotInnerAngle, 0.0f, mDesc.mSpotOutAngle);
 			//shader parameters
-			scalar minAttenuation = 1 / (range*mAttenuation);
+			scalar minAttenuation = 1 / (range*mDesc.mAttenuation);
 
 			mAttenuationParam[0] = -minAttenuation;
 			mAttenuationParam[1] = range * minAttenuation;
-			mAttenuationParam[2] = std::cos(Math::Degree2Radian(mSpotInnerAngle) / 2);
+			mAttenuationParam[2] = std::cos(Math::Degree2Radian(mDesc.mSpotInnerAngle) / 2);
 			mAttenuationParam[3] = std::cos(outerAngle / 2);
 			assert(mAttenuationParam[2] >= mAttenuationParam[3]);
 #endif

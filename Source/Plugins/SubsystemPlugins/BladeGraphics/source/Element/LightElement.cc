@@ -72,6 +72,43 @@ namespace Blade
 	}
 
 	/************************************************************************/
+	/* ILightInterface interface                                                                     */
+	/************************************************************************/
+	//////////////////////////////////////////////////////////////////////////
+	bool				LightElement::setDesc(const ILightInterface::DESC& desc)
+	{
+		BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
+
+		if (mLight == NULL)
+			return false;
+
+		const DESC& odesc = static_cast<Light*>(mLight)->getDesc();
+		if (odesc.mType != desc.mType)
+			this->LightElement::setType((ELightType)desc.mType);
+		if (odesc.mRange != desc.mRange)
+			this->LightElement::setRange(desc.mRange);
+		if (odesc.mSpotInnerAngle != desc.mSpotInnerAngle || odesc.mSpotOutAngle != desc.mSpotOutAngle)
+			this->LightElement::setSpotAngles(desc.mSpotInnerAngle, desc.mSpotOutAngle);
+		if (odesc.mAttenuation != desc.mAttenuation)
+			this->LightElement::setAttenuation(desc.mAttenuation);
+		if (odesc.mDiffuse != desc.mDiffuse)
+			this->LightElement::setDiffuse(desc.mDiffuse);
+		if (odesc.mSpecular != desc.mSpecular)
+			this->LightElement::setSpecular(desc.mSpecular);
+
+		return true;
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	const ILightInterface::DESC& LightElement::getLightDesc() const
+	{
+		BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
+
+		static DESC EMPTY = {};
+		return mLight != NULL ? static_cast<Light*>(mLight)->getDesc() : EMPTY;
+	}
+
+	/************************************************************************/
 	/* custom methods                                                                     */
 	/************************************************************************/
 	//////////////////////////////////////////////////////////////////////////
@@ -83,65 +120,46 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	bool				LightElement::setLightType(ELightType type)
 	{
-		if( mLight == NULL )
+		if (mLight == NULL)
 			return false;
 		bool ret = static_cast<Light*>(mLight)->setType(type);
-		//update bounding data
+		//update bounding data when type changes
 		if (ret)
 			mBounding = static_cast<Light*>(mLight)->getLocalAABB();
 		return ret;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
-	bool				LightElement::setLightPosition(const Vector3& pos)
-	{
-		if( mLight == NULL )
-			return false;
-		static_cast<Light*>(mLight)->setPosition(pos);
-		return true;
-	}
-
-	//////////////////////////////////////////////////////////////////////////
-	bool				LightElement::setLightDirection(const Vector3& dir)
-	{
-		if( mLight == NULL )
-			return false;
-		static_cast<Light*>(mLight)->setDirection(dir);
-		return true;
-	}
-
-	//////////////////////////////////////////////////////////////////////////
 	bool				LightElement::setLightRange(scalar range)
 	{
-		if( mLight == NULL )
+		if (mLight == NULL)
 			return false;
-
 		static_cast<Light*>(mLight)->setRange(range);
 		return true;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
-	bool				LightElement::setSpotLightInnerAngle(scalar inner)
+	bool				LightElement::setLightSpotInnerAngle(scalar inner)
 	{
 		if (mLight == NULL)
 			return false;
-		static_cast<Light*>(mLight)->setSpotLightInnerAngle(inner);
+		static_cast<Light*>(mLight)->setSpotInnerAngle(inner);
 		return true;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
-	bool				LightElement::setSpotLightOuterAngle(scalar outer)
+	bool				LightElement::setLightSpotOuterAngle(scalar outer)
 	{
 		if (mLight == NULL)
 			return false;
-		static_cast<Light*>(mLight)->setSpotLightOuterAngle(outer);
+		static_cast<Light*>(mLight)->setSpotInnerAngle(outer);
 		return true;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
-	bool				LightElement::setLightAttenuation(const scalar& attenuation)
+	bool				LightElement::setLightAttenuation(scalar attenuation)
 	{
-		if( mLight == NULL )
+		if (mLight == NULL)
 			return false;
 		static_cast<Light*>(mLight)->setAttenuation(attenuation);
 		return true;
@@ -150,7 +168,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	bool				LightElement::setLightDiffuse(const Color& diff)
 	{
-		if( mLight == NULL )
+		if (mLight == NULL)
 			return false;
 		static_cast<Light*>(mLight)->setDiffuse(diff);
 		return true;
@@ -159,9 +177,27 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	bool				LightElement::setLightSpecular(const Color& spec)
 	{
-		if( mLight == NULL )
+		if (mLight == NULL)
 			return false;
 		static_cast<Light*>(mLight)->setSpecular(spec);
+		return true;
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	bool				LightElement::setLightPosition(const Vector3& pos)
+	{
+		if (mLight == NULL)
+			return false;
+		static_cast<Light*>(mLight)->setPosition(pos);
+		return true;
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	bool				LightElement::setLightDirection(const Vector3& dir)
+	{
+		if (mLight == NULL)
+			return false;
+		static_cast<Light*>(mLight)->setDirection(dir);
 		return true;
 	}
 
