@@ -82,7 +82,7 @@ namespace Blade
 		this->setView( world->getWorldView() );
 		this->setGraphicsScene(world->getGraphicsScene());
 		this->setGeometryScene(world->getGeometryScene());
-		//this->getGraphicsScene()->setRealtimeDrawing(false);	
+		//this->getGraphicsScene()->setRealtimeDrawing(false);
 		this->setLogicScene( world->getLogicScene() );
 		this->setCamera( world->getWorldCamera() );
 		this->setUpdater(this);

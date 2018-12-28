@@ -148,14 +148,15 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void QtConfigDialog::accept()
 	{
-		QDialog::accept();
-
-		if (mCheckAutoShow.isVisible())
+		if (mCheckAutoShow.isVisible())	//check before accept() or it will be hidden
 		{
 			bool checked = mCheckAutoShow.isChecked();
 			TString ShowStringBOOL = TStringHelper::fromBool(checked);
 			IConfigManager::getSingleton().setEntry(BTString("ShowDialog"), ShowStringBOOL, CONFIG_DIALOG_SECTION);
 		}
+
+
+		QDialog::accept();
 
 		if (!mInfo.mModal)
 			mInfo.mNoneModalDelegate.call(mInfo.mUserData);

@@ -67,7 +67,8 @@ namespace Blade
 				mPreviewStage->loadEntitySync(mPreviewEntity);
 
 				IEntity* light = EditorHelper::createLightEntity(mPreviewStage, mPreviewScene, mPreviewGeomScene, BTString("PreviewLight"));
-				DataBindingHelper::setElementData(*light, BTString(BLANG_LIGHT_ELEMENT), BTString(BLANG_TYPE), (uint32)LT_DIRECTIONAL);
+				//DataBindingHelper::setElementData(*light, BTString(BLANG_LIGHT_ELEMENT), BTString(BLANG_TYPE), (uint32)LT_DIRECTIONAL);
+				light->getInterface(IID_LIGHT())->setType(LT_DIRECTIONAL);
 				light->getInterface(IID_GEOMETRY())->setGlobalDirection(Vector3::NEGATIVE_UNIT_ALL.getNormalizedVector());
 				mPreviewStage->loadEntitySync(light);
 			}

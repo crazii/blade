@@ -35,7 +35,7 @@ namespace Blade
 		class EffectListImpl : public Set<HGRAPHICSEFFECT, FnEffectSort>, public Allocatable 
 		{
 		public:
-			Lock mSyncLock;
+			//Lock mSyncLock;
 		};
 
 		class CommandListImpl : public TempSet<GraphicsElementCommandSlot*>
@@ -145,12 +145,16 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	bool	GraphicsElement::addGraphicsEffect(const HGRAPHICSEFFECT& effect)
 	{
+		BLADE_TS_VERIFY_GRAPHICS_WRITE();
+
 		if( effect == NULL)
 			return false;
 
-		ScopedLock lock(mEffectList->mSyncLock);
-		if (!mEffectList->insert(effect).second)
-			return false;
+		{
+			//ScopedLock lock(mEffectList->mSyncLock);
+			if (!mEffectList->insert(effect).second)
+				return false;
+		}
 
 		this->attachEffect(effect);
 		return true;
@@ -159,10 +163,13 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	bool	GraphicsElement::removeGraphicsEffect(const HGRAPHICSEFFECT& effect)
 	{
+		BLADE_TS_VERIFY_GRAPHICS_WRITE();
+
 		if( effect == NULL)
 			return false;
-		bool ret = this->detachEffect(effect);
-		ScopedLock lock(mEffectList->mSyncLock);
+		bool ret = this->detachEffect(effect);//detach first, otherwise erase will delete it.
+
+		//ScopedLock lock(mEffectList->mSyncLock);
 		if (mEffectList->erase(effect) != 1)
 		{
 			assert(!ret);
@@ -191,6 +198,8 @@ namespace Blade
 			return HGRAPHICSEFFECT::EMPTY;
 
 		EffectFinder finder(type);
+
+		//ScopedLock lock(mEffectList.get()->mSyncLock);
 		EffectListImpl::const_iterator i = mEffectList->find(finder);
 		if( i == mEffectList->end() )
 			return HGRAPHICSEFFECT::EMPTY;
@@ -337,44 +346,62 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	bool				GraphicsElement::dispatchPositionChanges(const Vector3& /*pos*/)
 	{
+		BLADE_TS_VERIFY_GRAPHICS_WRITE();
 		this->notifyContentChange();
 
 		bool ret = true;
-		for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
-			ret = this->dispatchPositionChange(*i) && ret;
+		if (mEffectList != NULL)
+		{
+			for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
+				ret = this->dispatchPositionChange(*i) && ret;
+		}
 		return ret;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
 	bool				GraphicsElement::dispatchRotationChanges(const Quaternion& /*rotation*/)
 	{
+		BLADE_TS_VERIFY_GRAPHICS_WRITE();
 		this->notifyContentChange();
 
 		bool ret = true;
-		for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
-			ret = this->dispatchRotationChange(*i) && ret;
+		if (mEffectList != NULL)
+		{
+			for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
+				ret = this->dispatchRotationChange(*i) && ret;
+		}
 		return ret;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
 	bool				GraphicsElement::dispatchScaleChanges(const Vector3& /*scale*/)
 	{
+		BLADE_TS_VERIFY_GRAPHICS_WRITE();
+
 		this->notifyContentChange();
 
 		bool ret = true;
-		for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
-			ret = this->dispatchScaleChange(*i) && ret;
+		if (mEffectList != NULL)
+		{
+			for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
+				ret = this->dispatchScaleChange(*i) && ret;
+		}
 		return ret;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
 	bool				GraphicsElement::dispatchLocalBoundsChanges(const AABB& /*aab*/)
 	{
+		BLADE_TS_VERIFY_GRAPHICS_WRITE();
+
 		this->notifyContentChange();
 
 		bool ret = true;
-		for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
-			ret = this->dispatchLocalBoundsChange(*i) && ret;
+		if (mEffectList != NULL)
+		{
+			for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
+				ret = this->dispatchLocalBoundsChange(*i) && ret;
+		}
 		return ret;
 	}
 
@@ -494,7 +521,7 @@ namespace Blade
 		{
 			for (EffectListImpl::iterator i = mEffectList->begin(); i != mEffectList->end(); ++i)
 				this->detachEffect(*i);
-			mEffectList->clear();
+			mEffectList.destruct();
 		}
 	}
 
@@ -518,6 +545,7 @@ namespace Blade
 			GraphicsElementCommandSlot* slot = static_cast<GraphicsElementCommandSlot*>(cmd->getRef());
 			bool ret = mCommandList->erase(slot) == 1;
 			BLADE_DELETE slot;
+			assert(ret);
 			return ret;
 		}
 		return true;

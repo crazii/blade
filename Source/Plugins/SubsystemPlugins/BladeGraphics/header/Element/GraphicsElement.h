@@ -52,14 +52,14 @@ namespace Blade
 		virtual bool	addEffect(const HGRAPHICSEFFECT& effect)
 		{
 			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
-			return this->addCommand(GraphicsElementCommand::make(effect, &GraphicsElement::addGraphicsEffect));
+			return effect != NULL && this->addCommand(GraphicsElementCommand::make(effect, &GraphicsElement::addGraphicsEffect));
 		}
 
 		/** @copydoc IGraphicsInterface::removeEffect  */
 		virtual bool	removeEffect(const HGRAPHICSEFFECT& effect)
 		{
 			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
-			return this->addCommand(GraphicsElementCommand::make(effect, &GraphicsElement::removeGraphicsEffect));
+			return effect != NULL && this->addCommand(GraphicsElementCommand::make(effect, &GraphicsElement::removeGraphicsEffect));
 		}
 
 		/** @copydoc IGraphicsInterface::getEffect  */

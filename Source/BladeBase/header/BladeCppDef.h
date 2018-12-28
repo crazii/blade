@@ -86,6 +86,13 @@ namespace std
 	template< typename T > struct is_pointer<T* volatile> { enum { value = true }; };
 	template< typename T > struct is_pointer<T* const volatile> { enum { value = true }; };
 
+	//remove_reference
+	template< typename T > struct remove_reference { typedef T type; };
+	template< typename T > struct remove_reference<T&> { typedef T type; };
+	template< typename T > struct remove_reference<T& const> { typedef T type; };
+	template< typename T > struct remove_reference<T& volatile> { typedef T type; };
+	template< typename T > struct remove_reference<T& const volatile> { typedef T type; };
+
 #endif
 
 #if defined(_MSC_VER) && _MSC_VER <= 1700

@@ -88,6 +88,7 @@ namespace Blade
 		{
 		public:
 			typedef bool (T::*FNSET)(V v);
+			typedef typename std::remove_reference<V>::type NRV;
 
 			TGraphicsElementCommand(const V& v, FNSET fnset)
 				:set(fnset), val(v)
@@ -101,7 +102,7 @@ namespace Blade
 				(element->*set)(val);
 			}
 			FNSET set;
-			V val;
+			NRV val;
 		};
 
 	}//namespace Impl
