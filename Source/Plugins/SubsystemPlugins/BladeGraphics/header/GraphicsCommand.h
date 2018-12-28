@@ -71,7 +71,51 @@ namespace Blade
 
 		/** @brief  */
 		BLADE_GRAPHICS_API virtual void update(SSTATE);
+
+	public:
+		template<typename T, typename V>
+		static inline GraphicsElementCommand* make(V v, bool (T::*pfnset)(V v));
+
+		template<typename T, typename V>
+		static inline GraphicsElementCommand* make(const V& v, bool (T::*pfnset)(const V& v));
 	};
+
+	namespace Impl
+	{
+		/** @brief helper */
+		template<typename T, typename V>
+		class TGraphicsElementCommand : public GraphicsElementCommand
+		{
+		public:
+			typedef bool (T::*FNSET)(V v);
+
+			TGraphicsElementCommand(const V& v, FNSET fnset)
+				:set(fnset), val(v)
+			{}
+
+		protected:
+			/** @brief  */
+			virtual void execute()
+			{
+				T* element = static_cast<T*>(this->getTarget());
+				(element->*set)(val);
+			}
+			FNSET set;
+			V val;
+		};
+
+	}//namespace Impl
+
+	template<typename T, typename V>
+	static inline GraphicsElementCommand* GraphicsElementCommand::make(V v, bool (T::*pfnset)(V v))
+	{
+		return BLADE_NEW Impl::TGraphicsElementCommand<T, V>(v, pfnset);
+	}
+	template<typename T, typename V>
+	static inline GraphicsElementCommand* GraphicsElementCommand::make(const V& v, bool (T::*pfnset)(const V& v))
+	{
+		return BLADE_NEW Impl::TGraphicsElementCommand<T, const V&>(v, pfnset);
+	}
 
 	//////////////////////////////////////////////////////////////////////////
 	class GraphicsElementCommandSlot : public GraphicsCommandSlot

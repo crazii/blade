@@ -73,35 +73,6 @@ namespace Blade
 		/* ILightInterface (public) interface                                                                     */
 		/************************************************************************/
 	protected:
-		template<typename T>
-		class TLightCommand : public GraphicsElementCommand
-		{
-		public:
-			typedef bool (LightElement::*FNSET)(T v);
-
-			TLightCommand(const T& v, FNSET fnset) :set(fnset),val(v) {}
-
-			/** @brief  */
-			virtual void execute()
-			{
-				LightElement* element = static_cast<LightElement*>(this->getTarget());
-				(element->*set)(val);
-			}
-
-			FNSET set;
-			T val;
-		};
-		template<typename T>
-		static inline GraphicsElementCommand* makeLightCommand(T v, typename TLightCommand<T>::FNSET fnset)
-		{
-			return BLADE_NEW TLightCommand<T>(v, fnset);
-		}
-		template<typename T>
-		static inline GraphicsElementCommand* makeLightCommand(const T& v, typename TLightCommand<const T&>::FNSET fnset)
-		{
-			return BLADE_NEW TLightCommand<const T&>(v, fnset);
-		}
-
 		/** @brief  */
 		virtual bool				setDesc(const DESC& desc);
 
@@ -109,42 +80,42 @@ namespace Blade
 		virtual bool				setType(ELightType type)
 		{
 			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
-			return this->addCommand(makeLightCommand(type, &LightElement::setLightType));
+			return this->addCommand(GraphicsElementCommand::make(type, &LightElement::setLightType));
 		}
 
 		/** @brief  */
 		virtual bool				setRange(scalar range)
 		{
 			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
-			return this->addCommand(makeLightCommand(range, &LightElement::setLightRange));
+			return this->addCommand(GraphicsElementCommand::make(range, &LightElement::setLightRange));
 		}
 
 		virtual bool		setSpotAngles(scalar inner, scalar outer)
 		{
 			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
-			return this->addCommand(makeLightCommand(inner, &LightElement::setLightSpotInnerAngle))
-			&& this->addCommand(makeLightCommand(outer, &LightElement::setLightSpotOuterAngle));
+			return this->addCommand(GraphicsElementCommand::make(inner, &LightElement::setLightSpotInnerAngle))
+			&& this->addCommand(GraphicsElementCommand::make(outer, &LightElement::setLightSpotOuterAngle));
 		}
 
 		/** @brief  */
 		virtual bool				setAttenuation(scalar attenuation)
 		{
 			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
-			return this->addCommand(makeLightCommand(attenuation, &LightElement::setLightAttenuation));
+			return this->addCommand(GraphicsElementCommand::make(attenuation, &LightElement::setLightAttenuation));
 		}
 
 		/** @brief  */
 		virtual bool				setDiffuse(const Color& diff)
 		{
 			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
-			return this->addCommand(makeLightCommand(diff, &LightElement::setLightDiffuse));
+			return this->addCommand(GraphicsElementCommand::make(diff, &LightElement::setLightDiffuse));
 		}
 
 		/** @brief  */
 		virtual bool				setSpecular(const Color& spec)
 		{
 			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
-			return this->addCommand(makeLightCommand(spec, &LightElement::setLightSpecular));
+			return this->addCommand(GraphicsElementCommand::make(spec, &LightElement::setLightSpecular));
 		}
 
 		/** @brief  */

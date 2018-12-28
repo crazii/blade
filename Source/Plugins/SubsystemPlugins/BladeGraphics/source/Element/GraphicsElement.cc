@@ -27,7 +27,6 @@ namespace Blade
 	{
 		struct FnEffectSort
 		{
-		public:
 			bool operator()(const HGRAPHICSEFFECT& lhs, const HGRAPHICSEFFECT& rhs) const
 			{
 				return FnTStringFastLess::compare(lhs->getType(), rhs->getType());
@@ -144,9 +143,8 @@ namespace Blade
 	}
 
 	//////////////////////////////////////////////////////////////////////////
-	bool	GraphicsElement::addEffect(const HGRAPHICSEFFECT& effect)
+	bool	GraphicsElement::addGraphicsEffect(const HGRAPHICSEFFECT& effect)
 	{
-		BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
 		if( effect == NULL)
 			return false;
 
@@ -154,21 +152,25 @@ namespace Blade
 		if (!mEffectList->insert(effect).second)
 			return false;
 
-		this->addCommand(BLADE_NEW AttachEffectCommand(effect));
+		this->attachEffect(effect);
 		return true;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
-	bool	GraphicsElement::removeEffect(const HGRAPHICSEFFECT& effect)
+	bool	GraphicsElement::removeGraphicsEffect(const HGRAPHICSEFFECT& effect)
 	{
-		BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
 		if( effect == NULL)
 			return false;
+		bool ret = this->detachEffect(effect);
 		ScopedLock lock(mEffectList->mSyncLock);
 		if (mEffectList->erase(effect) != 1)
+		{
+			assert(!ret);
 			return false;
-		this->addCommand(BLADE_NEW DetachEffectCommand(effect));
-		return true;
+		}
+		else
+			assert(ret);
+		return ret;
 	}
 
 	//////////////////////////////////////////////////////////////////////////
