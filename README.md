@@ -98,3 +98,7 @@ You need Visual Studio 2015/2017 (latest update), with **desktop develepment**, 
  ![Terrain Brush](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/terrain_brush.jpg)
  ## Dual quaternion animation: bone visualizer & bounding visualizer  
  ![Dual Quaternion Animation](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/animation.jpg)
+ ## Package browser  
+ ![Package Browser](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/package_browser.png)
+ ## Language Editor  
+![Language Editor](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/lang_edit.png)
