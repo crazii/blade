@@ -230,9 +230,10 @@ namespace Blade
 		for( UINT id = 0 ; id < mAdapterCount; ++id )
 		{
 			D3DADAPTER_IDENTIFIER9 adapterId;
+			std::memset(&adapterId, 0, sizeof(adapterId));
 			mD3D9->GetAdapterIdentifier(id,0,&adapterId);
 
-			TString AdapterDesc_tstr = StringConverter::StringToTString(adapterId.Description, MAX_DEVICE_IDENTIFIER_STRING);
+			TString AdapterDesc_tstr = StringConverter::StringToTString(adapterId.Description);
 			AdapterDesc_tstr = TStringHelper::trim( AdapterDesc_tstr );
 			if( adapterSet.insert(AdapterDesc_tstr).second )
 				adapters.push_back( AdapterDesc_tstr );
@@ -273,9 +274,10 @@ namespace Blade
 				const TString& adapterDesc = adapter;
 
 				D3DADAPTER_IDENTIFIER9 adapterId;
+				std::memset(&adapterId, 0, sizeof(adapterId));
 				mD3D9->GetAdapterIdentifier(id,0,&adapterId);
 
-				TString AdapterDesc_tstr = StringConverter::StringToTString(adapterId.Description, MAX_DEVICE_IDENTIFIER_STRING);
+				TString AdapterDesc_tstr = StringConverter::StringToTString(adapterId.Description);
 				AdapterDesc_tstr = TStringHelper::trim( AdapterDesc_tstr );
 
 				if( adapterDesc == AdapterDesc_tstr )

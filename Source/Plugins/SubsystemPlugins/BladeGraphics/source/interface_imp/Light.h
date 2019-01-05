@@ -33,7 +33,7 @@ namespace Blade
 		@param 
 		@return 
 		*/
-		virtual const uint32&	getType() const		{return mType;}
+		virtual const uint32&	getType() const		{return mDesc.mType;}
 
 		/*
 		@describe 
@@ -47,7 +47,7 @@ namespace Blade
 		@param
 		@return
 		*/
-		virtual const scalar&	getAttenuation() const	{return mAttenuation;}
+		virtual const scalar&	getAttenuation() const	{return mDesc.mAttenuation;}
 
 		/*
 		@describe 
@@ -68,35 +68,35 @@ namespace Blade
 		@param
 		@return
 		*/
-		virtual const scalar&	getRange() const { return mRange; }
+		virtual const scalar&	getRange() const { return mDesc.mRange; }
 
 		/**
 		@describe
 		@param
 		@return
 		*/
-		virtual const scalar&	getSpotInnerAngle() const { return mSpotInnerAngle; }
+		virtual const scalar&	getSpotInnerAngle() const { return mDesc.mSpotInnerAngle; }
 
 		/**
 		@describe
 		@param
 		@return
 		*/
-		virtual const scalar&	getSpotOuterAngle() const { return mSpotOutAngle; }
+		virtual const scalar&	getSpotOuterAngle() const { return mDesc.mSpotOutAngle; }
 
 		/*
 		@describe 
 		@param 
 		@return 
 		*/
-		virtual const Color&	getDiffuse() const		{return mDiffuse;}
+		virtual const Color&	getDiffuse() const		{return mDesc.mDiffuse;}
 
 		/*
 		@describe 
 		@param 
 		@return 
 		*/
-		virtual const Color&	getSpecular() const		{return mSpecular;}
+		virtual const Color&	getSpecular() const		{return mDesc.mSpecular;}
 
 		/*
 		@describe 
@@ -139,35 +139,35 @@ namespace Blade
 		/** @brief  */
 		inline void			setAttenuation(const scalar& attenuation)
 		{
-			mAttenuation = attenuation;
+			mDesc.mAttenuation = attenuation;
 			this->updateAttenuation();
 		}
 
 		/** @brief  */
 		inline void			setRange(const scalar& range)
 		{
-			mRange = range;
-			if (mType == LT_POINT)
+			mDesc.mRange = range;
+			if (mDesc.mType == LT_POINT)
 				this->setScale(Vector3::UNIT_ALL*range);
-			else if (mType == LT_SPOT)
+			else if (mDesc.mType == LT_SPOT)
 			{
-				scalar radius = std::tan(Math::Degree2Radian(mSpotOutAngle/2)) * range;
+				scalar radius = std::tan(Math::Degree2Radian(mDesc.mSpotOutAngle/2)) * range;
 				this->setScale(Vector3(radius, radius, range));
 			}
 		}
 
 		/** @brief  */
-		inline void			setSpotLightInnerAngle(const scalar& angle)
+		inline void			setSpotInnerAngle(const scalar& angle)
 		{
-			mSpotInnerAngle = angle;
+			mDesc.mSpotInnerAngle = angle;
 			this->updateAttenuation();
 		}
 
 		/** @brief  */
-		inline void			setSpotLightOuterAngle(const scalar& angle)
+		inline void			setSpotOuterAngle(const scalar& angle)
 		{
-			mSpotOutAngle = angle;
-			if (mType == LT_SPOT)
+			mDesc.mSpotOutAngle = angle;
+			if (mDesc.mType == LT_SPOT)
 			{
 				scalar range = this->getRange();
 				float radius = range * std::tan( Math::Degree2Radian(angle/2) );
@@ -178,13 +178,13 @@ namespace Blade
 		/** @brief  */
 		inline void			setDiffuse(const Color& diffuse)
 		{
-			mDiffuse = diffuse;
+			mDesc.mDiffuse = diffuse;
 		}
 
 		/** @brief  */
 		inline void			setSpecular(const Color& spec)
 		{
-			mSpecular = spec;
+			mDesc.mSpecular = spec;
 		}
 
 		/** @brief  */
@@ -277,7 +277,7 @@ namespace Blade
 		/* custom methods                                                                     */
 		/************************************************************************/
 		/** @brief  */
-		//MaterialInstance*	getMaterial()  { return mMaterial; }
+		const ILightInterface::DESC&	getDesc() const { return mDesc; }
 
 	protected:
 
@@ -288,23 +288,10 @@ namespace Blade
 		//HMATERIALINSTANCE	mMaterial;
 		Matrix44	mWorldTransform;
 
-		//shader parameters
-		Vector4		mAttenuationParam;
-		//note: the two members are used as a whole shader parameter
-		Vector3		mDirection;
-		scalar		mPadding;
-
-		Color		mDiffuse;
-		Color		mSpecular;
-		//-shader parameters
-
-		scalar		mRange;
-		scalar		mSpotInnerAngle;	//in degrees
-		scalar		mSpotOutAngle;		//in degrees
-		scalar		mAttenuation;		//linear attenuations
+		Vector4		mAttenuationParam;	//shader params
+		Vector4		mDirection;
+		ILightInterface::DESC	mDesc;
 		Mask		mMask;
-		uint32		mType;
-
 
 		class LightHelper : public IRenderable, public Allocatable
 		{

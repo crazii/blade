@@ -195,9 +195,9 @@ namespace Blade
 	void	TexCompressorApp::initPlugins()
 	{
 		ParamList params;
+		params[BTString("BladeImageFI")] = true;	//mandatory for compressing
 		params[BTString("BladeDevice")] = true;
 		params[BTString("BladeWindow")] = true;
-		params[BTString("BladeImageFI")] = true;	//mandatory for compressing
 		params[BTString("BladeGraphics")] = true;
 		//UI system for configs if needed
 		params[BTString("BladeUI")] = true;

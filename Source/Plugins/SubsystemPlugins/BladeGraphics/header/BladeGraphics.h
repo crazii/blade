@@ -31,7 +31,8 @@
 #include <interface/IGraphicsSystem.h>
 
 #define BLADE_TS_CHECK_GRAPHICS_CONTEXT() (IGraphicsSystem::getSingleton().isGraphiscContext())
-//public reads/writes (changing data) only available in async run state
+//public(access by other systems) reads/writes (changing data) only available in async run state
+//public writes will be queued using graphics commands
 #define BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS() (assert(BLADE_TS_INCLUDE(TS_ASYNC_RUN) || BLADE_TS_CHECK_GRAPHICS_CONTEXT()))
 //write/change data only happens in async update state
 #define BLADE_TS_VERIFY_GRAPHICS_WRITE() (assert((BLADE_TS_INCLUDE(TS_ASYNC_UPDATE) && BLADE_TS_CHECK_GRAPHICS_CONTEXT())))

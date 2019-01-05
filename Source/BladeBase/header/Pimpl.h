@@ -207,6 +207,13 @@ namespace Blade
 			return mPtr != rhs;
 		}
 
+		/** @brief const access to no-const pointer. not recommended */
+		pointer get(void) const
+		{
+			assert(this->mPtr != NULL);
+			return this->mPtr;
+		}
+
 		/** @brief  */
 		pointer operator-> (void)
 		{

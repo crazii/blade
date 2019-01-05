@@ -231,7 +231,7 @@ namespace Blade
 				{
 					GraphicsElement* element = static_cast<GraphicsElement*>(info.mEffect->getHost());
 					if (element != NULL)
-						element->removeEffect(info.mEffect);
+						element->removeGraphicsEffect(info.mEffect);
 
 					i = mLifeTimeEffect.erase(i);
 				}
@@ -274,7 +274,9 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void EffectManager::deactivateEffect(const HGRAPHICSEFFECT& hEffect)
 	{
-		GraphicsElement* element = static_cast<GraphicsElement*>(hEffect->getHost());
+		BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
+
+		IGraphicsInterface* element = hEffect->getHost();
 		if (element != NULL)
 			element->removeEffect(hEffect);
 		else if (hEffect->getType() == CustomEffect::CUSTOM_EFFECT_TYPE)

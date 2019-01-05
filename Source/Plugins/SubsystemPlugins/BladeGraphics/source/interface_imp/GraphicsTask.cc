@@ -300,7 +300,9 @@ namespace Blade
 		IEventManager::getSingleton().dispatchEvent(FrameBeginEvent(mRenderTarget));
 
 		//save old data
-		mQueue->update();
+		mQueue->update();					//update pending parallel states
+		mUpdater->update(SS_ASYNC_UPDATE);	//flush commands
+
 		mUpdater->update(SS_PRE_CULLING);
 		mRenderScheme->updateCulling(cameraOverride);
 		mUpdater->update(SS_POST_CULLING);
@@ -326,7 +328,9 @@ namespace Blade
 		IEventManager::getSingleton().dispatchEvent(fbs);
 
 		assert(target != NULL);
-		mQueue->update();
+		mQueue->update();					//update pending parallel states
+		mUpdater->update(SS_ASYNC_UPDATE);	//flush commands
+
 		mUpdater->update(SS_PRE_CULLING);
 		mRenderScheme->updateCulling(cameraOverride);
 		mUpdater->update(SS_POST_CULLING);

@@ -4,6 +4,10 @@
 // non-inline function definitions and static member definitions cannot
 // reside in header file because of the risk of multiple declarations
 
+#if _MSC_VER
+#pragma warning(disable:5045)
+#endif
+
 // initialization of static private members
 unsigned long MTRand_int32::state[n] = {0x0UL};
 int MTRand_int32::p = 0;

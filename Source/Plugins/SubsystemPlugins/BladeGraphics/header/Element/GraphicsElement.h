@@ -47,17 +47,26 @@ namespace Blade
 		/************************************************************************/
 		/* IGraphicsInterface interface                                                                     */
 		/************************************************************************/
+	protected:
 		/** @copydoc IGraphicsInterface::addEffect  */
-		virtual bool	addEffect(const HGRAPHICSEFFECT& effect);
+		virtual bool	addEffect(const HGRAPHICSEFFECT& effect)
+		{
+			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
+			return effect != NULL && this->addCommand(GraphicsElementCommand::make(effect, &GraphicsElement::addGraphicsEffect));
+		}
 
 		/** @copydoc IGraphicsInterface::removeEffect  */
-		virtual bool	removeEffect(const HGRAPHICSEFFECT& effect);
+		virtual bool	removeEffect(const HGRAPHICSEFFECT& effect)
+		{
+			BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS();
+			return effect != NULL && this->addCommand(GraphicsElementCommand::make(effect, &GraphicsElement::removeGraphicsEffect));
+		}
 
 		/** @copydoc IGraphicsInterface::getEffect  */
 		virtual const HGRAPHICSEFFECT& getEffect(const TString& type) const;
 
 		/** @brief  */
-		virtual IGraphicsScene* getGraphicsScene() const { return this->getRenderScene(); }
+		virtual IGraphicsScene* getGraphicsScene() const { BLADE_TS_VERITY_GRAPHICS_PUBLIC_ACCESS(); return this->getRenderScene(); }
 
 		/** @brief  */
 		virtual void setVisible(bool visible);
@@ -105,6 +114,13 @@ namespace Blade
 		/************************************************************************/
 		/* custom methods                                                                     */
 		/************************************************************************/
+	public:
+		/** @copydoc IGraphicsInterface::addEffect  */
+		bool	addGraphicsEffect(const HGRAPHICSEFFECT& effect);
+
+		/** @copydoc IGraphicsInterface::removeEffect  */
+		bool	removeGraphicsEffect(const HGRAPHICSEFFECT& effect);
+
 		/**
 		@describe
 		@param
@@ -328,37 +344,7 @@ namespace Blade
 
 		/** @brief  */
 		bool finishCommand(GraphicsElementCommand* cmd);
-
 		friend class GraphicsElementCommand;
-		using IGraphicsInterface::attachEffect;
-		using IGraphicsInterface::detachEffect;
-
-		//internal commands
-		class AttachEffectCommand : public GraphicsElementCommand
-		{
-		public:
-			AttachEffectCommand(const HGRAPHICSEFFECT& effect) :hEffect(effect) {}
-
-			HGRAPHICSEFFECT hEffect;
-			virtual void execute()
-			{
-				this->getTarget()->GraphicsElement::attachEffect(hEffect);
-			}
-		};
-
-		class DetachEffectCommand : public GraphicsElementCommand
-		{
-		public:
-			DetachEffectCommand(const HGRAPHICSEFFECT& effect) :hEffect(effect) {}
-
-			HGRAPHICSEFFECT hEffect;
-			virtual void execute()
-			{
-				this->getTarget()->GraphicsElement::detachEffect(hEffect);
-			}
-		};
-		friend class AttachEffectCommand;
-		friend class DetachEffectCommand;
 	};//class GraphicsElement
 
 

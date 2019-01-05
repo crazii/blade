@@ -41,17 +41,17 @@
 #	include <cstdint>
 #else
 #	if (BLADE_COMPILER == BLADE_COMPILER_MSVC && (_MSC_VER >= 1600))
-#		define _BLADE_HAS_STATIC_ASSERT
+#		define BLADE_HAS_STATIC_ASSERT
 #	elif BLADE_COMPILER == BLADE_COMPILER_CLANG
 #		if __has_extension(cxx_static_assert) 
-#			define _BLADE_HAS_STATIC_ASSERT
+#			define BLADE_HAS_STATIC_ASSERT
 #		endif
 #	else
 #		if (defined(__cpp_static_assert) && __cpp_static_assert >= 201411)
 #			define _BLADE_HAS_STATIC_ASSERT
 #		endif
 #	endif
-#	if !defined(_BLADE_HAS_STATIC_ASSERT)
+#	if !defined(BLADE_HAS_STATIC_ASSERT)
 #		define static_assert(exp, desc) typedef char assert_type[(exp) ? 1 : -1]
 #	endif
 #endif
@@ -85,6 +85,13 @@ namespace std
 	template< typename T > struct is_pointer<T* const> { enum { value = true }; };
 	template< typename T > struct is_pointer<T* volatile> { enum { value = true }; };
 	template< typename T > struct is_pointer<T* const volatile> { enum { value = true }; };
+
+	//remove_reference
+	template< typename T > struct remove_reference { typedef T type; };
+	template< typename T > struct remove_reference<T&> { typedef T type; };
+	template< typename T > struct remove_reference<T& const> { typedef T type; };
+	template< typename T > struct remove_reference<T& volatile> { typedef T type; };
+	template< typename T > struct remove_reference<T& const volatile> { typedef T type; };
 
 #endif
 

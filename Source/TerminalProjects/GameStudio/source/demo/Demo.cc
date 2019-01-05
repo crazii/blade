@@ -14,6 +14,7 @@
 #include <interface/IResourceManager.h>
 #include <interface/ITimeService.h>
 #include <interface/public/graphics/IGraphicsService.h>
+#include <interface/public/graphics/IGraphicsInterface.h>
 #include <interface/IPage.h>
 #include <interface/public/geometry/IGeometryService.h>
 #include <interface/public/logic/ILogicService.h>
@@ -63,7 +64,7 @@ namespace Blade
 		IEntity*	mLightEntity;
 	};//class AnimDemoState
 
-
+	const TString ELEMENT_NAME = BTString("Model");
 	//////////////////////////////////////////////////////////////////////////
 	AnimDemoState::AnimDemoState()
 	{
@@ -104,7 +105,6 @@ namespace Blade
 		IGeometry* geom = geomElem->getInterface(IID_GEOMETRY());
 
 		HELEMENT element = graphicsScene->createGraphicsElement(BTString(BLANG_MODEL_ELEMENT));
-		const TString ELEMENT_NAME = BTString("Model");
 		entity->addElement(ELEMENT_NAME, element);
 
 		//load model file
@@ -147,6 +147,8 @@ namespace Blade
 		HELEMENT hLight = graphicsScene->createGraphicsElement(BTString(BLANG_LIGHT_ELEMENT));
 		mLightEntity = stage->createEntity(BTString("dirLight"));
 		mLightEntity->addElement(BTString("light"), hLight);
+		ILightInterface* light = mLightEntity->getInterface(IID_LIGHT());
+		light->setType(LT_DIRECTIONAL);
 		stage->loadEntity(mLightEntity);
 		mStage = stage;
 	}
@@ -278,7 +280,7 @@ namespace Blade
 	void initDemoStates()
 	{
 		//set demo state as init state
-		NameRegisterFactory(SceneDemoState, IGameState, IGameState::INIT_STATE);
+		NameRegisterFactory(AnimDemoState, IGameState, IGameState::INIT_STATE);
 	}
 	
 	
