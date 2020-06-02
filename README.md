@@ -50,7 +50,7 @@ Any bug reports, suggestions, criticisms are welcomed. If anything you can learn
       * Shader compiler;  
       * Mesh & skinned animation importer;  
       * Language processor (in a GNU gettext way) & translation editing tool (a plugin for editor);
-  8. Fast build/compilation, for fast prototyping/iteration. Win32 debug takes **1.5 min** on i7 CPU, Android takes about **5 mins**.  
+  8. Fast build/compilation, for fast prototyping/iteration. **Effective LOC 200k**, takes **1.5 min** on i7 CPU for Win32 debug, Android takes about **5 mins**.  
   9. Data binding to XML (non-intrusive); simple binary XML format.  
   10. Multi-language supprt.  
 
@@ -92,7 +92,7 @@ You need Visual Studio 2015/2017 (latest update), with **desktop develepment**, 
  ![Config Panel](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/config_panel.jpg)
  ## Editor: model viewer  
  ![Editor](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/editor.jpg)
- ## Editor: scene & terrain editing  
+ ## Editor: scene & terrain editing (512x4CSM)  
  ![Terrain Editing](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/editor_terrain.jpg)
  ## Terrain height brushing & config  
  ![Terrain Brush](https://raw.githubusercontent.com/crazii/blade/master/Document/ScreenShots/terrain_brush.jpg)
