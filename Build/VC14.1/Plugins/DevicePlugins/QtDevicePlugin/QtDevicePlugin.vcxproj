@@ -112,7 +112,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>BladeBase.lib;BladeFramework.lib;qtmain.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib</AdditionalDependencies>
+      <AdditionalDependencies>BladeBase.lib;BladeFramework.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(TargetDir)..\Lib;$(SolutionDir)..\..\Dependencies\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <ProjectReference>

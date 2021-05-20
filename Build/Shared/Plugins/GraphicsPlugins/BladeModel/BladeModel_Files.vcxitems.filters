@@ -117,6 +117,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\SubMesh.h">
       <Filter>source\interface_imp</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\interface_imp\ParallelAnimation.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Source\Plugins\GraphicsPlugins\BladeModel\source\BladeModel.cc">
