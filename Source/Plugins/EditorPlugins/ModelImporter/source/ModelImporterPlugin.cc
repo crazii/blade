@@ -49,7 +49,7 @@ namespace Blade
 	//////////////////////////////////////////////////////////////////////////
 	void				ModelImporterPlugin::getDependency(TStringParam& dependencyList) const
 	{
-		dependencyList.push_back( BTString("UI") );	//IIconManager implementation
+		//dependencyList.push_back( BTString("UI") );	//IIconManager implementation
 		dependencyList.push_back( BTString("GraphicsModel") );
 		//dependencyList.push_back( BTString("ModelViewer") );
 	}
@@ -68,7 +68,8 @@ namespace Blade
 		info.mDescription = BTString("AutoDesk FBX Model File");
 		info.mExtensions.push_back( BTString("fbx") );
 		//use system icon, if FBX type not registered to system, icon will be an empty file.
-		info.mIconID = IIconManager::getSingleton().loadIconForFileType( BTString("fbx") );
+		if(Factory<IIconManager>::getSingleton().getNumRegisteredClasses() > 0)
+			info.mIconID = IIconManager::getSingleton().loadIconForFileType( BTString("fbx") );
 		IImporterManager::getSingleton().registerImporter(info);
 		//resource manager can recognize it as model resource after converting/importing to BLM with .fbx extension
 		IResourceManager::getSingleton().registerFileExtension(ModelConsts::MODEL_RESOURCE_TYPE, BTString("fbx"));
